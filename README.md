@@ -19,6 +19,7 @@ All the parts are or will be stocked at Tindie!
 
 - [Concept](#concept)
 - [Parts](#parts)
+- [KNX / NCN5121](#knx--ncn5121)
 - [Tools used](#tools-used)
 - [Donations](#donations)
 - [License](#license)
@@ -30,6 +31,14 @@ Testo
 ## Parts
 
 Ultra
+
+## KNX / NCN5121
+
+Utilizing [knxd](https://github.com/knxd/knxd/tree/main) to run a [NCN5121](https://www.onsemi.com/pdf/datasheet/ncn5121-d.pdf) KNX transceiver chip the PiPLC can talk to KNX networks natively, without going through an actual KNX-IP gateway first. (Internally, knxd looks like a KNX-IP gateway, but it won't route through your actual LAN)
+
+For Home Assistant, there is [an addon for knxd](https://github.com/da-anda/hass-io-addons/tree/main/knxd), so Home Assistant sees the internal NCN5121 as a KNX-IP gateway @ localhost.
+
+See the [knxd documentation](https://github.com/knxd/knxd/blob/main/doc/inifile.rst#ncn5120) for specifics on how to use the driver if you are not using Home Assistant.
 
 ## Tools used
 
