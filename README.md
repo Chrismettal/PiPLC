@@ -62,7 +62,7 @@ Pins marked unusable with OpenPLC are either not broken out, or differ too much 
 
 ### Digital Inputs (I1-8)
 
-8 24V tolerant digital inputs are provided 
+8 digital inputs are found at the top of the device.
 
 ### KNX / NCN5121
 
