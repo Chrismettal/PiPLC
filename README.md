@@ -28,6 +28,7 @@ All the parts are or will be stocked at Tindie!
   - [J5 / 1-Wire](#j5--1-wire)
 - [Supply](#supply)
 - [Tools used](#tools-used)
+- [Sources](#sources)
 - [Donations](#donations)
 - [License](#license)
 
@@ -115,7 +116,7 @@ This header contains 4 bare, unprotected GPIO pins. 2 of which are hardware PWM 
 
 ### J1 / Extbus
 
-
+<TODO>
 
 ### J4 / I²C
 
@@ -140,6 +141,11 @@ At `J5`, 3V3 from the RPI can be used to draw up to 500mA (protected through a p
 - FreeCAD 0.21.1
   - KicadStepUp Workbench 10.20.7
 - KiCAD 7.0.8
+
+## Sources
+
+- Wago 243-211 KNX Connector 3D file - https://grabcad.com/library/knx-connector-1
+- Raspberry Pi 3D file - https://grabcad.com/library/raspberry-pi-4-model-b-1#!
 
 ## Donations
 
