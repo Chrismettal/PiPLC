@@ -39,6 +39,7 @@
 
   (setup
     (pad_to_mask_clearance 0)
+    (aux_axis_origin 66.04 63.5)
     (grid_origin 66.04 63.5)
     (pcbplotparams
       (layerselection 0x00010fc_ffffffff)
@@ -1379,6 +1380,11 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
+    (model "${MEINE_BIBS}/MeineBib.3dshapes/PhoenixContact_MSTB_2,5⁄ 4-ST-5,08.stp"
+      (offset (xyz -2.5 -19.8 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (footprint "Relay_THT:Relay_SPST_Omron_G2RL-1A-E" (layer "F.Cu")
@@ -1519,7 +1525,7 @@
 
   (footprint "Capacitor_SMD:CP_Elec_6.3x7.7" (layer "F.Cu")
     (tstamp 260366ce-2fc2-4acc-a68a-1f1b394d73eb)
-    (at -8.149 140.366)
+    (at -8.26 140.8)
     (descr "SMD capacitor, aluminum electrolytic, Nichicon, 6.3x7.7mm")
     (tags "capacitor electrolytic")
     (property "LCSC" "C134220")
@@ -1781,6 +1787,11 @@
       (net 62 "Net-(J6-Pin_4)") (pinfunction "Pin_4") (pintype "passive") (tstamp 41e08dfe-ad61-4ff9-b6f5-4d9a5a0ae9c5))
     (model "${KICAD6_3DMODEL_DIR}/Connector_Phoenix_MSTB.3dshapes/PhoenixContact_MSTBA_2,5_4-G-5,08_1x04_P5.08mm_Horizontal.wrl"
       (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
+    (model "${MEINE_BIBS}/MeineBib.3dshapes/PhoenixContact_MSTB_2,5⁄ 4-ST-5,08.stp"
+      (offset (xyz -2.5 -19.8 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
@@ -2328,6 +2339,11 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
+    (model "${MEINE_BIBS}/MeineBib.3dshapes/PhoenixContact_MSTB_2,5⁄ 4-ST-5,08.stp"
+      (offset (xyz -2.5 -19.8 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (footprint "Resistor_SMD:R_0603_1608Metric" (layer "F.Cu")
@@ -2493,6 +2509,11 @@
       (net 66 "Net-(J7-Pin_4)") (pinfunction "Pin_4") (pintype "passive") (tstamp 18daf27d-e52e-4aa7-ba1c-ba9de3680e30))
     (model "${KICAD6_3DMODEL_DIR}/Connector_Phoenix_MSTB.3dshapes/PhoenixContact_MSTBA_2,5_4-G-5,08_1x04_P5.08mm_Horizontal.wrl"
       (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
+    (model "${MEINE_BIBS}/MeineBib.3dshapes/PhoenixContact_MSTB_2,5⁄ 4-ST-5,08.stp"
+      (offset (xyz -2.5 -19.8 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
@@ -3061,6 +3082,11 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
+    (model "${MEINE_BIBS}/MeineBib.3dshapes/PhoenixContact_MSTB_2,5⁄ 4-ST-5,08.stp"
+      (offset (xyz -2.5 -19.8 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (footprint "LED_THT:LED_D5.0mm" (layer "F.Cu")
@@ -3283,6 +3309,11 @@
       (net 1 "+24V") (pinfunction "Pin_4") (pintype "passive") (tstamp a081260c-1910-4809-85c4-4f2600fbac0a))
     (model "${KICAD6_3DMODEL_DIR}/Connector_Phoenix_MSTB.3dshapes/PhoenixContact_MSTBA_2,5_4-G-5,08_1x04_P5.08mm_Horizontal.wrl"
       (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
+    (model "${MEINE_BIBS}/MeineBib.3dshapes/PhoenixContact_MSTB_2,5⁄ 4-ST-5,08.stp"
+      (offset (xyz -2.5 -19.8 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
@@ -5124,6 +5155,11 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
+    (model "${MEINE_BIBS}/MeineBib.3dshapes/PhoenixContact_MSTB_2,5⁄ 4-ST-5,08.stp"
+      (offset (xyz -2.5 -19.8 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (footprint "Capacitor_SMD:C_0603_1608Metric" (layer "F.Cu")
@@ -5755,6 +5791,11 @@
       (net 82 "Net-(J12-Pin_4)") (pinfunction "Pin_4") (pintype "passive") (tstamp 3f65acdf-8384-4c8e-b44a-5965118d4563))
     (model "${KICAD6_3DMODEL_DIR}/Connector_Phoenix_MSTB.3dshapes/PhoenixContact_MSTBA_2,5_4-G-5,08_1x04_P5.08mm_Horizontal.wrl"
       (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
+    (model "${MEINE_BIBS}/MeineBib.3dshapes/PhoenixContact_MSTB_2,5⁄ 4-ST-5,08.stp"
+      (offset (xyz -2.5 -19.8 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
@@ -6863,7 +6904,7 @@
       (rotate (xyz 0 0 0))
     )
     (model "${MEINE_BIBS}/MeineBib.3dshapes/Raspberry Pi 4 Model B.STEP"
-      (offset (xyz -25.77 -14.15 25))
+      (offset (xyz -25.77 -14.15 35))
       (scale (xyz 1 1 1))
       (rotate (xyz 90 0 -90))
     )
@@ -7087,6 +7128,11 @@
       (net 74 "Net-(J10-Pin_4)") (pinfunction "Pin_4") (pintype "passive") (tstamp 901ec14e-d6f3-4dfa-b7dc-1ef68fdfe8c7))
     (model "${KICAD6_3DMODEL_DIR}/Connector_Phoenix_MSTB.3dshapes/PhoenixContact_MSTBA_2,5_4-G-5,08_1x04_P5.08mm_Horizontal.wrl"
       (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
+    (model "${MEINE_BIBS}/MeineBib.3dshapes/PhoenixContact_MSTB_2,5⁄ 4-ST-5,08.stp"
+      (offset (xyz -2.5 -19.8 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
@@ -7978,6 +8024,11 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
+    (model "${MEINE_BIBS}/MeineBib.3dshapes/PhoenixContact_MSTB_2,5⁄ 4-ST-5,08.stp"
+      (offset (xyz -2.5 -19.8 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (footprint "Capacitor_SMD:C_0603_1608Metric" (layer "F.Cu")
@@ -8532,6 +8583,11 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
+    (model "${MEINE_BIBS}/MeineBib.3dshapes/PhoenixContact_MSTB_2,5⁄ 4-ST-5,08.stp"
+      (offset (xyz -2.5 -19.8 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (footprint "Resistor_SMD:R_0603_1608Metric" (layer "F.Cu")
@@ -8748,6 +8804,11 @@
       (net 56 "Net-(J4-Pin_4)") (pinfunction "Pin_4") (pintype "passive") (tstamp 27b78c9e-6432-487b-a671-57bb0697bbb8))
     (model "${KICAD6_3DMODEL_DIR}/Connector_Phoenix_MSTB.3dshapes/PhoenixContact_MSTBA_2,5_4-G-5,08_1x04_P5.08mm_Horizontal.wrl"
       (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
+    (model "${MEINE_BIBS}/MeineBib.3dshapes/PhoenixContact_MSTB_2,5⁄ 4-ST-5,08.stp"
+      (offset (xyz -2.5 -19.8 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
@@ -9290,7 +9351,7 @@
     )
   )
 
-  (gr_rect (start 66.04 63.5) (end 224.94 148.5)
+  (gr_rect (start 66.04 63.5) (end 224.04 148.5)
     (stroke (width 0.1) (type default)) (fill none) (layer "Edge.Cuts") (tstamp 2196771c-57a6-43bd-89b6-76e18952288c))
 
 )
