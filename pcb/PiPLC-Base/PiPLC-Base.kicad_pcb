@@ -907,7 +907,7 @@
 
   (footprint "Relay_THT:Relay_SPST_Omron_G2RL-1A-E" (layer "F.Cu")
     (tstamp 1955a17c-0f01-4a92-a188-804b24a3626b)
-    (at 148.443 101.412)
+    (at 155.383 110.509)
     (descr "Omron Relay, SPST, High Capacity,  https://omronfs.omron.com/en_US/ecb/products/pdf/en-g2rl.pdf")
     (tags "Omron Relay SPST High Capacity")
     (property "LCSC" "C2896748")
@@ -1389,7 +1389,7 @@
 
   (footprint "Relay_THT:Relay_SPST_Omron_G2RL-1A-E" (layer "F.Cu")
     (tstamp 2256b486-9770-4fbd-8b16-249f1473dfd0)
-    (at 190.968 101.412)
+    (at 197.908 110.509)
     (descr "Omron Relay, SPST, High Capacity,  https://omronfs.omron.com/en_US/ecb/products/pdf/en-g2rl.pdf")
     (tags "Omron Relay SPST High Capacity")
     (property "LCSC" "C2896748")
@@ -3383,7 +3383,7 @@
 
   (footprint "Relay_THT:Relay_SPST_Omron_G2RL-1A-E" (layer "F.Cu")
     (tstamp 5bbc8052-3d75-42e4-9427-aa738f2586ef)
-    (at 162.618 101.412)
+    (at 169.558 110.509)
     (descr "Omron Relay, SPST, High Capacity,  https://omronfs.omron.com/en_US/ecb/products/pdf/en-g2rl.pdf")
     (tags "Omron Relay SPST High Capacity")
     (property "LCSC" "C2896748")
@@ -4913,7 +4913,7 @@
 
   (footprint "Relay_THT:Relay_SPST_Omron_G2RL-1A-E" (layer "F.Cu")
     (tstamp 82747802-bf7a-48d5-aaf6-255c20eb5b7a)
-    (at 105.918 101.412)
+    (at 112.858 110.509)
     (descr "Omron Relay, SPST, High Capacity,  https://omronfs.omron.com/en_US/ecb/products/pdf/en-g2rl.pdf")
     (tags "Omron Relay SPST High Capacity")
     (property "LCSC" "C2896748")
@@ -6386,7 +6386,7 @@
 
   (footprint "Relay_THT:Relay_SPST_Omron_G2RL-1A-E" (layer "F.Cu")
     (tstamp a39deb58-f18b-4070-ac85-39408da93660)
-    (at 134.268 101.412)
+    (at 141.208 110.509)
     (descr "Omron Relay, SPST, High Capacity,  https://omronfs.omron.com/en_US/ecb/products/pdf/en-g2rl.pdf")
     (tags "Omron Relay SPST High Capacity")
     (property "LCSC" "C2896748")
@@ -6660,7 +6660,7 @@
 
   (footprint "Relay_THT:Relay_SPST_Omron_G2RL-1A-E" (layer "F.Cu")
     (tstamp a82e76c0-831e-4d20-819d-f74cd5a975ce)
-    (at 205.143 101.412)
+    (at 212.083 110.509)
     (descr "Omron Relay, SPST, High Capacity,  https://omronfs.omron.com/en_US/ecb/products/pdf/en-g2rl.pdf")
     (tags "Omron Relay SPST High Capacity")
     (property "LCSC" "C2896748")
@@ -7591,7 +7591,7 @@
 
   (footprint "Relay_THT:Relay_SPST_Omron_G2RL-1A-E" (layer "F.Cu")
     (tstamp c20f259c-8d4f-4897-9bd2-1d4f1d90c7aa)
-    (at 120.093 101.412)
+    (at 127.033 110.509)
     (descr "Omron Relay, SPST, High Capacity,  https://omronfs.omron.com/en_US/ecb/products/pdf/en-g2rl.pdf")
     (tags "Omron Relay SPST High Capacity")
     (property "LCSC" "C2896748")
@@ -9021,7 +9021,7 @@
 
   (footprint "Relay_THT:Relay_SPST_Omron_G2RL-1A-E" (layer "F.Cu")
     (tstamp e5002334-d5c7-4408-9700-d51231960f40)
-    (at 176.793 101.412)
+    (at 183.733 110.509)
     (descr "Omron Relay, SPST, High Capacity,  https://omronfs.omron.com/en_US/ecb/products/pdf/en-g2rl.pdf")
     (tags "Omron Relay SPST High Capacity")
     (property "LCSC" "C2896748")
