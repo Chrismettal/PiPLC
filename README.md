@@ -8,6 +8,8 @@
 
 This is a work in progress for a Raspberry Pi breakout board + DIN rail case to use Pis in PLC-like industrial situations.
 
+The design relies on a Raspberry Pi 4 for all functions to work. Pi 5 is currently untested, while Pi 3 and below don't allow for all functions to be used.
+
 All the parts are or will be stocked at Tindie!
 
 <a href="https://www.tindie.com/stores/binary-6/?ref=offsite_badges&utm_source=sellers_Chrismettal&utm_medium=badges&utm_campaign=badge_medium"><img src="https://d2ss6ovg47m0r5.cloudfront.net/badges/tindie-mediums.png" alt="I sell on Tindie" width="150" height="78"></a>
@@ -22,6 +24,7 @@ All the parts are or will be stocked at Tindie!
   - [Digital Inputs (I1-8)](#digital-inputs-i1-8)
   - [Digital Outputs (Q1-8)](#digital-outputs-q1-8)
   - [KNX / NCN5121](#knx--ncn5121)
+  - [Modbus](#modbus)
   - [J13 / Pure](#j13--pure)
   - [J1 / Extbus](#j1--extbus)
   - [J4 / I²C](#j4--ic)
@@ -109,10 +112,31 @@ For Home Assistant, there is [an addon for knxd](https://github.com/da-anda/hass
 See the [knxd documentation](https://github.com/knxd/knxd/blob/main/doc/inifile.rst#ncn5120) for specifics on how to use the driver if you are not using Home Assistant.
 
 In this board, the NC5121 is NOT supplied through the KNX supply, but through the Pi's 3v3 rail. This means that it doesn't need to be taken into account when calculating the KNX power supply needs.
+
+> [!IMPORTANT]  
+> To enable KNX, make sure to disable bluetooth and the serial console on your Pi
+>
+> In `/boot/config.txt` add:
+> `dtoverlay=pi3-disable-bt`
+>
+> In `/boot/cmdline.txt` remove:
+> `console=serial0,115200` or `console=ttyAMA0,115200` if found
+>
+> reboot
  
+### Modbus
+
+<TODO>
+
+https://raspberrypi.stackexchange.com/questions/104464/where-are-the-uarts-on-the-raspberry-pi-4 
+
+https://raspberrypi.stackexchange.com/questions/45570/how-do-i-make-serial-work-on-the-raspberry-pi3-pizerow-pi4-or-later-models/107780#107780
+
 ### J13 / Pure 
 
-This header contains 4 bare, unprotected GPIO pins. 2 of which are hardware PWM capable (`GPIO_18`, `GPIO_19`) and 2 regular GPIO (`GPIO_13`, `GPIO_23`).
+<TODO> which pins are here?
+
+<TODO> how to enable PWM
 
 ### J1 / Extbus
 
@@ -146,6 +170,7 @@ At `J5`, 3V3 from the RPI can be used to draw up to 500mA (protected through a p
 
 - Wago 243-211 KNX Connector 3D file - https://grabcad.com/library/knx-connector-1
 - Raspberry Pi 3D file - https://grabcad.com/library/raspberry-pi-4-model-b-1#!
+- PCB Standoffs 3D files - https://grabcad.com/library/ettinger-standoff-nickel-plated-brass-m-f-m2-m8-1/details?folder_id=12725833
 
 ## Donations
 
