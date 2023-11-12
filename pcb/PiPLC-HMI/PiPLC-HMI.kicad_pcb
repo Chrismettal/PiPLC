@@ -231,7 +231,7 @@
     (pad "2" thru_hole circle (at 2.54 0) (size 1.8 1.8) (drill 0.9) (layers "*.Cu" "*.Mask")
       (net 2 "+3V3") (pinfunction "A") (pintype "passive") (tstamp bf6da74e-f17c-4d5f-a33a-40f48d9af76f))
     (model "${KICAD6_3DMODEL_DIR}/LED_THT.3dshapes/LED_D5.0mm.wrl"
-      (offset (xyz 0 0 3))
+      (offset (xyz 0 0 6))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
@@ -287,7 +287,7 @@
     (pad "2" thru_hole circle (at 2.54 0) (size 1.8 1.8) (drill 0.9) (layers "*.Cu" "*.Mask")
       (net 15 "/LED_Q4") (pinfunction "A") (pintype "passive") (tstamp bafa3c9f-1f12-4071-942d-e0b0118cfb26))
     (model "${KICAD6_3DMODEL_DIR}/LED_THT.3dshapes/LED_D5.0mm.wrl"
-      (offset (xyz 0 0 3))
+      (offset (xyz 0 0 6))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
@@ -343,7 +343,7 @@
     (pad "2" thru_hole circle (at 2.54 0) (size 1.8 1.8) (drill 0.9) (layers "*.Cu" "*.Mask")
       (net 14 "/LED_Q5") (pinfunction "A") (pintype "passive") (tstamp d9d84bf6-17a3-47bc-b69e-6a9611680e41))
     (model "${KICAD6_3DMODEL_DIR}/LED_THT.3dshapes/LED_D5.0mm.wrl"
-      (offset (xyz 0 0 3))
+      (offset (xyz 0 0 6))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
@@ -399,7 +399,7 @@
     (pad "2" thru_hole circle (at 2.54 0) (size 1.8 1.8) (drill 0.9) (layers "*.Cu" "*.Mask")
       (net 17 "/LED_Q2") (pinfunction "A") (pintype "passive") (tstamp 695ae328-5c91-4cbd-8ce0-5b75094bec77))
     (model "${KICAD6_3DMODEL_DIR}/LED_THT.3dshapes/LED_D5.0mm.wrl"
-      (offset (xyz 0 0 3))
+      (offset (xyz 0 0 6))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
@@ -455,7 +455,7 @@
     (pad "2" thru_hole circle (at 2.54 0) (size 1.8 1.8) (drill 0.9) (layers "*.Cu" "*.Mask")
       (net 2 "+3V3") (pinfunction "A") (pintype "passive") (tstamp 16e0dab8-b473-4221-98eb-5b97a0f8ed06))
     (model "${KICAD6_3DMODEL_DIR}/LED_THT.3dshapes/LED_D5.0mm.wrl"
-      (offset (xyz 0 0 3))
+      (offset (xyz 0 0 6))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
@@ -511,7 +511,7 @@
     (pad "2" thru_hole circle (at 2.54 0) (size 1.8 1.8) (drill 0.9) (layers "*.Cu" "*.Mask")
       (net 2 "+3V3") (pinfunction "A") (pintype "passive") (tstamp 8b066f9c-760c-43e3-b01e-db1025898af9))
     (model "${KICAD6_3DMODEL_DIR}/LED_THT.3dshapes/LED_D5.0mm.wrl"
-      (offset (xyz 0 0 3))
+      (offset (xyz 0 0 6))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
@@ -567,7 +567,7 @@
     (pad "2" thru_hole circle (at 2.54 0) (size 1.8 1.8) (drill 0.9) (layers "*.Cu" "*.Mask")
       (net 2 "+3V3") (pinfunction "A") (pintype "passive") (tstamp 07bdb5d9-2dbf-4ae1-ac47-2b4e065776fd))
     (model "${KICAD6_3DMODEL_DIR}/LED_THT.3dshapes/LED_D5.0mm.wrl"
-      (offset (xyz 0 0 3))
+      (offset (xyz 0 0 6))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
@@ -623,7 +623,7 @@
     (pad "2" thru_hole circle (at 2.54 0) (size 1.8 1.8) (drill 0.9) (layers "*.Cu" "*.Mask")
       (net 2 "+3V3") (pinfunction "A") (pintype "passive") (tstamp c17ab6ad-2ec4-455e-961d-5de039c22241))
     (model "${KICAD6_3DMODEL_DIR}/LED_THT.3dshapes/LED_D5.0mm.wrl"
-      (offset (xyz 0 0 3))
+      (offset (xyz 0 0 6))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
@@ -679,7 +679,7 @@
     (pad "2" thru_hole circle (at 2.54 0) (size 1.8 1.8) (drill 0.9) (layers "*.Cu" "*.Mask")
       (net 16 "/LED_Q3") (pinfunction "A") (pintype "passive") (tstamp 99bfc093-4fb4-4868-a313-6ff23337d108))
     (model "${KICAD6_3DMODEL_DIR}/LED_THT.3dshapes/LED_D5.0mm.wrl"
-      (offset (xyz 0 0 3))
+      (offset (xyz 0 0 6))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
@@ -735,7 +735,7 @@
     (pad "2" thru_hole circle (at 2.54 0) (size 1.8 1.8) (drill 0.9) (layers "*.Cu" "*.Mask")
       (net 12 "/LED_Q7") (pinfunction "A") (pintype "passive") (tstamp 262a03be-53fa-4d8b-bbee-dbf7555d8adf))
     (model "${KICAD6_3DMODEL_DIR}/LED_THT.3dshapes/LED_D5.0mm.wrl"
-      (offset (xyz 0 0 3))
+      (offset (xyz 0 0 6))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
@@ -906,7 +906,7 @@
     (pad "2" thru_hole circle (at 2.54 0) (size 1.8 1.8) (drill 0.9) (layers "*.Cu" "*.Mask")
       (net 11 "/LED_Q8") (pinfunction "A") (pintype "passive") (tstamp 2393c882-1239-40bc-a677-deacf6ea539d))
     (model "${KICAD6_3DMODEL_DIR}/LED_THT.3dshapes/LED_D5.0mm.wrl"
-      (offset (xyz 0 0 3))
+      (offset (xyz 0 0 6))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
@@ -962,7 +962,7 @@
     (pad "2" thru_hole circle (at 2.54 0) (size 1.8 1.8) (drill 0.9) (layers "*.Cu" "*.Mask")
       (net 2 "+3V3") (pinfunction "A") (pintype "passive") (tstamp ddba8181-705f-45d2-8ba0-97e50b903f17))
     (model "${KICAD6_3DMODEL_DIR}/LED_THT.3dshapes/LED_D5.0mm.wrl"
-      (offset (xyz 0 0 3))
+      (offset (xyz 0 0 6))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
@@ -1018,7 +1018,7 @@
     (pad "2" thru_hole circle (at 2.54 0) (size 1.8 1.8) (drill 0.9) (layers "*.Cu" "*.Mask")
       (net 13 "/LED_Q6") (pinfunction "A") (pintype "passive") (tstamp 010fc938-0f34-4b07-9260-8db4d5d157d5))
     (model "${KICAD6_3DMODEL_DIR}/LED_THT.3dshapes/LED_D5.0mm.wrl"
-      (offset (xyz 0 0 3))
+      (offset (xyz 0 0 6))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
@@ -1074,7 +1074,7 @@
     (pad "2" thru_hole circle (at 2.54 0) (size 1.8 1.8) (drill 0.9) (layers "*.Cu" "*.Mask")
       (net 2 "+3V3") (pinfunction "A") (pintype "passive") (tstamp c702b562-7416-4dd2-a897-1f84390d2354))
     (model "${KICAD6_3DMODEL_DIR}/LED_THT.3dshapes/LED_D5.0mm.wrl"
-      (offset (xyz 0 0 3))
+      (offset (xyz 0 0 6))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
@@ -1130,7 +1130,7 @@
     (pad "2" thru_hole circle (at 2.54 0) (size 1.8 1.8) (drill 0.9) (layers "*.Cu" "*.Mask")
       (net 18 "/LED_Q1") (pinfunction "A") (pintype "passive") (tstamp 62ecdb09-594c-4fdb-8d61-80f4db18f26c))
     (model "${KICAD6_3DMODEL_DIR}/LED_THT.3dshapes/LED_D5.0mm.wrl"
-      (offset (xyz 0 0 3))
+      (offset (xyz 0 0 6))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
@@ -1186,7 +1186,7 @@
     (pad "2" thru_hole circle (at 2.54 0) (size 1.8 1.8) (drill 0.9) (layers "*.Cu" "*.Mask")
       (net 2 "+3V3") (pinfunction "A") (pintype "passive") (tstamp d3e6d82c-989c-47ba-8269-651cb26267df))
     (model "${KICAD6_3DMODEL_DIR}/LED_THT.3dshapes/LED_D5.0mm.wrl"
-      (offset (xyz 0 0 3))
+      (offset (xyz 0 0 6))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
