@@ -1214,7 +1214,7 @@
       (net 53 "LED_Q1") (pinfunction "Pin_23") (pintype "passive") (tstamp f0727464-7349-447f-93bc-77fec325e295))
     (pad "24" thru_hole oval (at -2.54 27.94 90) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask")
       (net 29 "LED_I8") (pinfunction "Pin_24") (pintype "passive") (tstamp bc2c225c-7a7e-428f-a993-c20d556a5f5b))
-    (model "${KICAD6_3DMODEL_DIR}/Connector_PinSocket_2.54mm.3dshapes/PinSocket_2x12_P2.54mm_Vertical.wrl"
+    (model "${KICAD6_3DMODEL_DIR}/Connector_PinSocket_2.54mm.3dshapes/PinSocket_2x12_P2.54mm_Vertical.wrl" hide
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -6691,7 +6691,7 @@
       (net 141 "GND") (pinfunction "Pin_39") (pintype "passive") (tstamp a36c176e-12b0-42cf-980b-51951aed2b53))
     (pad "40" thru_hole oval (at -2.54 48.26 180) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask")
       (net 112 "/GPIO_21") (pinfunction "Pin_40") (pintype "passive") (tstamp 89350f92-0a8a-44bb-ba60-c99d09d908bd))
-    (model "${KICAD6_3DMODEL_DIR}/Connector_PinSocket_2.54mm.3dshapes/PinSocket_2x20_P2.54mm_Vertical.wrl"
+    (model "${KICAD6_3DMODEL_DIR}/Connector_PinSocket_2.54mm.3dshapes/PinSocket_2x20_P2.54mm_Vertical.wrl" hide
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
