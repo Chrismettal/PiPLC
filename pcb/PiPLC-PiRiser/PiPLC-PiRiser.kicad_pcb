@@ -748,7 +748,7 @@
     (stroke (width 0.15) (type default)) (fill none) (layer "F.SilkS") (tstamp 97f11530-0a71-4673-be93-6be4d98a4b51))
   (gr_rect (start 108.7 112.4) (end 157.7 114.4)
     (stroke (width 0.15) (type default)) (fill none) (layer "F.SilkS") (tstamp bce998aa-1289-4e4e-be75-0e098bff6f64))
-  (gr_rect (start 107.2 85.4) (end 159.1 115.05)
+  (gr_rect (start 107.2 85.4) (end 159.1 114.8)
     (stroke (width 0.1) (type default)) (fill none) (layer "Edge.Cuts") (tstamp d7bf099f-6a8d-45bd-9cf3-fdba1855b184))
   (gr_text "This side needs to face inward of the PLC" (at 133.2 103.4) (layer "B.SilkS") (tstamp 831a0491-ad36-48e1-b68e-2e227db6d3a9)
     (effects (font (size 1 1) (thickness 0.15)) (justify bottom mirror))
