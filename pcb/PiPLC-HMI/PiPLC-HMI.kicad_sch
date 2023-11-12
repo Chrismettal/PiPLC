@@ -1150,7 +1150,7 @@
     (pin "1" (uuid bb1b038a-558d-4535-926a-717ce17eb35c))
     (pin "2" (uuid c9c2fe31-d61e-46b2-8598-719066d6b295))
     (instances
-      (project "PiPLC-Frontpanel"
+      (project "PiPLC-HMI"
         (path "/8e79ca85-0324-46f6-b833-7804912a961b"
           (reference "D1") (unit 1)
         )
@@ -1175,7 +1175,7 @@
     )
     (pin "1" (uuid b2fd33ad-4a8d-470e-b76f-de36c7592f45))
     (instances
-      (project "PiPLC-Frontpanel"
+      (project "PiPLC-HMI"
         (path "/8e79ca85-0324-46f6-b833-7804912a961b"
           (reference "#PWR03") (unit 1)
         )
@@ -1205,7 +1205,7 @@
     )
     (pin "1" (uuid e0f50c2e-f5df-48de-850e-6727f27ceb65))
     (instances
-      (project "PiPLC-Frontpanel"
+      (project "PiPLC-HMI"
         (path "/8e79ca85-0324-46f6-b833-7804912a961b"
           (reference "#PWR02") (unit 1)
         )
@@ -1236,7 +1236,7 @@
     (pin "1" (uuid 986b273b-be86-4713-99e7-77ab8651d014))
     (pin "2" (uuid debf5a59-553a-4e55-a0e4-3e220795057b))
     (instances
-      (project "PiPLC-Frontpanel"
+      (project "PiPLC-HMI"
         (path "/8e79ca85-0324-46f6-b833-7804912a961b"
           (reference "D8") (unit 1)
         )
@@ -1267,7 +1267,7 @@
     (pin "3" (uuid 58e8033d-d7df-45db-a58b-61573be8ea5c))
     (pin "4" (uuid bd78f5c4-78fd-4a6f-857d-01ad4025b236))
     (instances
-      (project "PiPLC-Frontpanel"
+      (project "PiPLC-HMI"
         (path "/8e79ca85-0324-46f6-b833-7804912a961b"
           (reference "U1") (unit 1)
         )
@@ -1293,7 +1293,7 @@
     (pin "1" (uuid 46ad2254-4de4-4381-9886-1f1ba6d85d85))
     (pin "2" (uuid 91f306e6-df1e-48cc-be4f-f910ea4c7faf))
     (instances
-      (project "PiPLC-Frontpanel"
+      (project "PiPLC-HMI"
         (path "/8e79ca85-0324-46f6-b833-7804912a961b"
           (reference "D10") (unit 1)
         )
@@ -1341,7 +1341,7 @@
     (pin "8" (uuid c0a60807-becf-4914-8caf-bfdb98b07565))
     (pin "9" (uuid 0b424a89-294b-49c5-a125-cb52c0eaef3c))
     (instances
-      (project "PiPLC-Frontpanel"
+      (project "PiPLC-HMI"
         (path "/8e79ca85-0324-46f6-b833-7804912a961b"
           (reference "J1") (unit 1)
         )
@@ -1372,7 +1372,7 @@
     (pin "1" (uuid 22fe5a25-321d-4431-9f8b-518516678460))
     (pin "2" (uuid d77c27e7-0f54-4c95-bb7b-5dcc34736f86))
     (instances
-      (project "PiPLC-Frontpanel"
+      (project "PiPLC-HMI"
         (path "/8e79ca85-0324-46f6-b833-7804912a961b"
           (reference "D16") (unit 1)
         )
@@ -1398,7 +1398,7 @@
     (pin "1" (uuid e91cd777-4891-47bc-a3bb-dc4bf0100760))
     (pin "2" (uuid 9f926a8e-5725-4409-adc5-e7998b3d4c33))
     (instances
-      (project "PiPLC-Frontpanel"
+      (project "PiPLC-HMI"
         (path "/8e79ca85-0324-46f6-b833-7804912a961b"
           (reference "D9") (unit 1)
         )
@@ -1427,7 +1427,7 @@
     (pin "1" (uuid 5bc5f552-78cf-49c7-b837-aa190d73e9ed))
     (pin "2" (uuid 4e284467-7938-4d9c-9c52-cec9e4b0e287))
     (instances
-      (project "PiPLC-Frontpanel"
+      (project "PiPLC-HMI"
         (path "/8e79ca85-0324-46f6-b833-7804912a961b"
           (reference "Plug_KNX1") (unit 1)
         )
@@ -1458,7 +1458,7 @@
     (pin "1" (uuid e3439108-f947-446c-b5c4-7fe2b4d2c9dd))
     (pin "2" (uuid 61f02487-8476-414e-aab5-904cd7536045))
     (instances
-      (project "PiPLC-Frontpanel"
+      (project "PiPLC-HMI"
         (path "/8e79ca85-0324-46f6-b833-7804912a961b"
           (reference "D11") (unit 1)
         )
@@ -1484,7 +1484,7 @@
     (pin "1" (uuid a5caa02c-3c44-401a-b2e7-f08be83d87b7))
     (pin "2" (uuid 79976630-dcaa-4dc6-83c2-19dc6a426386))
     (instances
-      (project "PiPLC-Frontpanel"
+      (project "PiPLC-HMI"
         (path "/8e79ca85-0324-46f6-b833-7804912a961b"
           (reference "D4") (unit 1)
         )
@@ -1513,7 +1513,7 @@
     (pin "1" (uuid ac38492d-8321-4bc3-a6d4-0b699f361f58))
     (pin "2" (uuid 796c02f3-d930-4543-8abd-6f73aa31802d))
     (instances
-      (project "PiPLC-Frontpanel"
+      (project "PiPLC-HMI"
         (path "/8e79ca85-0324-46f6-b833-7804912a961b"
           (reference "J2") (unit 1)
         )
@@ -1544,7 +1544,7 @@
     (pin "1" (uuid 2e81940e-8ddd-423b-a880-a465bef9a7c5))
     (pin "2" (uuid 01fe0f4b-4557-4038-8698-494c9f8df490))
     (instances
-      (project "PiPLC-Frontpanel"
+      (project "PiPLC-HMI"
         (path "/8e79ca85-0324-46f6-b833-7804912a961b"
           (reference "D3") (unit 1)
         )
@@ -1570,7 +1570,7 @@
     (pin "1" (uuid 9fd98805-c261-463f-b474-627fb7b7377b))
     (pin "2" (uuid 13795c2e-4a69-447d-a98e-6c0f4fe9178e))
     (instances
-      (project "PiPLC-Frontpanel"
+      (project "PiPLC-HMI"
         (path "/8e79ca85-0324-46f6-b833-7804912a961b"
           (reference "D15") (unit 1)
         )
@@ -1595,7 +1595,7 @@
     )
     (pin "1" (uuid 36d4512f-7f0c-4155-afdf-8bd46573267e))
     (instances
-      (project "PiPLC-Frontpanel"
+      (project "PiPLC-HMI"
         (path "/8e79ca85-0324-46f6-b833-7804912a961b"
           (reference "#PWR01") (unit 1)
         )
@@ -1628,7 +1628,7 @@
     )
     (pin "1" (uuid ec590c94-8eb9-4dec-a306-69ad0f1f4138))
     (instances
-      (project "PiPLC-Frontpanel"
+      (project "PiPLC-HMI"
         (path "/8e79ca85-0324-46f6-b833-7804912a961b"
           (reference "J4") (unit 1)
         )
@@ -1658,7 +1658,7 @@
     )
     (pin "1" (uuid 5d6fd340-adad-4396-b0ae-ecdffef7713f))
     (instances
-      (project "PiPLC-Frontpanel"
+      (project "PiPLC-HMI"
         (path "/8e79ca85-0324-46f6-b833-7804912a961b"
           (reference "#PWR04") (unit 1)
         )
@@ -1688,7 +1688,7 @@
     )
     (pin "1" (uuid d2e26978-eb56-411c-8b43-8e98b902c3f8))
     (instances
-      (project "PiPLC-Frontpanel"
+      (project "PiPLC-HMI"
         (path "/8e79ca85-0324-46f6-b833-7804912a961b"
           (reference "#PWR05") (unit 1)
         )
@@ -1721,7 +1721,7 @@
     )
     (pin "1" (uuid 936340bc-5401-4315-ae5e-77c0cb187890))
     (instances
-      (project "PiPLC-Frontpanel"
+      (project "PiPLC-HMI"
         (path "/8e79ca85-0324-46f6-b833-7804912a961b"
           (reference "J3") (unit 1)
         )
@@ -1752,7 +1752,7 @@
     (pin "1" (uuid 4eb219f0-9a5b-4b22-9ba6-2c0429689920))
     (pin "2" (uuid 404238e5-dd65-4ef3-8438-6c5d959ce78f))
     (instances
-      (project "PiPLC-Frontpanel"
+      (project "PiPLC-HMI"
         (path "/8e79ca85-0324-46f6-b833-7804912a961b"
           (reference "D5") (unit 1)
         )
@@ -1778,7 +1778,7 @@
     (pin "1" (uuid 2498823f-103e-4f29-9553-742728423ef3))
     (pin "2" (uuid b35a09ac-86b3-48a2-9f17-5b73d74bf085))
     (instances
-      (project "PiPLC-Frontpanel"
+      (project "PiPLC-HMI"
         (path "/8e79ca85-0324-46f6-b833-7804912a961b"
           (reference "D2") (unit 1)
         )
@@ -1804,7 +1804,7 @@
     (pin "1" (uuid 029a8065-00f8-4458-9aa7-382bdeb2318b))
     (pin "2" (uuid a2aa0523-ce8f-4f64-9e29-900e9c2244e1))
     (instances
-      (project "PiPLC-Frontpanel"
+      (project "PiPLC-HMI"
         (path "/8e79ca85-0324-46f6-b833-7804912a961b"
           (reference "D13") (unit 1)
         )
@@ -1830,7 +1830,7 @@
     (pin "1" (uuid 92fb59e0-5fa8-4545-95cc-8856ae3d2210))
     (pin "2" (uuid 356b7810-3e80-4707-bceb-305202643dca))
     (instances
-      (project "PiPLC-Frontpanel"
+      (project "PiPLC-HMI"
         (path "/8e79ca85-0324-46f6-b833-7804912a961b"
           (reference "D12") (unit 1)
         )
@@ -1856,7 +1856,7 @@
     (pin "1" (uuid 0cbb0eda-94bb-4b86-859e-86b444a91703))
     (pin "2" (uuid 8904c1e8-b322-44e9-8a4e-973f8a329e70))
     (instances
-      (project "PiPLC-Frontpanel"
+      (project "PiPLC-HMI"
         (path "/8e79ca85-0324-46f6-b833-7804912a961b"
           (reference "D7") (unit 1)
         )
@@ -1882,7 +1882,7 @@
     (pin "1" (uuid c87de30b-d548-426f-811c-69e46a998c45))
     (pin "2" (uuid a101d7a5-e4c2-4b29-b5a7-23b3d8969a2b))
     (instances
-      (project "PiPLC-Frontpanel"
+      (project "PiPLC-HMI"
         (path "/8e79ca85-0324-46f6-b833-7804912a961b"
           (reference "D14") (unit 1)
         )
@@ -1908,7 +1908,7 @@
     (pin "1" (uuid 5f6b5af4-1226-4f9b-a075-d2bc28527af7))
     (pin "2" (uuid 91b5ce48-5ec7-46e2-8b7c-89fc0c050a2f))
     (instances
-      (project "PiPLC-Frontpanel"
+      (project "PiPLC-HMI"
         (path "/8e79ca85-0324-46f6-b833-7804912a961b"
           (reference "D6") (unit 1)
         )

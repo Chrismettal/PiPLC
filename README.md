@@ -34,6 +34,7 @@ All the parts are or will be stocked at Tindie!
 - [Software](#software-1)
   - [OpenPLC](#openplc)
   - [HomeAssistant](#homeassistant)
+  - [Codesys](#codesys)
 - [Tools used](#tools-used)
 - [Sources](#sources)
 - [Donations](#donations)
@@ -106,6 +107,7 @@ As with the digital inputs, each output features a status LED.
 > As this the PiPLC is an open source passion project and not externally rated by TÜV or a similar agency, usage of these relays in mains powered systems is at your own risk.
 > 
 > All components chosen are rated for 16 A at 250 V AC and should be capable of driving everything in a home environment.
+> 
 > Only certified electricians should ever be performing mains work, and home-built devices should never be connected to mains power unless you know what you are doing.
 
 ### J? / KNX / NCN5121
@@ -123,9 +125,11 @@ In this board, the NC5121 is NOT supplied through the KNX supply, but through th
 > This is required to enable full `UART0` at GPIO14/15
 >
 > In `/boot/config.txt` add:
+> 
 > `dtoverlay=pi3-disable-bt`
 >
 > In `/boot/cmdline.txt` remove:
+> 
 > `console=serial0,115200` or `console=ttyAMA0,115200` if found
 >
 > reboot
@@ -186,6 +190,10 @@ TODO own hardware driver? Dark mode?
 TODO installation steps
 TODO knxd
 TODO modbus
+
+### Codesys
+
+TODO? Not open source so might not do. No reason why it shouldn't work tho.
 
 ## Tools used
 

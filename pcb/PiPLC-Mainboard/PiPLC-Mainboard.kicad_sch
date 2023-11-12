@@ -6941,7 +6941,7 @@
     )
     (pin "1" (uuid d23b02e1-e2ac-407d-8d41-f9748e108b94))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "#PWR017") (unit 1)
         )
@@ -6970,7 +6970,7 @@
     (pin "1" (uuid db124438-589b-48a8-807f-ae0af8b60ed0))
     (pin "2" (uuid c32cffde-355c-4de4-8580-335414247aaa))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "R24") (unit 1)
         )
@@ -6995,7 +6995,7 @@
     )
     (pin "1" (uuid 30646c4a-eb60-4967-a877-85791d4fc237))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "#PWR010") (unit 1)
         )
@@ -7026,7 +7026,7 @@
     (pin "3" (uuid 69a021cd-6b0d-43f7-9f19-aff8a36693a9))
     (pin "4" (uuid 7fc02a48-60c5-4978-961c-69090c859c77))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "U7") (unit 1)
         )
@@ -7055,7 +7055,7 @@
     (pin "1" (uuid cce9bd72-bc62-495a-9a15-bb94a95f90ea))
     (pin "2" (uuid 4e49f173-0183-441d-b4d1-3d216ef729c3))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "R46") (unit 1)
         )
@@ -7080,7 +7080,7 @@
     )
     (pin "1" (uuid fbe39b4c-4e34-42e1-aa14-edd970cef06b))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "#PWR09") (unit 1)
         )
@@ -7105,7 +7105,7 @@
     )
     (pin "1" (uuid abedf6a8-f3e6-4939-9101-847e2af1f450))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "#PWR06") (unit 1)
         )
@@ -7134,7 +7134,7 @@
     (pin "1" (uuid d6a7d049-8861-43ec-9b85-6e23cf3d5116))
     (pin "2" (uuid 7039da98-2971-41fa-ad7c-f323be29a775))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "C14") (unit 1)
         )
@@ -7163,7 +7163,7 @@
     (pin "1" (uuid 87d12ded-c89c-4681-9c71-05b147ed6a45))
     (pin "2" (uuid 316ad25c-1330-4db5-b120-4b444f43841a))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "R44") (unit 1)
         )
@@ -7191,7 +7191,7 @@
     )
     (pin "1" (uuid 71c868c9-8ac3-41dc-844b-9f56eb8106da))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "TP2") (unit 1)
         )
@@ -7220,7 +7220,7 @@
     (pin "1" (uuid 703d95eb-b2e6-4e9b-9234-9b8e1ed9367e))
     (pin "2" (uuid 465e17e8-3feb-436c-9672-4f82b8ede58b))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "C15") (unit 1)
         )
@@ -7245,7 +7245,7 @@
     )
     (pin "1" (uuid 71208289-88bf-4130-822e-0b60d98b7e5a))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "#PWR08") (unit 1)
         )
@@ -7279,7 +7279,7 @@
     (pin "1" (uuid 1c2b8ca1-e2de-4074-8de8-42b092c15c2e))
     (pin "2" (uuid a9fb9f7f-7b82-4515-bc0b-ccae9d8659d5))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "R48") (unit 1)
         )
@@ -7310,7 +7310,7 @@
     (pin "3" (uuid b00d076b-954b-4078-a8e0-ab0722cf99f5))
     (pin "4" (uuid 9354b563-65f9-4fb0-ad19-65644223b2fe))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "U8") (unit 1)
         )
@@ -7345,7 +7345,7 @@
     (pin "7" (uuid baf154a5-bb69-46ec-9f5c-0c25d45f6e6c))
     (pin "8" (uuid 21115bb2-0378-4d29-b6d5-f67283a40e95))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "U1") (unit 1)
         )
@@ -7381,7 +7381,7 @@
     (pin "A1" (uuid 1babb4fd-77d8-42b9-9f7b-748076e70f3e))
     (pin "A2" (uuid 407f9341-76e8-486b-984e-54fff15020ab))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "K7") (unit 1)
         )
@@ -7410,7 +7410,7 @@
     (pin "1" (uuid e87f77f5-cc73-4a8a-b3dc-10db5c75fb00))
     (pin "2" (uuid 8d3edd63-4b79-4b20-af4e-ab658875621c))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "R8") (unit 1)
         )
@@ -7439,7 +7439,7 @@
     (pin "1" (uuid 4abe4f97-afdd-4ca8-9b3b-d6445e20fc40))
     (pin "2" (uuid e5b4df00-17a1-471c-92ce-34ab64ad5d2d))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "C21") (unit 1)
         )
@@ -7470,7 +7470,7 @@
     (pin "A1" (uuid 10c6c5b0-6a11-4356-bb98-eb55e526980f))
     (pin "A2" (uuid 269eed65-44c0-4e4a-ba95-9581c7c75544))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "K4") (unit 1)
         )
@@ -7495,7 +7495,7 @@
     )
     (pin "1" (uuid 981c5803-1a4d-41a0-95ef-6bbf49945698))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "#PWR012") (unit 1)
         )
@@ -7525,7 +7525,7 @@
     )
     (pin "1" (uuid ff74daef-7c07-4826-9b2a-21f8f6176250))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "#PWR029") (unit 1)
         )
@@ -7554,7 +7554,7 @@
     (pin "1" (uuid 59d725bd-1a94-4855-b0ed-519a48af439d))
     (pin "2" (uuid cec7ce7f-b383-4f27-94fe-c5e0ae152c33))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "R3") (unit 1)
         )
@@ -7584,7 +7584,7 @@
     )
     (pin "1" (uuid c03a95cb-e234-46ac-9d4e-7fd7bdc41e74))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "#PWR085") (unit 1)
         )
@@ -7618,7 +7618,7 @@
     (pin "1" (uuid 7f62b37d-94f4-442c-9d62-05806526c6f4))
     (pin "2" (uuid 4bc105f5-a36f-4022-8a9c-4b485ad98345))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "C6") (unit 1)
         )
@@ -7648,7 +7648,7 @@
     )
     (pin "1" (uuid 2cc89ac9-9910-4c15-929a-d2dda9317dd6))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "#PWR071") (unit 1)
         )
@@ -7673,7 +7673,7 @@
     )
     (pin "1" (uuid 1d9ff9ca-4bf9-46a5-bd37-ed66ae267dcf))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "#PWR067") (unit 1)
         )
@@ -7709,7 +7709,7 @@
     (pin "A1" (uuid 4f8f11b1-6c0d-4a4c-a219-0d62fbc322b3))
     (pin "A2" (uuid 552e3de3-6871-430f-bd32-145d696bca7f))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "K1") (unit 1)
         )
@@ -7738,7 +7738,7 @@
     (pin "1" (uuid bebc6aeb-3713-4d15-bbc8-d2140f4ba029))
     (pin "2" (uuid 0437e284-231e-4b3b-9f17-e565344a1b1b))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "R5") (unit 1)
         )
@@ -7763,7 +7763,7 @@
     )
     (pin "1" (uuid ee45a789-caea-490b-bb98-7b6e22420a2d))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "#PWR01") (unit 1)
         )
@@ -7794,7 +7794,7 @@
     (pin "3" (uuid a689d349-f7a2-4a62-97b0-df751dbc498b))
     (pin "4" (uuid 6137ae03-4c5d-41e8-b026-157b031551d0))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "J4") (unit 1)
         )
@@ -7819,7 +7819,7 @@
     )
     (pin "1" (uuid 1e832a77-bf27-4ebc-b2f5-a1a16cf689af))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "#PWR090") (unit 1)
         )
@@ -7853,7 +7853,7 @@
     (pin "1" (uuid ccf26d5f-b18f-4062-9ff9-0a19b370907d))
     (pin "2" (uuid 30d3eebd-3661-479a-9391-351b0547321b))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "R23") (unit 1)
         )
@@ -7884,7 +7884,7 @@
     (pin "3" (uuid 841d2cce-7aa3-4da5-b410-1e77e7e39b33))
     (pin "4" (uuid d8b4c2b1-e24e-4eb9-96f5-0f71977bac69))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "Plug_10") (unit 1)
         )
@@ -7913,7 +7913,7 @@
     (pin "1" (uuid 06f06752-d76b-4fc2-872f-282cb39ff9bd))
     (pin "2" (uuid c7928d10-21c1-485e-baaf-38feb27bc641))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "R20") (unit 1)
         )
@@ -7942,7 +7942,7 @@
     (pin "1" (uuid 086f7b85-8a1b-4fde-8648-dc50d9c0a32f))
     (pin "2" (uuid 0767bd72-3bc5-4253-a431-79daadd6ecf0))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "R2") (unit 1)
         )
@@ -7978,7 +7978,7 @@
     (pin "3" (uuid 68f65184-6f44-49c6-ab9b-861dbc931248))
     (pin "4" (uuid f2244d1d-f615-46a2-bc5a-1ab8f2165aa3))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "Plug_7") (unit 1)
         )
@@ -8003,7 +8003,7 @@
     )
     (pin "1" (uuid 166460ff-fa8b-4244-9ce4-dff24f361468))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "#PWR056") (unit 1)
         )
@@ -8032,7 +8032,7 @@
     (pin "1" (uuid d4439c2e-c30d-4344-b6bb-e7a56e10ae40))
     (pin "2" (uuid 27260c2c-ef97-46c5-be81-75904ea8c5de))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "R42") (unit 1)
         )
@@ -8063,7 +8063,7 @@
     (pin "3" (uuid 1b9fe52a-7cda-4dfe-bd74-64738a79c27d))
     (pin "4" (uuid fd0d6364-68e1-4937-9f8f-eb5ef1d0d11e))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "Plug_8") (unit 1)
         )
@@ -8088,7 +8088,7 @@
     )
     (pin "1" (uuid 6aecb4ac-c9bd-4f88-8d15-11ed188fcfbc))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "#PWR075") (unit 1)
         )
@@ -8118,7 +8118,7 @@
     )
     (pin "1" (uuid 2085fac5-3f61-4410-b6cd-64d7c2a20b46))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "#PWR069") (unit 1)
         )
@@ -8147,7 +8147,7 @@
     (pin "1" (uuid 6df42ad2-da01-4be0-a9ce-62df62e482f5))
     (pin "2" (uuid 47d8d530-2d65-4211-a0c9-01dbe46f6506))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "R30") (unit 1)
         )
@@ -8176,7 +8176,7 @@
     (pin "1" (uuid 7d3ca6c9-d489-46ec-a0da-3707d73b46be))
     (pin "2" (uuid eecadeb3-abc6-4476-9b3f-4dc1ebad8ce9))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "R33") (unit 1)
         )
@@ -8207,7 +8207,7 @@
     (pin "3" (uuid ead057d1-6a36-4829-bf33-0b95c468351c))
     (pin "4" (uuid 98c19320-3738-4588-92ca-24f9f102dd6d))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "Plug_4") (unit 1)
         )
@@ -8232,7 +8232,7 @@
     )
     (pin "1" (uuid ff2a4def-72c8-43c2-8424-fcef78d1d7a3))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "#PWR013") (unit 1)
         )
@@ -8266,7 +8266,7 @@
     (pin "1" (uuid edbe6db1-6ab4-420b-9f04-91f256c619d7))
     (pin "2" (uuid 02a83189-0769-45f8-a202-382842dbec72))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "D1") (unit 1)
         )
@@ -8296,7 +8296,7 @@
     )
     (pin "1" (uuid caa33ab5-387d-4aa5-8a7a-abe387f3bd15))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "#PWR068") (unit 1)
         )
@@ -8321,7 +8321,7 @@
     )
     (pin "1" (uuid de7d944c-4efc-4743-b868-60cce792e64e))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "#PWR073") (unit 1)
         )
@@ -8355,7 +8355,7 @@
     (pin "1" (uuid b1fe6d5d-2916-43fb-b96c-81c94434b5de))
     (pin "2" (uuid deb47854-17e3-484f-b7af-a3d5aae460c7))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "R4") (unit 1)
         )
@@ -8385,7 +8385,7 @@
     )
     (pin "1" (uuid 539c8384-f3f0-4619-9dac-eb9bb94f84b2))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "#PWR027") (unit 1)
         )
@@ -8410,7 +8410,7 @@
     )
     (pin "1" (uuid 6e9ead2c-b561-4193-a2f6-5e0e0ccc47de))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "#PWR011") (unit 1)
         )
@@ -8446,7 +8446,7 @@
     (pin "3" (uuid 90d8987a-ab86-4805-a6ba-0dc25d7ecc7a))
     (pin "4" (uuid b103c276-51de-454c-aeec-656c6f534b42))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "J10") (unit 1)
         )
@@ -8475,7 +8475,7 @@
     (pin "1" (uuid e58c7438-292f-44dc-96d1-029b080df1bc))
     (pin "2" (uuid 22bc466c-7ba9-44a9-b36e-aea576ba4d53))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "D17") (unit 1)
         )
@@ -8511,7 +8511,7 @@
     (pin "3" (uuid 217038cc-619e-43cc-8811-31029c5c499a))
     (pin "4" (uuid 4b848a60-f77d-4f96-bf9d-8ac0b6afa90c))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "U5") (unit 1)
         )
@@ -8542,7 +8542,7 @@
     (pin "3" (uuid 3cf45de8-b5dc-49f4-ba09-03b399145259))
     (pin "4" (uuid 349608f3-8a7f-4f77-8df9-4cfd4b238713))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "J11") (unit 1)
         )
@@ -8573,7 +8573,7 @@
     (pin "3" (uuid a009137a-a981-4c0b-9be3-129419eb1834))
     (pin "4" (uuid dcd4d267-6ef4-4649-a69d-5f0911c2413b))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "J5") (unit 1)
         )
@@ -8598,7 +8598,7 @@
     )
     (pin "1" (uuid 48468720-5514-4ecc-9c60-d505778838f1))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "#PWR077") (unit 1)
         )
@@ -8632,7 +8632,7 @@
     (pin "1" (uuid 1eb91ada-5154-433b-ab69-312a76bab587))
     (pin "2" (uuid cda88b23-7076-47b8-adb9-2380a856b078))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "C8") (unit 1)
         )
@@ -8663,7 +8663,7 @@
     (pin "3" (uuid 74c174bf-4080-4089-b40a-f06f9f68f0dc))
     (pin "4" (uuid eb5de593-4180-405e-9964-2edcc2974db6))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "J9") (unit 1)
         )
@@ -8688,7 +8688,7 @@
     )
     (pin "1" (uuid 79d74832-d3a0-4bdd-bf6b-d0e01e1262e8))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "#PWR030") (unit 1)
         )
@@ -8717,7 +8717,7 @@
     (pin "1" (uuid 3401cd05-bb10-4540-bf48-65a3eb8e1f57))
     (pin "2" (uuid 27c503ab-9aca-4530-9837-8d847fd9e277))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "R9") (unit 1)
         )
@@ -8746,7 +8746,7 @@
     (pin "1" (uuid 4dbbaabf-dec3-4717-aabc-df057749f674))
     (pin "2" (uuid 111cf54c-18e1-4a04-ace8-23eb05817617))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "C20") (unit 1)
         )
@@ -8771,7 +8771,7 @@
     )
     (pin "1" (uuid ca5d8f2c-557f-4a04-9d45-c66684578a08))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "#PWR044") (unit 1)
         )
@@ -8796,7 +8796,7 @@
     )
     (pin "1" (uuid f9b5ce0e-4438-402e-9094-5f830f530fcd))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "#PWR022") (unit 1)
         )
@@ -8825,7 +8825,7 @@
     (pin "1" (uuid 0b15178e-14fb-4bc9-9dc4-6e16c38ba6e8))
     (pin "2" (uuid 916cac23-8097-4053-8110-75acf5afa829))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "R25") (unit 1)
         )
@@ -8850,7 +8850,7 @@
     )
     (pin "1" (uuid 1ff9ac82-bba3-4626-b407-517936d6b633))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "#PWR051") (unit 1)
         )
@@ -8875,7 +8875,7 @@
     )
     (pin "1" (uuid 38882a0c-06c1-4f8e-8ece-82d4214ac20b))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "#PWR034") (unit 1)
         )
@@ -8904,7 +8904,7 @@
     (pin "1" (uuid 38f80745-98cf-4ecb-a957-899b58ef27aa))
     (pin "2" (uuid 56f4c5a2-8118-4e6f-b39b-533d95804b49))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "C10") (unit 1)
         )
@@ -8935,7 +8935,7 @@
     (pin "3" (uuid 2898d67c-2a40-4c7d-a9c1-97fa1a7957fb))
     (pin "4" (uuid ba2d51f2-26a1-47f1-b020-9514b32d7095))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "J1") (unit 1)
         )
@@ -8964,7 +8964,7 @@
     (pin "1" (uuid 7ff32538-591d-495b-a12c-f1af90e19160))
     (pin "2" (uuid 15c36e22-6012-45e0-8c5f-96a3569131d0))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "R29") (unit 1)
         )
@@ -8993,7 +8993,7 @@
     (pin "1" (uuid f2373501-c050-4537-88b3-0c63f06e39d9))
     (pin "2" (uuid 812465c5-e76e-4eb1-854a-6ad8c0296c00))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "C12") (unit 1)
         )
@@ -9018,7 +9018,7 @@
     )
     (pin "1" (uuid 4495d691-74f2-48d7-abb2-8d3c3b087189))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "#PWR035") (unit 1)
         )
@@ -9043,7 +9043,7 @@
     )
     (pin "1" (uuid ae6c31e7-4ef4-435d-8437-5fd3d2c0b3f2))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "#PWR020") (unit 1)
         )
@@ -9074,7 +9074,7 @@
     (pin "3" (uuid 58899379-b240-4764-b9da-ce13eca4f2fd))
     (pin "4" (uuid fe14ae83-e33c-4af5-838f-0a58390d1127))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "Plug_12") (unit 1)
         )
@@ -9099,7 +9099,7 @@
     )
     (pin "1" (uuid 42dc0f82-6ad6-41d2-bc68-084ad8382897))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "#PWR063") (unit 1)
         )
@@ -9124,7 +9124,7 @@
     )
     (pin "1" (uuid 58586121-8242-40c1-8221-667d4c91aa3a))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "#PWR033") (unit 1)
         )
@@ -9192,7 +9192,7 @@
     (pin "8" (uuid e5e0a5fc-1269-4d89-a18e-4a7725f3e7a7))
     (pin "9" (uuid a9d7ca54-5682-4450-8af1-fcd41d42451b))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "U2") (unit 1)
         )
@@ -9217,7 +9217,7 @@
     )
     (pin "1" (uuid 9f377482-cddf-4acd-8598-91193bc534f5))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "#PWR092") (unit 1)
         )
@@ -9247,7 +9247,7 @@
     )
     (pin "1" (uuid 0f7e0161-643c-41f2-8334-65a20109a072))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "#PWR025") (unit 1)
         )
@@ -9264,7 +9264,7 @@
     (property "Value" "Conn_02x12_Odd_Even" (at 177.8 241.3 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x12_P2.54mm_Vertical" (at 193.04 241.3 0)
+    (property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_2x12_P2.54mm_Vertical" (at 193.04 241.3 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 193.04 241.3 0)
@@ -9295,7 +9295,7 @@
     (pin "8" (uuid 4c382374-1e09-4365-aa77-5c3ea84dc23f))
     (pin "9" (uuid 190ff126-08f1-4a6c-836e-f64a1d4285e1))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "J17") (unit 1)
         )
@@ -9320,7 +9320,7 @@
     )
     (pin "1" (uuid 6140886c-89cd-4076-b22d-00faadf08860))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "#PWR032") (unit 1)
         )
@@ -9351,7 +9351,7 @@
     (pin "3" (uuid 92a4dfdc-a35c-4f4b-8370-e6a23a3d70cc))
     (pin "4" (uuid 27dd90c9-1c71-40a5-9f06-e7e662fbc3aa))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "J7") (unit 1)
         )
@@ -9380,7 +9380,7 @@
     (pin "1" (uuid cd78942c-9307-48dd-9be5-d9962966c9db))
     (pin "2" (uuid 4e127c2e-846d-46bd-a6a5-792f8375782a))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "C19") (unit 1)
         )
@@ -9409,7 +9409,7 @@
     (pin "1" (uuid 31a14aea-9d1a-4f6a-953f-70c226cd932c))
     (pin "2" (uuid 1682d998-cab7-4d97-a40a-3c179ace831a))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "R32") (unit 1)
         )
@@ -9434,7 +9434,7 @@
     )
     (pin "1" (uuid 711c0dbd-d9ed-487a-9eb2-289f5616d56d))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "#PWR026") (unit 1)
         )
@@ -9459,7 +9459,7 @@
     )
     (pin "1" (uuid fe040203-2345-4d51-9a2c-6a619baba39d))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "#PWR053") (unit 1)
         )
@@ -9493,7 +9493,7 @@
     (pin "1" (uuid 318af83e-e2ea-4fee-8162-a0d03c6dfa85))
     (pin "2" (uuid d708d698-72bb-4ad9-bf91-fd5ea5458fd6))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "R1") (unit 1)
         )
@@ -9523,7 +9523,7 @@
     )
     (pin "1" (uuid 1bbb0621-62b5-41e5-b38a-1ef752d9de6b))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "#PWR082") (unit 1)
         )
@@ -9557,7 +9557,7 @@
     (pin "1" (uuid 65ebebf9-cb52-40dc-8c27-b04c2a6f6362))
     (pin "2" (uuid 319d8f62-34b6-4dd2-be76-22b04665c854))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "R22") (unit 1)
         )
@@ -9586,7 +9586,7 @@
     (pin "1" (uuid f6137ffd-8b35-4e81-af9b-11c7b9e0945b))
     (pin "2" (uuid 56ef27be-46cc-4a7e-8b85-5aca659a6553))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "R26") (unit 1)
         )
@@ -9615,7 +9615,7 @@
     (pin "1" (uuid a0302b82-e846-417d-ac61-2c7d47c69b6c))
     (pin "2" (uuid 8fcf1f4b-b8b5-4de2-8811-757f335051c6))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "R28") (unit 1)
         )
@@ -9644,7 +9644,7 @@
     (pin "1" (uuid 30a7cbdf-f76b-47a5-816b-20fd57a018c9))
     (pin "2" (uuid 80a1becd-a825-4022-a0da-6621b225175c))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "R35") (unit 1)
         )
@@ -9669,7 +9669,7 @@
     )
     (pin "1" (uuid 17e37507-4d4f-4404-852a-af4489abcad4))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "#PWR023") (unit 1)
         )
@@ -9694,7 +9694,7 @@
     )
     (pin "1" (uuid 2d4265d2-c215-40a4-bb6b-114ac3476acc))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "#PWR081") (unit 1)
         )
@@ -9725,7 +9725,7 @@
     (pin "3" (uuid 3f615634-3921-42d0-92d8-878b2624fb5e))
     (pin "4" (uuid 2faa546e-2aff-4abf-b3a7-200b1da29123))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "U11") (unit 1)
         )
@@ -9750,7 +9750,7 @@
     )
     (pin "1" (uuid 0331a4ca-9b30-4498-ab7f-629cb97184dc))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "#PWR015") (unit 1)
         )
@@ -9780,7 +9780,7 @@
     )
     (pin "1" (uuid adae5612-d75a-49d0-ada5-a74ed5a21d72))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "#PWR028") (unit 1)
         )
@@ -9805,7 +9805,7 @@
     )
     (pin "1" (uuid 8af44953-87d6-4c85-9877-aeaf8d579ed4))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "#PWR016") (unit 1)
         )
@@ -9835,7 +9835,7 @@
     )
     (pin "1" (uuid 3e245707-fb99-4611-8639-03e634d0275a))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "#PWR047") (unit 1)
         )
@@ -9860,7 +9860,7 @@
     )
     (pin "1" (uuid e174d1a0-e169-4f7c-9d67-b7cb4594b610))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "#PWR037") (unit 1)
         )
@@ -9889,7 +9889,7 @@
     (pin "1" (uuid d11f1960-fde5-4202-8b22-cfa83d6ad5fb))
     (pin "2" (uuid 8f50056e-9c66-4a50-85f4-34a889638be4))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "R36") (unit 1)
         )
@@ -9918,7 +9918,7 @@
     (pin "1" (uuid 7bf6d8d9-6acf-4a85-a97c-5b977de426e7))
     (pin "2" (uuid 70efbeb4-a0ce-4391-a509-6da7616162e4))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "R13") (unit 1)
         )
@@ -9949,7 +9949,7 @@
     (pin "3" (uuid 42d0862a-c64e-4f96-bc8c-f9c1992f1f79))
     (pin "4" (uuid 46c3b622-c4ad-413e-8035-4363aa03c6fd))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "U6") (unit 1)
         )
@@ -9980,7 +9980,7 @@
     (pin "3" (uuid 5193cb3c-d36d-4f43-b716-04d6b163ff1a))
     (pin "4" (uuid a764c5a0-3be3-475c-8cca-183a49f16a88))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "J8") (unit 1)
         )
@@ -10009,7 +10009,7 @@
     (pin "1" (uuid 9dfdb842-e517-4532-92f5-421397c0f544))
     (pin "2" (uuid abe54a6f-8ccc-4a67-a271-4c68f86882ce))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "R15") (unit 1)
         )
@@ -10040,7 +10040,7 @@
     (pin "3" (uuid 3044d48a-8347-4816-9b4c-de237e1bee93))
     (pin "4" (uuid 570b1789-da40-4b77-8d65-0dc5e6952e67))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "J3") (unit 1)
         )
@@ -10075,7 +10075,7 @@
     (pin "7" (uuid 88cd5408-0f64-469b-964b-58e9fc84186d))
     (pin "8" (uuid 13a671b6-c45e-4d88-b331-24fc2c13595f))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "U3") (unit 1)
         )
@@ -10104,7 +10104,7 @@
     (pin "1" (uuid cdb47e5d-ca72-49ef-a4ef-de1a9ce78c25))
     (pin "2" (uuid d3736ab2-6f9d-4289-8b01-1a6a3d659b01))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "R41") (unit 1)
         )
@@ -10135,7 +10135,7 @@
     (pin "3" (uuid 6000172d-53f7-44ca-a797-415296d252c4))
     (pin "4" (uuid bef43cf2-568b-47c8-b7f0-33f4ddb9c1c1))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "J12") (unit 1)
         )
@@ -10160,7 +10160,7 @@
     )
     (pin "1" (uuid 12099439-3fc1-4909-8d79-99e69eb01dec))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "#PWR055") (unit 1)
         )
@@ -10194,7 +10194,7 @@
     (pin "1" (uuid b6e6be76-3425-4745-a87c-1c0e130d6f82))
     (pin "2" (uuid a9b763b3-3249-43fb-8c11-a15197205faa))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "D19") (unit 1)
         )
@@ -10228,7 +10228,7 @@
     (pin "1" (uuid 50592d7c-5dea-4631-bb50-07cf199fa301))
     (pin "2" (uuid 605ef848-e8f6-4a3c-9e9d-d3dd2d81f0b9))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "R38") (unit 1)
         )
@@ -10257,7 +10257,7 @@
     (pin "1" (uuid b4bac399-36e1-45ce-8b60-c80a4a2e3363))
     (pin "2" (uuid b4638931-0db0-486b-9980-bbc9d2e30ed0))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "R47") (unit 1)
         )
@@ -10282,7 +10282,7 @@
     )
     (pin "1" (uuid abe693ba-1a1b-4256-b131-b9c8bd969cb9))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "#PWR046") (unit 1)
         )
@@ -10349,7 +10349,7 @@
     (pin "8" (uuid 6d760dd1-3b05-4210-8127-e81b96b06fd1))
     (pin "9" (uuid 5fd1cfb2-a140-4382-973e-21b8e1d79508))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "J99") (unit 1)
         )
@@ -10374,7 +10374,7 @@
     )
     (pin "1" (uuid 99a2bf08-ce31-4b20-b1b5-e3e4777ca356))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "#PWR060") (unit 1)
         )
@@ -10404,7 +10404,7 @@
     )
     (pin "1" (uuid c27a1f34-712c-4cf2-a0d8-cdf68ea890e8))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "#PWR065") (unit 1)
         )
@@ -10434,7 +10434,7 @@
     )
     (pin "1" (uuid e666451b-789e-415d-9a44-695aa3b5b317))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "#PWR048") (unit 1)
         )
@@ -10459,7 +10459,7 @@
     )
     (pin "1" (uuid 42026c62-e889-46be-bd96-e0655ec4bb67))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "#PWR076") (unit 1)
         )
@@ -10484,7 +10484,7 @@
     )
     (pin "1" (uuid 4dda916d-840c-4d1b-9278-30acaa10db45))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "#PWR040") (unit 1)
         )
@@ -10515,7 +10515,7 @@
     (pin "3" (uuid 9a44907f-458c-4981-9a6f-05f472424d31))
     (pin "4" (uuid 4526b398-a5c4-4b35-be97-2b5f59d0d10b))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "U9") (unit 1)
         )
@@ -10544,7 +10544,7 @@
     (pin "1" (uuid 509f3f3a-f5ba-4cbf-8c2e-25aae56e64ff))
     (pin "2" (uuid e3c2f10a-6681-48e1-a5b8-30e9dfa352e0))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "R12") (unit 1)
         )
@@ -10569,7 +10569,7 @@
     )
     (pin "1" (uuid 4a703e7d-2a84-42bc-abc9-0dc208052848))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "#PWR03") (unit 1)
         )
@@ -10600,7 +10600,7 @@
     (pin "3" (uuid 69e39ec3-38e5-480c-9ca0-92d6f16c6a36))
     (pin "4" (uuid 9920e8fa-9359-47a1-a6e3-9f6977c5f29f))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "Plug_9") (unit 1)
         )
@@ -10625,7 +10625,7 @@
     )
     (pin "1" (uuid 121ac2c8-0199-46ea-a457-ae74ca5b4bb0))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "#PWR049") (unit 1)
         )
@@ -10654,7 +10654,7 @@
     (pin "1" (uuid 200204e3-e808-460d-95f9-c286586efb72))
     (pin "2" (uuid 8c7cb9d8-9f5f-4da5-b89e-54153ee9db60))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "D18") (unit 1)
         )
@@ -10684,7 +10684,7 @@
     )
     (pin "1" (uuid 9191e2fb-ca52-4b53-a2eb-a15054d70a07))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "#PWR019") (unit 1)
         )
@@ -10715,7 +10715,7 @@
     (pin "3" (uuid 47cc6d5e-e238-40f8-b3c0-2f9624075a1a))
     (pin "4" (uuid ebfb6175-4ff0-4979-95c2-2ad889fe0c35))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "U10") (unit 1)
         )
@@ -10746,7 +10746,7 @@
     (pin "3" (uuid edd97d44-417b-4515-8820-cf5adbcea68f))
     (pin "4" (uuid 11663c0a-0b9b-4ef7-8528-0b94be871291))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "Y2") (unit 1)
         )
@@ -10775,7 +10775,7 @@
     (pin "1" (uuid e227a28c-00ba-4f84-8267-4fe35f349182))
     (pin "2" (uuid 222a4fe2-caa2-410d-8aa6-466ea68cd65c))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "R39") (unit 1)
         )
@@ -10800,7 +10800,7 @@
     )
     (pin "1" (uuid 7a48b157-30f6-4c57-81d1-e15ed83f48b1))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "#PWR021") (unit 1)
         )
@@ -10829,7 +10829,7 @@
     (pin "1" (uuid b3eb8db0-f34d-4567-89ae-99e127049afe))
     (pin "2" (uuid 72d081b8-ef7d-4c5f-8e9b-709b94dbb728))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "D2") (unit 1)
         )
@@ -10859,7 +10859,7 @@
     )
     (pin "1" (uuid 64e987dc-fc0f-4dda-8a4f-7b09ada1dd7d))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "#PWR070") (unit 1)
         )
@@ -10893,7 +10893,7 @@
     (pin "1" (uuid a8329bd7-0899-4d9c-897e-7caaaf7cf9ea))
     (pin "2" (uuid 4bac92a9-d022-49e2-bc66-2992963b70f1))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "C11") (unit 1)
         )
@@ -10918,7 +10918,7 @@
     )
     (pin "1" (uuid 7c941c1b-854c-4997-9154-de5de755a054))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "#PWR050") (unit 1)
         )
@@ -10947,7 +10947,7 @@
     (pin "1" (uuid 50b6356c-2901-4c46-afa3-4427e883af7d))
     (pin "2" (uuid 85425b6a-81b8-48ed-b86d-e4c136c56497))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "D16") (unit 1)
         )
@@ -10982,7 +10982,7 @@
     (pin "2" (uuid 7ad026c9-5f92-4572-babb-a20236d71922))
     (pin "3" (uuid bb1b2ccc-7901-4049-a723-dce3b31ed22f))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "Q1") (unit 1)
         )
@@ -11007,7 +11007,7 @@
     )
     (pin "1" (uuid 7cc9101f-3406-4dd3-945e-c6150481f0db))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "#PWR059") (unit 1)
         )
@@ -11036,7 +11036,7 @@
     (pin "1" (uuid 38b2374f-e50c-49bc-be90-d1870ed68898))
     (pin "2" (uuid cd2483f9-f044-4168-947d-10518eb754ed))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "F2") (unit 1)
         )
@@ -11067,7 +11067,7 @@
     (pin "3" (uuid 3eacbcdc-3920-4d75-91d7-79afb261bea0))
     (pin "4" (uuid 6dec6036-4255-4724-8bc1-3a4067cb38b4))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "J13") (unit 1)
         )
@@ -11096,7 +11096,7 @@
     (pin "1" (uuid 92101034-dd11-4fcc-be0e-49d137c5112b))
     (pin "2" (uuid e20de3fa-cfb7-421a-a1f8-e9b0d97197dc))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "R11") (unit 1)
         )
@@ -11124,7 +11124,7 @@
     )
     (pin "1" (uuid 194f70be-8742-4664-a651-1f40e8464e3a))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "TP1") (unit 1)
         )
@@ -11149,7 +11149,7 @@
     )
     (pin "1" (uuid 727ccef1-212b-4836-a8c8-23d17879bd6f))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "#PWR080") (unit 1)
         )
@@ -11179,7 +11179,7 @@
     )
     (pin "1" (uuid 57719e39-f93a-4317-bd4c-e2b6cffdbbe9))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "#PWR014") (unit 1)
         )
@@ -11209,7 +11209,7 @@
     )
     (pin "1" (uuid 4474f954-9670-4dbb-b1ac-7d41444cb925))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "#PWR07") (unit 1)
         )
@@ -11238,7 +11238,7 @@
     (pin "1" (uuid e7a611a0-2636-46d6-aa21-3cd8cc918b9c))
     (pin "2" (uuid 94730ecf-cb28-44ac-aeee-94986ad5662d))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "C5") (unit 1)
         )
@@ -11286,7 +11286,7 @@
     (pin "8" (uuid 8e5c6b0e-22ed-4d9b-8a7c-2e0ded961ab5))
     (pin "9" (uuid b2c65626-ef74-46bd-89fd-49645975baac))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "U12") (unit 1)
         )
@@ -11311,7 +11311,7 @@
     )
     (pin "1" (uuid 1196de1b-442b-492b-99b8-2bfa52670856))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "#PWR036") (unit 1)
         )
@@ -11340,7 +11340,7 @@
     (pin "1" (uuid 04f839c0-596a-45bf-bbd0-4cd9c4396bb2))
     (pin "2" (uuid 2d875cdd-a450-46ce-99e0-29f84c7abcac))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "R43") (unit 1)
         )
@@ -11371,7 +11371,7 @@
     (pin "A1" (uuid fcab162f-ce80-41c9-b153-d44a3f1ad0a4))
     (pin "A2" (uuid aa6e7d36-dc62-4e4f-8003-93b82ef970c5))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "K6") (unit 1)
         )
@@ -11396,7 +11396,7 @@
     )
     (pin "1" (uuid 849575cc-445a-4cf1-9f19-0b15eab24215))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "#PWR04") (unit 1)
         )
@@ -11421,7 +11421,7 @@
     )
     (pin "1" (uuid 45cda4bf-6c88-4f74-98a3-db03a6dfa07b))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "#PWR02") (unit 1)
         )
@@ -11450,7 +11450,7 @@
     (pin "1" (uuid 65349915-665d-416d-91b7-e92744a5cf6d))
     (pin "2" (uuid 8a889a35-30b9-4f70-b44d-f7bfc95f3ee8))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "R27") (unit 1)
         )
@@ -11481,7 +11481,7 @@
     (pin "3" (uuid 86202ab8-95a0-48c6-8410-826e96a47dad))
     (pin "4" (uuid 65922226-7373-4c40-94c1-80e19899433d))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "Plug_11") (unit 1)
         )
@@ -11510,7 +11510,7 @@
     (pin "1" (uuid b5e2a5e4-4f3f-4ac7-8683-113362c62956))
     (pin "2" (uuid e3077a74-0ea1-4949-b56b-017ad0ff771c))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "C3") (unit 1)
         )
@@ -11540,7 +11540,7 @@
     )
     (pin "1" (uuid 5333439f-4bc3-4ac1-9451-4728edb01e1b))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "#PWR064") (unit 1)
         )
@@ -11565,7 +11565,7 @@
     )
     (pin "1" (uuid 50bd67b7-ec99-4d0d-98f0-83ec553a9df4))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "#PWR087") (unit 1)
         )
@@ -11599,7 +11599,7 @@
     (pin "1" (uuid 405f03d0-5355-4f2e-935b-48d678cd411e))
     (pin "2" (uuid 4ec269d3-9e25-46c6-bb49-87e148a64681))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "R37") (unit 1)
         )
@@ -11630,7 +11630,7 @@
     (pin "3" (uuid 85385fc7-c1c6-417a-82dd-2d0152ead38c))
     (pin "4" (uuid 2060ba88-a002-4bc1-b366-e7e28af9e503))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "Plug_5") (unit 1)
         )
@@ -11655,7 +11655,7 @@
     )
     (pin "1" (uuid dff6e704-2cd7-464b-a3e2-dc770fc7ec3b))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "#PWR039") (unit 1)
         )
@@ -11685,7 +11685,7 @@
     (pin "2" (uuid b64e8c3a-d62b-4ffe-bc1f-9313acdda2e3))
     (pin "3" (uuid eed92a17-ef5b-4a11-bb96-c86d141cd058))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "Q2") (unit 1)
         )
@@ -11714,7 +11714,7 @@
     (pin "1" (uuid a8c096ff-7ea3-4d5d-94bf-446d37d9fd41))
     (pin "2" (uuid 7c31f953-d143-4e8f-8370-00a2d9b99bd3))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "C2") (unit 1)
         )
@@ -11750,7 +11750,7 @@
     (pin "A1" (uuid 5aa957f0-369a-4e38-aa09-9c094bd28531))
     (pin "A2" (uuid c07177dc-19e7-4b02-b7a5-e6c6acca829f))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "K8") (unit 1)
         )
@@ -11781,7 +11781,7 @@
     (pin "3" (uuid 5cf620d6-ace4-4de5-b1bb-b2f36a8a79e2))
     (pin "4" (uuid 1360fc6c-d89e-4c4f-a9b0-879c88a333f8))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "U4") (unit 1)
         )
@@ -11806,7 +11806,7 @@
     )
     (pin "1" (uuid 47c8b572-59a8-45e3-a297-97aa55f4f761))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "#PWR024") (unit 1)
         )
@@ -11836,7 +11836,7 @@
     (pin "2" (uuid da2ab014-a101-4d2b-9588-536cbbcc30bb))
     (pin "3" (uuid 778905b0-7426-40aa-99f7-7231ea66b7a6))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "Q4") (unit 1)
         )
@@ -11866,7 +11866,7 @@
     (pin "2" (uuid d78b06e3-f5b1-4b46-af32-2e8cdb08a6ce))
     (pin "3" (uuid 40fb2614-4a6d-4d6b-a4e0-020748834aa7))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "Q3") (unit 1)
         )
@@ -11895,7 +11895,7 @@
     (pin "1" (uuid 83aec50a-d6bd-409d-90bb-9603393dd283))
     (pin "2" (uuid 721c55c8-9495-4487-9119-a9cd54c0a4cc))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "L1") (unit 1)
         )
@@ -11925,7 +11925,7 @@
     )
     (pin "1" (uuid 2e621afa-1539-4f04-a3a0-15a9999839ab))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "#PWR062") (unit 1)
         )
@@ -11959,7 +11959,7 @@
     (pin "1" (uuid 0a58cd83-5bf7-4d19-9b01-73e5ea7a22e7))
     (pin "2" (uuid 445f92a3-74ff-4b4d-a839-589382c17e51))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "D13") (unit 1)
         )
@@ -11995,7 +11995,7 @@
     (pin "3" (uuid af5a8963-3776-4076-9941-341673ab5a4e))
     (pin "4" (uuid 7afb9422-825c-4d4b-b822-282e3aded328))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "Plug_6") (unit 1)
         )
@@ -12024,7 +12024,7 @@
     (pin "1" (uuid 08c9f755-3033-4e50-9e52-a88704634883))
     (pin "2" (uuid 781821de-cbf5-4789-988c-9a3badee5227))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "R6") (unit 1)
         )
@@ -12049,7 +12049,7 @@
     )
     (pin "1" (uuid 47cd8f6f-1607-4ccd-b1b2-e4a52ee4a9df))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "#PWR074") (unit 1)
         )
@@ -12074,7 +12074,7 @@
     )
     (pin "1" (uuid 7483f33f-49e3-41da-beb3-51f073a0b157))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "#PWR041") (unit 1)
         )
@@ -12103,7 +12103,7 @@
     (pin "1" (uuid 7ae7a43c-c395-41d1-8be9-7dcb7fad4b9c))
     (pin "2" (uuid 7c8025d7-b2fe-40d6-af54-76772e967f49))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "C1") (unit 1)
         )
@@ -12133,7 +12133,7 @@
     )
     (pin "1" (uuid fd613824-9dcd-4055-acf9-9abc110476f0))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "#PWR045") (unit 1)
         )
@@ -12162,7 +12162,7 @@
     (pin "1" (uuid b21aa32c-9b17-4566-aa22-656374329fd1))
     (pin "2" (uuid 8c21cfb8-9540-44b2-a2e4-97306cf1fb30))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "F3") (unit 1)
         )
@@ -12191,7 +12191,7 @@
     (pin "1" (uuid 1611e69c-7a22-4a81-a6a5-a3b93212b98f))
     (pin "2" (uuid facb6636-b0f2-4ca2-85ee-be4c47429ae8))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "R21") (unit 1)
         )
@@ -12222,7 +12222,7 @@
     (pin "A1" (uuid 70239f19-31ac-429b-88e9-4c8d3621e9c0))
     (pin "A2" (uuid 0710f289-eb19-4609-bd5f-abce737e02ab))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "K5") (unit 1)
         )
@@ -12251,7 +12251,7 @@
     (pin "1" (uuid bb37df76-eccc-495d-8da7-2654d523c139))
     (pin "2" (uuid 5d0fffe9-4457-4d3c-b7ac-c0002de3ba20))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "R17") (unit 1)
         )
@@ -12280,7 +12280,7 @@
     (pin "1" (uuid 3cbbed45-d769-4e4b-a03d-7b3e3d2d253b))
     (pin "2" (uuid aaf5253f-0524-4d2c-a743-7a7cde17df9e))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "R18") (unit 1)
         )
@@ -12305,7 +12305,7 @@
     )
     (pin "1" (uuid a7739c8d-6afb-48c0-b554-bf71a03c52fe))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "#PWR058") (unit 1)
         )
@@ -12334,7 +12334,7 @@
     (pin "1" (uuid 8e350b63-427d-40fd-8e19-ef083cc9fb34))
     (pin "2" (uuid 95a56308-eefe-4a26-8eb2-6bd79489c04e))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "C18") (unit 1)
         )
@@ -12363,7 +12363,7 @@
     (pin "1" (uuid 2bdf32ac-f0fd-45c9-8234-bb281d87332d))
     (pin "2" (uuid 855f3508-a391-46d6-b755-d084e3bf8d23))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "D14") (unit 1)
         )
@@ -12397,7 +12397,7 @@
     (pin "1" (uuid f42b94f3-dbea-43fe-8386-f74e8974708d))
     (pin "2" (uuid 17f99b68-44c2-4c8e-aaa6-374c2e6fd96d))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "R40") (unit 1)
         )
@@ -12428,7 +12428,7 @@
     (pin "3" (uuid 7088d887-e1c8-4bd8-b7ee-3ea9dc9b9b70))
     (pin "4" (uuid d78aba5f-47ba-41d1-86ad-29a38595b780))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "Plug_1") (unit 1)
         )
@@ -12453,7 +12453,7 @@
     )
     (pin "1" (uuid ec310122-1bb6-4f08-8b1a-65516301b3cb))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "#PWR05") (unit 1)
         )
@@ -12482,7 +12482,7 @@
     (pin "1" (uuid aa6935c6-0705-42aa-b364-8ae1ab50d396))
     (pin "2" (uuid ad4edc9b-1965-4a8c-af60-2a7598a79f92))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "F1") (unit 1)
         )
@@ -12511,7 +12511,7 @@
     (pin "1" (uuid ecb42647-8d9e-4995-abfc-0002bf2aa892))
     (pin "2" (uuid 5377aacd-efa9-4b1f-9a72-075d0e7478ec))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "C4") (unit 1)
         )
@@ -12541,7 +12541,7 @@
     )
     (pin "1" (uuid 65a176ce-4739-4f11-b1cb-86de381949ac))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "#PWR057") (unit 1)
         )
@@ -12566,7 +12566,7 @@
     )
     (pin "1" (uuid 7dd800ed-a9e5-4018-8369-9ea5b8ce9613))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "#PWR052") (unit 1)
         )
@@ -12591,7 +12591,7 @@
     )
     (pin "1" (uuid cd915751-4378-475b-a3cc-505338b4cfec))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "#PWR066") (unit 1)
         )
@@ -12616,7 +12616,7 @@
     )
     (pin "1" (uuid 609b5b6f-012e-4320-be6d-3db826eafb82))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "#PWR038") (unit 1)
         )
@@ -12641,7 +12641,7 @@
     )
     (pin "1" (uuid 08d4c935-a7ca-43af-affb-e68156fa97eb))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "#PWR018") (unit 1)
         )
@@ -12666,7 +12666,7 @@
     )
     (pin "1" (uuid 6ca54714-2921-423e-832b-bb927fd76158))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "#PWR086") (unit 1)
         )
@@ -12691,7 +12691,7 @@
     )
     (pin "1" (uuid 8c8af623-317f-4f3a-bc16-84e7968dc1ba))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "#PWR061") (unit 1)
         )
@@ -12721,7 +12721,7 @@
     (pin "2" (uuid 4f7b1f44-931d-46e3-a681-8895bb9c7039))
     (pin "3" (uuid e4fe315f-5f6b-4971-b8cd-1dcb486c1f6a))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "Q5") (unit 1)
         )
@@ -12750,7 +12750,7 @@
     (pin "1" (uuid 5cb670c0-bbd3-4d80-8050-e52d4b06b31b))
     (pin "2" (uuid 074fcbe0-b49e-4ee2-bfe3-ca9767087ce5))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "C16") (unit 1)
         )
@@ -12775,7 +12775,7 @@
     )
     (pin "1" (uuid 803523e2-ac68-4d70-99c0-548f607ae71f))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "#PWR054") (unit 1)
         )
@@ -12806,7 +12806,7 @@
     (pin "3" (uuid a5b706f2-94bd-462f-9406-a22e31c7c8d6))
     (pin "4" (uuid 933a81cc-c6c2-458d-aab3-49af67456893))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "Plug_2") (unit 1)
         )
@@ -12837,7 +12837,7 @@
     (pin "3" (uuid 96ab6488-077e-47a8-a392-258cd9544e1a))
     (pin "4" (uuid 71ef3fec-87d1-4b33-987c-f18cc65ddf0d))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "J6") (unit 1)
         )
@@ -12862,7 +12862,7 @@
     )
     (pin "1" (uuid 21da7f44-644a-43b5-9a5e-ac0dc7530ac3))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "#PWR043") (unit 1)
         )
@@ -12891,7 +12891,7 @@
     (pin "1" (uuid 1ffe0b47-fcc0-4ced-a1f7-67100e797004))
     (pin "2" (uuid db88bb92-02ea-4292-875c-5f4716d245f1))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "D12") (unit 1)
         )
@@ -12925,7 +12925,7 @@
     (pin "1" (uuid 33293db1-70c8-4b46-8a95-2a7e3a37a239))
     (pin "2" (uuid 904601ff-3604-44ff-afe9-0099e14c25f3))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "D3") (unit 1)
         )
@@ -12954,7 +12954,7 @@
     (pin "1" (uuid 8e171b3a-b8fe-4b80-835b-a17d8b3aaff0))
     (pin "2" (uuid c5e37927-10b6-4268-b5e8-2fae30bde510))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "C7") (unit 1)
         )
@@ -12987,7 +12987,7 @@
     )
     (pin "1" (uuid 42c84929-42e7-4b1a-b4c2-18129b182921))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "TP4") (unit 1)
         )
@@ -13017,7 +13017,7 @@
     (pin "2" (uuid d26a0248-1cfa-43b0-9788-75d151410990))
     (pin "3" (uuid 117fcda1-cc79-4654-b172-109bd6e8c6ad))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "Q8") (unit 1)
         )
@@ -13042,7 +13042,7 @@
     )
     (pin "1" (uuid 4e36517c-59d9-4099-8a27-18237ae04677))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "#PWR091") (unit 1)
         )
@@ -13072,7 +13072,7 @@
     (pin "2" (uuid 623d96ea-4fc2-4329-be8d-7892071edbef))
     (pin "3" (uuid d6a2cf5d-c99e-4b7c-8eaf-0b4b403fa719))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "Q6") (unit 1)
         )
@@ -13097,7 +13097,7 @@
     )
     (pin "1" (uuid 1e0a99e5-e068-435c-b277-0e15df18647d))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "#PWR042") (unit 1)
         )
@@ -13126,7 +13126,7 @@
     (pin "1" (uuid 2b34b2b4-e7d8-4998-b1fa-30abc84fc857))
     (pin "2" (uuid de058f9a-6168-4081-a5d9-4577121b3236))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "R14") (unit 1)
         )
@@ -13155,7 +13155,7 @@
     (pin "1" (uuid ac71f1f2-26af-4bf6-b29b-7bf89ae57113))
     (pin "2" (uuid 3a878c04-a593-4870-88e1-8329c4af8dbb))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "R34") (unit 1)
         )
@@ -13184,7 +13184,7 @@
     (pin "1" (uuid 90c9dce5-7f39-4e57-b2c0-8ec134d660eb))
     (pin "2" (uuid e0f30c84-8973-4b99-9492-8206b1815c4c))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "C13") (unit 1)
         )
@@ -13213,7 +13213,7 @@
     (pin "1" (uuid a6f74a26-1cc0-432f-8473-984090b565e5))
     (pin "2" (uuid 52c4ae7e-0cb7-44f5-a2f7-4909f2de0a04))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "R31") (unit 1)
         )
@@ -13242,7 +13242,7 @@
     (pin "1" (uuid 5e2ee072-0a58-478f-9d46-0d084c673f4e))
     (pin "2" (uuid e1075c6c-b58b-4217-ae00-6e26dc95c63a))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "D15") (unit 1)
         )
@@ -13272,7 +13272,7 @@
     )
     (pin "1" (uuid 106b9a81-a52d-4387-8ec5-ab0414e9616d))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "#PWR078") (unit 1)
         )
@@ -13301,7 +13301,7 @@
     (pin "1" (uuid 834cf358-1c2b-4fbd-bbc9-5325575d64f5))
     (pin "2" (uuid 61f8ed0d-1800-47dc-918e-e2bbf10530f4))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "C17") (unit 1)
         )
@@ -13330,7 +13330,7 @@
     (pin "1" (uuid 8aa8ae4d-376a-41d3-ab37-ab7393b56adf))
     (pin "2" (uuid ef5f5d57-bb0b-4a6d-abe7-57d15cda3a4a))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "C9") (unit 1)
         )
@@ -13355,7 +13355,7 @@
     )
     (pin "1" (uuid 8395c5ad-0b2a-4a58-81f0-2ae6fea1e225))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "#PWR031") (unit 1)
         )
@@ -13384,7 +13384,7 @@
     (pin "1" (uuid 7bdf1456-8118-45f0-8dfe-4b92e757beb5))
     (pin "2" (uuid 43def66c-b6c0-43f7-a43a-ac27f2fd2f2c))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "R16") (unit 1)
         )
@@ -13415,7 +13415,7 @@
     (pin "A1" (uuid bef1d976-6a66-4722-9f79-a723916d1f5b))
     (pin "A2" (uuid faadb6f4-81a7-465c-a9d5-59513c3f199a))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "K3") (unit 1)
         )
@@ -13443,7 +13443,7 @@
     )
     (pin "1" (uuid e6149a72-fbc0-48c5-b0a9-2c0a3a638ccd))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "TP3") (unit 1)
         )
@@ -13472,7 +13472,7 @@
     (pin "1" (uuid f1bea6b7-3b8e-4924-89e6-1ec48c6f055f))
     (pin "2" (uuid c0480d36-fb30-4620-b513-51890352cc3c))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "R7") (unit 1)
         )
@@ -13497,7 +13497,7 @@
     )
     (pin "1" (uuid ec219406-cac2-4212-9a41-4b6acf3d76b4))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "#PWR072") (unit 1)
         )
@@ -13533,7 +13533,7 @@
     (pin "A1" (uuid cb4d3c7a-c09d-40b1-ba83-92392a151f18))
     (pin "A2" (uuid c0e5243f-0e29-44e2-b6b5-1b2d95d029a0))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "K2") (unit 1)
         )
@@ -13563,7 +13563,7 @@
     (pin "2" (uuid 62d2faf9-5d31-4df5-a0a1-e00357d1d869))
     (pin "3" (uuid 47d9b558-217c-469c-bc72-90acbc313e3d))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "Q7") (unit 1)
         )
@@ -13592,7 +13592,7 @@
     (pin "1" (uuid ee58fd4b-2053-4ead-b6e8-ee32b1b8bee8))
     (pin "2" (uuid 2f019288-3316-4d1e-860c-6b8db760086a))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "R19") (unit 1)
         )
@@ -13621,7 +13621,7 @@
     (pin "1" (uuid fdd93214-b62b-4bb5-bf20-1f1a1d767dd3))
     (pin "2" (uuid 43196762-bc57-4288-8063-062dae27d5a5))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "R10") (unit 1)
         )
@@ -13652,7 +13652,7 @@
     (pin "3" (uuid 7e29eb48-815b-4079-b8f4-d4f9951df771))
     (pin "4" (uuid 7b7f3fa9-f6be-4fdc-8c8d-8abc49988404))
     (instances
-      (project "PiPLC-Base"
+      (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
           (reference "Plug_3") (unit 1)
         )
