@@ -48,34 +48,34 @@ Obviously, since it's just a breakout board for any Pi, you can run whatever sof
 
 ## GPIO mapping
 
-| GPIO Name | Header<br>Pin Nbr | PiPLC naming                   | OpenPLC<br>RPI mapping |             Usable with<br>OpenPLC             |
-| :-------: | :---------------: | :----------------------------- | :--------------------: | :--------------------------------------------: |
-| `GPIO_02` |       `03`        | :blue_square: I²C SDA          |        `%IX0.0`        |   :ballot_box_with_check: Unprotected input    |
-| `GPIO_03` |       `05`        | :blue_square: I²C SCL          |        `%IX0.1`        |   :ballot_box_with_check: Unprotected input    |
-| `GPIO_04` |       `07`        | :blue_square: Modbus UART TX   |        `%IX0.2`        |     :warning: TODO Modbus through driver?      |
-| `GPIO_05` |       `29`        | :blue_square: Modbus UART RX   |        `%IX1.1`        |     :warning: TODO Modbus through driver?      |
-| `GPIO_06` |       `31`        | :blue_square: Modbus UART RTS  |        `%IX1.2`        |     :warning: TODO Modbus through driver?      |
-| `GPIO_07` |       `26`        | :red_square: Q4                |        `%QX0.6`        |        :white_check_mark: Relay output         |
-| `GPIO_08` |       `24`        | :red_square: Q3                |        `%QX0.5`        |        :white_check_mark: Relay output         |
-| `GPIO_09` |       `21`        | :yellow_square: I5             |        `%IX0.7`        |       :white_check_mark: Protected input       |
-| `GPIO_10` |       `19`        | :yellow_square: I4             |        `%IX0.6`        |       :white_check_mark: Protected input       |
-| `GPIO_11` |       `23`        | :yellow_square: I6             |        `%IX1.0`        |       :white_check_mark: Protected input       |
-| `GPIO_12` |       `32`        | :red_square: Q5                |        `%QX0.7`        |        :white_check_mark: Relay output         |
-| `GPIO_13` |       `33`        | :yellow_square: I7             |        `%IX1.3`        |       :white_check_mark: Protected input       |
-| `GPIO_14` |       `08`        | :blue_square: KNX UART TX      |        `%QX0.0`        |             :x: KNX not supported              |
-| `GPIO_15` |       `10`        | :blue_square: KNX UART RX      |        `%QX0.1`        |             :x: KNX not supported              |
-| `GPIO_16` |       `36`        | :red_square: Q6                |        `%QX1.0`        |        :white_check_mark: Relay output         |
-| `GPIO_17` |       `11`        | :yellow_square: I1             |        `%IX0.3`        |       :white_check_mark: Protected input       |
+| GPIO Name | Header<br>Pin Nbr | PiPLC naming                   | OpenPLC<br>RPI mapping | Usable with<br>OpenPLC                         |
+| :-------: | :---------------: | :----------------------------- | :--------------------: | :--------------------------------------------- |
+| `GPIO_02` |       `03`        | :blue_square: I²C SDA          |        `%IX0.0`        | :ballot_box_with_check: Unprotected input      |
+| `GPIO_03` |       `05`        | :blue_square: I²C SCL          |        `%IX0.1`        | :ballot_box_with_check: Unprotected input      |
+| `GPIO_04` |       `07`        | :blue_square: Modbus UART TX   |        `%IX0.2`        | :warning: TODO Modbus through driver?          |
+| `GPIO_05` |       `29`        | :blue_square: Modbus UART RX   |        `%IX1.1`        | :warning: TODO Modbus through driver?          |
+| `GPIO_06` |       `31`        | :blue_square: Modbus UART RTS  |        `%IX1.2`        | :warning: TODO Modbus through driver?          |
+| `GPIO_07` |       `26`        | :red_square: Q4                |        `%QX0.6`        | :white_check_mark: Relay output                |
+| `GPIO_08` |       `24`        | :red_square: Q3                |        `%QX0.5`        | :white_check_mark: Relay output                |
+| `GPIO_09` |       `21`        | :yellow_square: I5             |        `%IX0.7`        | :white_check_mark: Protected input             |
+| `GPIO_10` |       `19`        | :yellow_square: I4             |        `%IX0.6`        | :white_check_mark: Protected input             |
+| `GPIO_11` |       `23`        | :yellow_square: I6             |        `%IX1.0`        | :white_check_mark: Protected input             |
+| `GPIO_12` |       `32`        | :red_square: Q5                |        `%QX0.7`        | :white_check_mark: Relay output                |
+| `GPIO_13` |       `33`        | :yellow_square: I7             |        `%IX1.3`        | :white_check_mark: Protected input             |
+| `GPIO_14` |       `08`        | :blue_square: KNX UART TX      |        `%QX0.0`        | :x: KNX not supported                          |
+| `GPIO_15` |       `10`        | :blue_square: KNX UART RX      |        `%QX0.1`        | :x: KNX not supported                          |
+| `GPIO_16` |       `36`        | :red_square: Q6                |        `%QX1.0`        | :white_check_mark: Relay output                |
+| `GPIO_17` |       `11`        | :yellow_square: I1             |        `%IX0.3`        | :white_check_mark: Protected input             |
 | `GPIO_18` |       `12`        | :orange_square: PWM_0 *@ TODO* |        `%QW0.0`        | :ballot_box_with_check: Unprotected PWM output |
-| `GPIO_19` |       `35`        | :orange_square: PWM_1 *@ TODO* |        `%QX1.0`        |        :white_check_mark: Relay output         |
-| `GPIO_20` |       `38`        | :red_square: Q7                |        `%QX1.1`        |        :white_check_mark: Relay output         |
-| `GPIO_21` |       `40`        | :red_square: Q8                |        `%QX1.2`        |        :white_check_mark: Relay output         |
-| `GPIO_22` |       `15`        | :yellow_square: I3             |        `%IX0.5`        |       :white_check_mark: Protected input       |
-| `GPIO_23` |       `16`        | :blue_square: 1-Wire           |        `%QX0.2`        |        :white_check_mark: Relay output         |
-| `GPIO_24` |       `18`        | :red_square: Q1                |        `%QX0.3`        |        :white_check_mark: Relay output         |
-| `GPIO_25` |       `22`        | :red_square: Q2                |        `%QX0.4`        |        :white_check_mark: Relay output         |
-| `GPIO_26` |       `37`        | :yellow_square: I8             |        `%IX1.5`        |       :white_check_mark: Protected input       |
-| `GPIO_27` |       `13`        | :yellow_square: I2             |        `%IX0.4`        |       :white_check_mark: Protected input       |
+| `GPIO_19` |       `35`        | :orange_square: PWM_1 *@ TODO* |        `%QX1.0`        | :white_check_mark: Relay output                |
+| `GPIO_20` |       `38`        | :red_square: Q7                |        `%QX1.1`        | :white_check_mark: Relay output                |
+| `GPIO_21` |       `40`        | :red_square: Q8                |        `%QX1.2`        | :white_check_mark: Relay output                |
+| `GPIO_22` |       `15`        | :yellow_square: I3             |        `%IX0.5`        | :white_check_mark: Protected input             |
+| `GPIO_23` |       `16`        | :blue_square: 1-Wire           |        `%QX0.2`        | :white_check_mark: Relay output                |
+| `GPIO_24` |       `18`        | :red_square: Q1                |        `%QX0.3`        | :white_check_mark: Relay output                |
+| `GPIO_25` |       `22`        | :red_square: Q2                |        `%QX0.4`        | :white_check_mark: Relay output                |
+| `GPIO_26` |       `37`        | :yellow_square: I8             |        `%IX1.5`        | :white_check_mark: Protected input             |
+| `GPIO_27` |       `13`        | :yellow_square: I2             |        `%IX0.4`        | :white_check_mark: Protected input             |
 
 Pins marked unusable with OpenPLC are either not broken out, or differ too much from OpenPLC's mapping. As OpenPLC's mapping is immutable, these pins might not be used if PiPLC is used with the OpenPLC runtime and Pi default hardware layer.
 
