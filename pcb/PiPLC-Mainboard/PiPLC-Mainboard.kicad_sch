@@ -8031,7 +8031,7 @@
   (symbol (lib_id "Connector_Generic:Conn_01x04") (at 27.94 157.48 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 1ce50365-cd45-4a72-87b5-b3a8a3c8626e)
-    (property "Reference" "J4" (at 27.94 149.86 0)
+    (property "Reference" "J8" (at 27.94 149.86 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "WJ2EDGRC-5.08-4P" (at 24.13 152.4 0)
@@ -8053,7 +8053,7 @@
     (instances
       (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
-          (reference "J4") (unit 1)
+          (reference "J8") (unit 1)
         )
       )
     )
@@ -8717,7 +8717,7 @@
   (symbol (lib_id "Connector_Generic:Conn_01x04") (at 381 353.06 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 328b7918-5200-4026-86ea-46811260bd96)
-    (property "Reference" "J10" (at 379.73 364.49 90)
+    (property "Reference" "J4" (at 379.73 364.49 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "WJ2EDGRC-5.08-4P" (at 379.73 361.95 90)
@@ -8739,7 +8739,7 @@
     (instances
       (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
-          (reference "J10") (unit 1)
+          (reference "J4") (unit 1)
         )
       )
     )
@@ -8813,7 +8813,7 @@
   (symbol (lib_id "Connector_Generic:Conn_01x04") (at 259.08 353.06 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 33e5a82e-b298-4692-9d61-d48f475de879)
-    (property "Reference" "J11" (at 257.81 364.49 90)
+    (property "Reference" "J5" (at 257.81 364.49 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "WJ2EDGRC-5.08-4P" (at 257.81 361.95 90)
@@ -8835,7 +8835,7 @@
     (instances
       (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
-          (reference "J11") (unit 1)
+          (reference "J5") (unit 1)
         )
       )
     )
@@ -8844,7 +8844,7 @@
   (symbol (lib_id "Connector_Generic:Conn_01x04") (at 27.94 189.23 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 35db10c9-1f04-46d7-ae5f-f2c06fb20ff6)
-    (property "Reference" "J5" (at 27.94 181.61 0)
+    (property "Reference" "J9" (at 27.94 181.61 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "WJ2EDGRC-5.08-4P" (at 24.13 184.15 0)
@@ -8866,7 +8866,7 @@
     (instances
       (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
-          (reference "J5") (unit 1)
+          (reference "J9") (unit 1)
         )
       )
     )
@@ -8934,7 +8934,7 @@
   (symbol (lib_id "Connector_Generic:Conn_01x04") (at 502.92 353.06 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 3ed2fa95-355e-46f3-8064-ee1e3c1564cc)
-    (property "Reference" "J9" (at 501.65 364.49 90)
+    (property "Reference" "J3" (at 501.65 364.49 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "WJ2EDGRC-5.08-4P" (at 501.65 361.95 90)
@@ -8956,7 +8956,7 @@
     (instances
       (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
-          (reference "J9") (unit 1)
+          (reference "J3") (unit 1)
         )
       )
     )
@@ -9231,7 +9231,7 @@
   (symbol (lib_id "Connector_Generic:Conn_01x04") (at 410.21 160.02 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 42b3f98f-33c8-4884-8897-4a1b5aa9d0b9)
-    (property "Reference" "J1" (at 410.21 152.4 0)
+    (property "Reference" "J7" (at 410.21 152.4 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "WJ2EDGRC-5.08-4P" (at 414.02 154.94 0)
@@ -9253,7 +9253,7 @@
     (instances
       (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
-          (reference "J1") (unit 1)
+          (reference "J7") (unit 1)
         )
       )
     )
@@ -9571,19 +9571,19 @@
     )
   )
 
-  (symbol (lib_id "Connector_Generic:Conn_02x12_Odd_Even") (at 193.04 241.3 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+  (symbol (lib_id "Connector_Generic:Conn_02x12_Odd_Even") (at 193.04 238.76 90) (mirror x) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
     (uuid 5124b2da-6448-452f-bc5a-e45cd840a17a)
-    (property "Reference" "J17" (at 177.8 238.76 90)
+    (property "Reference" "J17" (at 177.8 241.3 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "Conn_02x12_Odd_Even" (at 177.8 241.3 90)
+    (property "Value" "Conn_02x12_Odd_Even" (at 177.8 238.76 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_2x12_P2.54mm_Vertical" (at 193.04 241.3 0)
+    (property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_2x12_P2.54mm_Vertical" (at 193.04 238.76 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "~" (at 193.04 241.3 0)
+    (property "Datasheet" "~" (at 193.04 238.76 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 39b14b12-e812-424a-a71a-1449c07097d6))
@@ -9644,22 +9644,22 @@
     )
   )
 
-  (symbol (lib_id "Connector_Generic:Conn_01x04") (at 27.94 30.48 0) (mirror y) (unit 1)
+  (symbol (lib_id "Connector_Generic:Conn_01x04") (at 27.94 33.02 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 527cf61e-8404-41af-84a5-8a4bc9f13785)
-    (property "Reference" "J7" (at 27.94 22.86 0)
+    (property "Reference" "J12" (at 27.94 22.86 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "WJ2EDGRC-5.08-4P" (at 27.94 25.4 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Connector_Phoenix_MSTB:PhoenixContact_MSTBA_2,5_4-G-5,08_1x04_P5.08mm_Horizontal" (at 27.94 30.48 0)
+    (property "Footprint" "Connector_Phoenix_MSTB:PhoenixContact_MSTBA_2,5_4-G-5,08_1x04_P5.08mm_Horizontal" (at 27.94 33.02 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "https://datasheet.lcsc.com/lcsc/1912251635_Ningbo-Kangnex-Elec-WJ2EDGRC-5-08-4P_C8446.pdf" (at 27.94 30.48 0)
+    (property "Datasheet" "https://datasheet.lcsc.com/lcsc/1912251635_Ningbo-Kangnex-Elec-WJ2EDGRC-5-08-4P_C8446.pdf" (at 27.94 33.02 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "LCSC" "C8446" (at 27.94 30.48 0)
+    (property "LCSC" "C8446" (at 27.94 33.02 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 7ffd0113-6fbd-4880-84eb-2063f3e6050d))
@@ -9669,7 +9669,7 @@
     (instances
       (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
-          (reference "J7") (unit 1)
+          (reference "J12") (unit 1)
         )
       )
     )
@@ -10301,7 +10301,7 @@
   (symbol (lib_id "Connector_Generic:Conn_01x04") (at 236.22 31.75 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 667c1139-80c3-4f59-9df6-7e230ab7c044)
-    (property "Reference" "J8" (at 231.14 24.13 0)
+    (property "Reference" "J10" (at 231.14 24.13 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "WJ2EDGRC-5.08-4P" (at 236.22 26.67 0)
@@ -10323,7 +10323,7 @@
     (instances
       (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
-          (reference "J8") (unit 1)
+          (reference "J10") (unit 1)
         )
       )
     )
@@ -10361,7 +10361,7 @@
   (symbol (lib_id "Connector_Generic:Conn_01x04") (at 27.94 220.98 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 6a95580e-0091-4950-bc47-1fc23273ee95)
-    (property "Reference" "J3" (at 27.94 213.36 0)
+    (property "Reference" "J1" (at 27.94 213.36 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "WJ2EDGRC-5.08-4P" (at 24.13 215.9 0)
@@ -10383,7 +10383,7 @@
     (instances
       (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
-          (reference "J3") (unit 1)
+          (reference "J1") (unit 1)
         )
       )
     )
@@ -10456,7 +10456,7 @@
   (symbol (lib_id "Connector_Generic:Conn_01x04") (at 137.16 353.06 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 7064b042-680c-45be-b32a-c1a1264c381c)
-    (property "Reference" "J12" (at 135.89 364.49 90)
+    (property "Reference" "J6" (at 135.89 364.49 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "WJ2EDGRC-5.08-4P" (at 135.89 361.95 90)
@@ -10478,7 +10478,7 @@
     (instances
       (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
-          (reference "J12") (unit 1)
+          (reference "J6") (unit 1)
         )
       )
     )
@@ -11388,7 +11388,7 @@
   (symbol (lib_id "Connector_Generic:Conn_01x04") (at 411.48 195.58 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 8fd9e40b-b3d4-43b3-904e-d208853394fa)
-    (property "Reference" "J13" (at 411.48 187.96 0)
+    (property "Reference" "J2" (at 411.48 187.96 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "Modbus" (at 411.48 190.5 0)
@@ -11410,7 +11410,7 @@
     (instances
       (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
-          (reference "J13") (unit 1)
+          (reference "J2") (unit 1)
         )
       )
     )
@@ -13219,22 +13219,22 @@
     )
   )
 
-  (symbol (lib_id "Connector_Generic:Conn_01x04") (at 123.19 30.48 0) (mirror y) (unit 1)
+  (symbol (lib_id "Connector_Generic:Conn_01x04") (at 123.19 33.02 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid da546720-d620-4665-a1e8-7343a3ec745b)
-    (property "Reference" "J6" (at 121.92 22.86 0)
+    (property "Reference" "J11" (at 121.92 22.86 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "WJ2EDGRC-5.08-4P" (at 120.65 25.4 0)
+    (property "Value" "WJ2EDGRC-5.08-4P" (at 121.92 25.4 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Connector_Phoenix_MSTB:PhoenixContact_MSTBA_2,5_4-G-5,08_1x04_P5.08mm_Horizontal" (at 123.19 30.48 0)
+    (property "Footprint" "Connector_Phoenix_MSTB:PhoenixContact_MSTBA_2,5_4-G-5,08_1x04_P5.08mm_Horizontal" (at 123.19 33.02 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "https://datasheet.lcsc.com/lcsc/1912251635_Ningbo-Kangnex-Elec-WJ2EDGRC-5-08-4P_C8446.pdf" (at 123.19 30.48 0)
+    (property "Datasheet" "https://datasheet.lcsc.com/lcsc/1912251635_Ningbo-Kangnex-Elec-WJ2EDGRC-5-08-4P_C8446.pdf" (at 123.19 33.02 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "LCSC" "C8446" (at 123.19 30.48 0)
+    (property "LCSC" "C8446" (at 123.19 33.02 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid e96fe8de-af42-437b-9ca2-00ed7b2a0050))
@@ -13244,7 +13244,7 @@
     (instances
       (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
-          (reference "J6") (unit 1)
+          (reference "J11") (unit 1)
         )
       )
     )
