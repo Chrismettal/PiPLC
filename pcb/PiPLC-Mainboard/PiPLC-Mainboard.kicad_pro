@@ -478,6 +478,10 @@
       {
         "netclass": "Mains",
         "pattern": "Net-(J6-Pin_*)"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "Net-(D1*-A)"
       }
     ]
   },
