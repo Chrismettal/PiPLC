@@ -9164,7 +9164,7 @@
     (property "Datasheet" "" (at 396.24 190.5 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 1ff9ac82-bba3-4626-b407-517936d6b633))
+    (pin "1" (uuid 2b015c94-75d0-41f8-ae73-10dddebf2e3f))
     (instances
       (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
@@ -9413,7 +9413,7 @@
     (property "Datasheet" "" (at 339.09 201.93 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 42dc0f82-6ad6-41d2-bc68-084ad8382897))
+    (pin "1" (uuid c28d4910-50cd-43ac-9962-83cae9de2ae3))
     (instances
       (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
@@ -9693,8 +9693,8 @@
     (property "LCSC" "C14663" (at 339.09 195.58 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 21e594eb-076d-4051-afe8-280e37eac4f8))
-    (pin "2" (uuid bbecde0b-c6c2-4f4d-9806-227117a91641))
+    (pin "1" (uuid 1c8ccd1d-c60e-4941-8990-b130c00ef544))
+    (pin "2" (uuid dbc6bb50-d2e9-4a49-a211-0818c5a9bfd4))
     (instances
       (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
@@ -10174,7 +10174,7 @@
     (property "Datasheet" "" (at 363.22 177.8 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 3e245707-fb99-4611-8639-03e634d0275a))
+    (pin "1" (uuid c0539276-f76c-499d-b163-b5482202ca19))
     (instances
       (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
@@ -10773,7 +10773,7 @@
     (property "Datasheet" "" (at 378.46 177.8 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid e666451b-789e-415d-9a44-695aa3b5b317))
+    (pin "1" (uuid dd616c9b-7bda-42e5-9495-a28947eb067e))
     (instances
       (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
@@ -10964,7 +10964,7 @@
     (property "Datasheet" "" (at 363.22 217.17 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 121ac2c8-0199-46ea-a457-ae74ca5b4bb0))
+    (pin "1" (uuid edd43ab2-2a84-4926-8f81-1fcb703c4204))
     (instances
       (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
@@ -11257,7 +11257,7 @@
     (property "Datasheet" "" (at 378.46 217.17 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 7c941c1b-854c-4997-9154-de5de755a054))
+    (pin "1" (uuid 3a90686a-8684-4c8c-926c-aa686b8c8667))
     (instances
       (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
@@ -11346,7 +11346,7 @@
     (property "Datasheet" "" (at 328.93 201.93 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 7cc9101f-3406-4dd3-945e-c6150481f0db))
+    (pin "1" (uuid ce9e36ec-1381-4dbc-9c78-ecbf087ee85e))
     (instances
       (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
@@ -11403,10 +11403,10 @@
     (property "LCSC" "C8446" (at 411.48 195.58 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid c961dab3-8288-4a39-9907-e972ea7382f4))
-    (pin "2" (uuid 631ebcf3-94fe-4627-bc4a-536094728735))
-    (pin "3" (uuid 3eacbcdc-3920-4d75-91d7-79afb261bea0))
-    (pin "4" (uuid 6dec6036-4255-4724-8bc1-3a4067cb38b4))
+    (pin "1" (uuid 492ffb79-b433-4f1f-9e00-cf7bd1e01454))
+    (pin "2" (uuid c55a61ee-d0ed-4840-a440-d726e5b255a6))
+    (pin "3" (uuid 6108340b-9c29-4730-98ab-f07c4849f0f1))
+    (pin "4" (uuid 4fb411fd-00c7-457e-aba9-098192b8faf0))
     (instances
       (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
@@ -11644,22 +11644,22 @@
     (property "LCSC" "C21710" (at 370.84 196.85 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 385c4766-3fa4-4ada-a0b7-5178cf90ec7a))
-    (pin "10" (uuid 50fcecdd-20c8-49db-b351-68fe1435485c))
-    (pin "11" (uuid 40c6c267-3a21-47be-b228-db36e3f32946))
-    (pin "12" (uuid c7e3946a-8246-4342-aaf6-fe48a1c0c80b))
-    (pin "13" (uuid b3c3930e-634b-4c71-b4cc-12e6fd3f0018))
-    (pin "14" (uuid 9913d304-0721-41d1-9f37-77518ad2edf4))
-    (pin "15" (uuid effd065d-e1ac-4b61-b06e-9707e7a4d36e))
-    (pin "16" (uuid c5e8b420-848b-40e7-9c1d-7088e3f35746))
-    (pin "2" (uuid 4b408744-f459-486f-8cbb-2d1bf61909eb))
-    (pin "3" (uuid 0d9f996a-8ee6-48ee-a662-bd3146f5b708))
-    (pin "4" (uuid ce0d6eb4-b3b2-48a0-afad-d7b3623303dc))
-    (pin "5" (uuid 774b5208-1b85-43fa-b550-a1c535c13b93))
-    (pin "6" (uuid edce7996-1a5b-4527-ba7a-f6b4be86d93b))
-    (pin "7" (uuid 4e097329-f546-45d9-9522-f97f9a020ec1))
-    (pin "8" (uuid 8e5c6b0e-22ed-4d9b-8a7c-2e0ded961ab5))
-    (pin "9" (uuid b2c65626-ef74-46bd-89fd-49645975baac))
+    (pin "1" (uuid 1e3c08b6-52d1-4dbe-afca-926e35f060ea))
+    (pin "10" (uuid 468763f9-eace-4227-a1fe-034b2b7c6b9a))
+    (pin "11" (uuid 7dff52e2-c5bb-4301-bf4d-7161e7025ce3))
+    (pin "12" (uuid ee7da1d3-cd46-4e78-915b-f121139c3bfd))
+    (pin "13" (uuid f3d69c9b-7348-4191-a67f-d9ef8dee5f7e))
+    (pin "14" (uuid 502a3b4e-429f-40d1-b17a-7eacba5efe56))
+    (pin "15" (uuid 463ba83b-ee37-493d-b82e-8139c1c32910))
+    (pin "16" (uuid 7e9a1e23-eeb2-4d57-8af4-e731ab8708da))
+    (pin "2" (uuid 8a680098-0b17-4414-a1eb-4ea629559d87))
+    (pin "3" (uuid 90145b19-8246-4cf2-95e1-e42b8f0e1a1f))
+    (pin "4" (uuid 2b245c0e-0520-4f38-bae4-67be6aff2cad))
+    (pin "5" (uuid 13598bdf-2e9b-4991-b7e0-e684c40b3c60))
+    (pin "6" (uuid 7694f051-3d52-4e41-9926-4f19ccb455bf))
+    (pin "7" (uuid faab05a9-1eaf-408b-b561-e2fe8f34b1b3))
+    (pin "8" (uuid 853c77b3-0710-4443-b933-c843a32c36c0))
+    (pin "9" (uuid 3afcc0ce-0d0c-4491-855e-f49bebfd58bb))
     (instances
       (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
@@ -12534,8 +12534,8 @@
     (property "LCSC" "C2833485" (at 401.32 193.04 90)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid b21aa32c-9b17-4566-aa22-656374329fd1))
-    (pin "2" (uuid 8c21cfb8-9540-44b2-a2e4-97306cf1fb30))
+    (pin "1" (uuid 4c054739-f037-4385-a00f-cd698d051f7d))
+    (pin "2" (uuid 302aa961-97cf-481d-b7f2-c0805bc389b0))
     (instances
       (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
@@ -12678,7 +12678,7 @@
     (property "Datasheet" "" (at 328.93 189.23 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid a7739c8d-6afb-48c0-b554-bf71a03c52fe))
+    (pin "1" (uuid f637421c-de95-464d-8744-e126b5e6b16a))
     (instances
       (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
@@ -12706,8 +12706,8 @@
     (property "LCSC" "C14663" (at 328.93 195.58 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 8e350b63-427d-40fd-8e19-ef083cc9fb34))
-    (pin "2" (uuid 95a56308-eefe-4a26-8eb2-6bd79489c04e))
+    (pin "1" (uuid b97ec72d-44b0-41ca-a9ac-8baeb5e3086f))
+    (pin "2" (uuid 20a082f9-9845-4383-bbfa-96f21494c8a0))
     (instances
       (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
@@ -12914,7 +12914,7 @@
     (property "Datasheet" "" (at 339.09 189.23 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 65a176ce-4739-4f11-b1cb-86de381949ac))
+    (pin "1" (uuid 8de88222-8516-4b60-ba47-0cdf64e92781))
     (instances
       (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
@@ -12939,7 +12939,7 @@
     (property "Datasheet" "" (at 403.86 203.2 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 7dd800ed-a9e5-4018-8369-9ea5b8ce9613))
+    (pin "1" (uuid 6a23cbf8-cd55-4d66-81b4-dfb8252c53f5))
     (instances
       (project "PiPLC-Mainboard"
         (path "/93ebf745-625a-4d9e-8f47-45e91f30ef94"
