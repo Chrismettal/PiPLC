@@ -595,10 +595,12 @@
     (uuid f7edb905-127b-4363-a47f-9371f3ea148a)
   )
 
+  (no_connect (at 139.7 85.09) (uuid 0b3027dd-d61d-43f4-aab8-1f013cb88ef7))
   (no_connect (at 107.95 125.73) (uuid 0e838244-49bc-40e0-a45a-712ae559c3fc))
   (no_connect (at 118.11 123.19) (uuid 4213bb63-fbfa-44be-92a3-bbdfc8ade07b))
   (no_connect (at 118.11 125.73) (uuid 741c043a-0054-4327-a7a0-df68745d6ae3))
   (no_connect (at 107.95 123.19) (uuid c3d0d1a7-db8f-4576-a793-41f0a5e47cd7))
+  (no_connect (at 139.7 97.79) (uuid d2d1f067-ac59-4f7e-9014-eea01ae15d08))
 
   (polyline (pts (xy 130.81 121.92) (xy 120.65 121.92))
     (stroke (width 0) (type solid))
@@ -988,11 +990,6 @@
   (text "Black" (at 129.54 124.46 0)
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid 2da262c1-03c3-4c8d-8654-19c530310003)
-  )
-  (text "Double quadruple check pinout!\nIf Chris mounts this thing upside\ndown as he currently plans to\nhe will surely forget to flip\nthis pinout upside down.\nThe mere existance of this\nnote is proof of the fact\nthis was never checked again."
-    (at 171.45 106.68 0)
-    (effects (font (size 2.5 2.5)) (justify left bottom))
-    (uuid 4966412e-5313-4bc1-94b8-6d5a0499e3c9)
   )
   (text "Red" (at 129.54 127 0)
     (effects (font (size 1.27 1.27)) (justify right bottom))
