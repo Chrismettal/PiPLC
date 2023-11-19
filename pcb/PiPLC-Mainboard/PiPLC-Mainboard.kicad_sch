@@ -6484,11 +6484,6 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 0beb4983-5310-47bf-8cf1-64e6cd63c857)
   )
-  (text "Double quadruple check pinout!\nIf Chris mounts this thing upside\ndown as he currently plans to\nhe will surely forget to flip\nthis pinout upside down.\nThe mere existance of this\nnote is proof of the fact\nthis was never checked again."
-    (at 214.63 95.25 0)
-    (effects (font (size 2.5 2.5)) (justify left bottom))
-    (uuid 0bed68d7-ed3e-4d46-b756-41c12d6cd2e0)
-  )
   (text "GPIO_11" (at 219.71 135.89 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 0ecbb567-b0a3-4c7d-b257-70e19936842b)
