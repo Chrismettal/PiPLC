@@ -528,6 +528,10 @@
       {
         "netclass": "KNX",
         "pattern": "KNX +"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "Net-(D1-K)"
       }
     ]
   },
