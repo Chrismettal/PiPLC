@@ -429,7 +429,7 @@
       "netlist": "",
       "specctra_dsn": "",
       "step": "",
-      "vrml": "PiPLC-Frontpanel.wrl"
+      "vrml": "../../../../Desktop/PiPLC-Frontpanel.wrl"
     },
     "page_layout_descr_file": ""
   },

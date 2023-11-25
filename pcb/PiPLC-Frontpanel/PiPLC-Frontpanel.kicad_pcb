@@ -2871,6 +2871,9 @@
       )
     )
   )
+  (gr_text "JLCJLCJLCJLC" (at 124.988 106.456) (layer "F.SilkS") (tstamp 22150463-dba9-48cb-90d0-37ba3ca32dd6)
+    (effects (font (size 1 1) (thickness 0.15)) (justify left bottom))
+  )
   (gr_text "Q5" (at 181.15 97.3) (layer "F.SilkS" knockout) (tstamp 2411112a-cf76-46f3-b258-209fa42758b2)
     (effects (font (face "Hack") (size 3 3) (thickness 0.5) bold))
     (render_cache "Q5" 0
