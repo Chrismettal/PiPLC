@@ -1,0 +1,4 @@
+﻿Designator,Footprint,Quantity,Value,LCSC Part #
+"D1, D10, D11, D12, D13, D14, D15, D16, D2, D3, D4, D5, D6, D7, D8, D9",LED_D5.0mm,16,Red,C417347
+"D18, D19",LED_D5.0mm,2,Green,C2764903
+J1,PinHeader_2x12_P2.54mm_Vertical,1,Conn_02x12_Odd_Even,C2894973
