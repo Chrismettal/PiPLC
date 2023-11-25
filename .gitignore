@@ -1,5 +1,6 @@
 # Default
 _gitignored/*
+*.zip
  
 # office lock files
 .~lock*
@@ -21,6 +22,11 @@ _autosave-*
 *-save.pro
 *-save.kicad_pcb
 fp-info-cache
+designators.csv
+netlist.ipc
+bom.csv
+positions.csv
+
 
 # Netlist files (exported from Eeschema)
 *.net
