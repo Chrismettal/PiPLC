@@ -23,18 +23,25 @@ All the parts are or will be stocked at Tindie!
 - [GPIO mapping](#gpio-mapping)
 - [Pinout](#pinout)
 - [I/O](#io)
-  - [J1 | Power input](#j1--power-input)
+  - [J1 | Power Input](#j1--power-input)
   - [J2 | Modbus](#j2--modbus)
   - [J3 - J6 | Digital Outputs (Q1-8)](#j3---j6--digital-outputs-q1-8)
   - [J7 | PWM](#j7--pwm)
   - [J8 | I²C](#j8--ic)
   - [J9 | 1-Wire](#j9--1-wire)
-  - [Wago header | KNX / NCN5121](#wago-header--knx--ncn5121)
   - [J10 - J12 | Digital Inputs (I1-8)](#j10---j12--digital-inputs-i1-8)
+  - [Wago header | KNX / NCN5121](#wago-header--knx--ncn5121)
 - [Software](#software-1)
   - [OpenPLC](#openplc)
   - [HomeAssistant](#homeassistant)
   - [Codesys](#codesys)
+- [Making your own](#making-your-own)
+  - [Boards](#boards)
+    - [Mainboard](#mainboard)
+    - [HMI](#hmi)
+    - [Frontpanel](#frontpanel)
+    - [Pi Riser](#pi-riser)
+    - [HMI Riser](#hmi-riser)
 - [Tools used](#tools-used)
 - [Sources](#sources)
 - [Donations](#donations)
@@ -85,7 +92,7 @@ Pins marked unusable with OpenPLC are either not broken out, or differ too much 
 
 ## I/O
 
-### J1 | Power input
+### J1 | Power Input
 
 **J1**
 
@@ -191,30 +198,6 @@ TODO
 
 This header contains `GPIO_04` for native 1-Wire capability, as well as `GPIO_26` since I couldn't find a better place for it. Bear in mind, both of these are unprotected just as `J?`.
 
-### Wago header | KNX / NCN5121
-
-Utilizing [knxd](https://github.com/knxd/knxd/tree/main) to run a [NCN5121](https://www.onsemi.com/pdf/datasheet/ncn5121-d.pdf) KNX transceiver chip the PiPLC can talk to KNX networks natively, without going through an actual KNX-IP gateway first. (Internally, knxd looks like a KNX-IP gateway, but it won't route through your actual LAN)
-
-For Home Assistant, there is [an addon for knxd](https://github.com/da-anda/hass-io-addons/tree/main/knxd), so Home Assistant sees the internal NCN5121 as a KNX-IP gateway @ localhost.
-
-See the [knxd documentation](https://github.com/knxd/knxd/blob/main/doc/inifile.rst#ncn5120) for specifics on how to use the driver if you are not using Home Assistant.
-
-In this board, the NC5121 is NOT supplied through the KNX supply, but through the Pi's 3v3 rail. This means that it doesn't need to be taken into account when calculating the KNX power supply needs.
-
-> [!IMPORTANT]  
-> To enable KNX, make sure to disable bluetooth and the serial console on your Pi
-> This is required to enable full `UART0` at GPIO14/15
->
-> In `/boot/config.txt` add:
-> 
-> `dtoverlay=pi3-disable-bt`
->
-> In `/boot/cmdline.txt` remove:
-> 
-> `console=serial0,115200` or `console=ttyAMA0,115200` if found
->
-> reboot
-
 ### J10 - J12 | Digital Inputs (I1-8)
 
 **J10**
@@ -251,6 +234,30 @@ Input currents are as follows:
 | 12 V    | TODO mA       |
 | 24 V    | 5 mA          |
 
+### Wago header | KNX / NCN5121
+
+Utilizing [knxd](https://github.com/knxd/knxd/tree/main) to run a [NCN5121](https://www.onsemi.com/pdf/datasheet/ncn5121-d.pdf) KNX transceiver chip the PiPLC can talk to KNX networks natively, without going through an actual KNX-IP gateway first. (Internally, knxd looks like a KNX-IP gateway, but it won't route through your actual LAN)
+
+For Home Assistant, there is [an addon for knxd](https://github.com/da-anda/hass-io-addons/tree/main/knxd), so Home Assistant sees the internal NCN5121 as a KNX-IP gateway @ localhost.
+
+See the [knxd documentation](https://github.com/knxd/knxd/blob/main/doc/inifile.rst#ncn5120) for specifics on how to use the driver if you are not using Home Assistant.
+
+In this board, the NC5121 is NOT supplied through the KNX supply, but through the Pi's 3v3 rail. This means that it doesn't need to be taken into account when calculating the KNX power supply needs.
+
+> [!IMPORTANT]  
+> To enable KNX, make sure to disable bluetooth and the serial console on your Pi
+> This is required to enable full `UART0` at GPIO14/15
+>
+> In `/boot/config.txt` add:
+> 
+> `dtoverlay=pi3-disable-bt`
+>
+> In `/boot/cmdline.txt` remove:
+> 
+> `console=serial0,115200` or `console=ttyAMA0,115200` if found
+>
+> reboot
+
 ## Software
 
 ### OpenPLC
@@ -266,6 +273,62 @@ TODO modbus
 ### Codesys
 
 TODO? Not open source so might not do. No reason why it shouldn't work tho.
+
+## Making your own
+
+### Boards
+
+A full PiPLC consists of several subboards that need to be manufactured individually. 
+Theoretically only the mainboard is technically required, as you could use wires to manually connect the Pi to the PLC 
+as well as just not using the HMI as it is only a status display at the moment, 
+but the existing 3D printable case assumes all boards to be used.
+
+Only the main board has SMD parts that need to be assembled, so only one board will need to go through PCBA.
+
+All boards are designed to be manufactured by JLCPCB, with BOMs using LCSC partnumbers attached.
+ALso all boards are to be manufactured with regular 1.6mm thickness, lead free HASL and 1oz copper weight.
+
+#### Mainboard
+
+![Render_Mainboard](/img/Render_Mainboard.png)
+
+Online view with [KiCanvas](https://kicanvas.org/home/): [Mainboard](https://kicanvas.org/?github=https%3A%2F%2Fgithub.com%2FChrismettal%2FPiPLC%2Ftree%2Fmaster%2Fpcb%2FPiPLC-Mainboard)
+
+This board houses all logic and is the only one that benefits from a PCBA service. All other boards plug into here, including the Raspberry Pi.
+
+#### HMI
+
+![Render_HMI](/img/Render_HMI.png)
+
+Online view with [KiCanvas](https://kicanvas.org/home/): [HMI](https://kicanvas.org/?github=https%3A%2F%2Fgithub.com%2FChrismettal%2FPiPLC%2Ftree%2Fmaster%2Fpcb%2FPiPLC-HMI)
+
+While not strictly required, this board houses frontpanel LEDs for status view of digital inputs and outputs, as well as 5V and 24V power status LEDs.
+
+Additionally, the Wago header to plug into a KNX network is housed on this board.
+
+#### Frontpanel
+
+![Render_Frontpanel](/img/Render_Frontpanel.png)
+
+Online view with [KiCanvas](https://kicanvas.org/home/): [Frontpanel](https://kicanvas.org/?github=https%3A%2F%2Fgithub.com%2FChrismettal%2FPiPLC%2Ftree%2Fmaster%2Fpcb%2FPiPLC-Frontpanel)
+
+Purely for decoration / labelling. No electrical connections here. Can theoretically be replaced by a sticker.
+
+#### Pi Riser
+
+![Render_PiRiser](/img/Render_PiRiser.png)
+
+Online view with [KiCanvas](https://kicanvas.org/home/): [PiRiser](https://kicanvas.org/?github=https%3A%2F%2Fgithub.com%2FChrismettal%2FPiPLC%2Ftree%2Fmaster%2Fpcb%2FPiPLC-PiRiser)
+
+Riser board to give the Pi enough clearance to connect face-down to the mainboard. Can theoretically be replaced by a ribbon cable.
+
+#### HMI Riser
+
+![Render_HmiRiser](/img/Render_HmiRiser.png)
+
+Online view with [KiCanvas](https://kicanvas.org/home/): [HmiRiser](https://kicanvas.org/?github=https%3A%2F%2Fgithub.com%2FChrismettal%2FPiPLC%2Ftree%2Fmaster%2Fpcb%2FPiPLC-HmiRiser)
+
+Riser board to connect the HMI board to the mainboard. Can theoretically be replaced by a ribbon cable
 
 ## Tools used
 
