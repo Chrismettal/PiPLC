@@ -51,3 +51,6 @@ pcb/*.csv
 
 # Markdown notes that are usually linked here
 Notebook.md
+
+# Drawio
+*.dtmp
