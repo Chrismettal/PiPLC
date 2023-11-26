@@ -11,6 +11,10 @@ This is a work in progress for a Raspberry Pi breakout board + DIN rail case to 
 
 The design relies on a Raspberry Pi 4 for all functions to work. Pi 5 is currently untested, while Pi 3 and below don't allow for all functions to be used.
 
+The PiPLC is intended to be used with [Home Assistant](https://www.home-assistant.io/), as well as [Autonomy](https://autonomylogic.com/) / [OpenPLC](https://openplcproject.github.io/) (to be honest I don't exactly know why OpenPLC runs under two names and at this point I am too afraid to ask)
+
+Obviously, since it's just a breakout board for any Pi, you can run whatever software you want, but Home Assistant and OpenPLC are the ones inspiring the design of this project.
+
 All the parts are or will be stocked at Tindie!
 
 <a href="https://www.tindie.com/stores/binary-6/?ref=offsite_badges&utm_source=sellers_Chrismettal&utm_medium=badges&utm_campaign=badge_medium"><img src="https://d2ss6ovg47m0r5.cloudfront.net/badges/tindie-mediums.png" alt="I sell on Tindie" width="150" height="78"></a>
@@ -19,7 +23,6 @@ All the parts are or will be stocked at Tindie!
 
 ## Table of contents <!-- omit in toc -->
 
-- [Software](#software)
 - [GPIO mapping](#gpio-mapping)
 - [Pinout](#pinout)
 - [I/O](#io)
@@ -31,7 +34,7 @@ All the parts are or will be stocked at Tindie!
   - [J9 | 1-Wire](#j9--1-wire)
   - [J10 - J12 | Digital Inputs (I1-8)](#j10---j12--digital-inputs-i1-8)
   - [Wago header | KNX / NCN5121](#wago-header--knx--ncn5121)
-- [Software](#software-1)
+- [Software](#software)
   - [OpenPLC](#openplc)
   - [HomeAssistant](#homeassistant)
   - [Codesys](#codesys)
@@ -48,11 +51,7 @@ All the parts are or will be stocked at Tindie!
 - [Donations](#donations)
 - [License](#license)
 
-## Software
-
-The PiPLC is intended to be used with [Home Assistant](https://www.home-assistant.io/), as well as [Autonomy](https://autonomylogic.com/) / [OpenPLC](https://openplcproject.github.io/) (to be honest I don't exactly know why OpenPLC runs under two names and at this point I am too afraid to ask)
-
-Obviously, since it's just a breakout board for any Pi, you can run whatever software you want, but Home Assistant and OpenPLC are the ones inspiring the design of this project.
+---
 
 ## GPIO mapping
 
@@ -91,6 +90,8 @@ Pins marked unusable with OpenPLC are either not broken out, or differ too much 
 
 ![Pinout](/doc/PiPLC_Pinout.drawio.svg)
 
+---
+
 ## I/O
 
 ### J1 | Power Input
@@ -110,8 +111,6 @@ At `J3`, 3V3 from the RPI can be used to draw up to 500mA (protected through a p
 ---
 
 ### J2 | Modbus
-
-**J2**
 
 |   1    |            2             |            3             |   4   |
 | :----: | :----------------------: | :----------------------: | :---: |
@@ -143,6 +142,8 @@ https://raspberrypi.stackexchange.com/questions/104464/where-are-the-uarts-on-th
 
 https://raspberrypi.stackexchange.com/questions/45570/how-do-i-make-serial-work-on-the-raspberry-pi3-pizerow-pi4-or-later-models/107780#107780
 </details>
+
+---
 
 ### J3 - J6 | Digital Outputs (Q1-8)
 
@@ -186,9 +187,9 @@ TODO usage example
 > 
 > Only certified electricians should ever be performing mains work, and home-built devices should never be connected to mains power unless you know what you are doing.
 
-### J7 | PWM
+---
 
-**J7**
+### J7 | PWM
 
 |            1            |            2            |   3   |   4   |
 | :---------------------: | :---------------------: | :---: | :---: |
@@ -207,9 +208,9 @@ TODO usage example
 > [!WARNING]
 > Unprotected access to `GPIO_18` and `GPIO_19`. Take care not to damage your Pi!
 
-### J8 | I²C
+---
 
-**J8**
+### J8 | I²C
 
 |   1    |   2   |            3            |            4            |
 | :----: | :---: | :---------------------: | :---------------------: |
@@ -226,9 +227,9 @@ TODO usage example
 > [!WARNING]
 > The I²C contacts are already pulled up to 5 V so do not connect any 3.3 V only I²C devices directly without isolation!
 
-### J9 | 1-Wire
+---
 
-**J9**
+### J9 | 1-Wire
 
 |     1     |   2   |           3            |           4            |
 | :-------: | :---: | :--------------------: | :--------------------: |
@@ -245,6 +246,8 @@ TODO usage example
 
 > [!WARNING]
 > Unprotected access to `GPIO_04`. Take care not to damage your Pi!
+
+---
 
 ### J10 - J12 | Digital Inputs (I1-8)
 
@@ -287,6 +290,8 @@ Input currents are as follows:
 TODO usage example
 </details>
 
+---
+
 ### Wago header | KNX / NCN5121
 
 Utilizing [knxd](https://github.com/knxd/knxd/tree/main) to run a [NCN5121](https://www.onsemi.com/pdf/datasheet/ncn5121-d.pdf) KNX transceiver chip the PiPLC can talk to KNX networks natively, without going through an actual KNX-IP gateway first. (Internally, knxd looks like a KNX-IP gateway, but it won't route through your actual LAN)
@@ -316,6 +321,8 @@ In this board, the NC5121 is NOT supplied through the KNX supply, but through th
 TODO usage example
 </details>
 
+---
+
 ## Software
 
 ### OpenPLC
@@ -332,6 +339,8 @@ TODO modbus
 
 TODO? Not open source so might not do. No reason why it shouldn't work tho.
 
+---
+
 ## Making your own
 
 ### Boards
@@ -346,6 +355,8 @@ Only the main board has SMD parts that need to be assembled, so only one board w
 All boards are designed to be manufactured by JLCPCB, with BOMs using LCSC partnumbers attached.
 ALso all boards are to be manufactured with regular 1.6mm thickness, lead free HASL and 1oz copper weight.
 
+---
+
 #### Mainboard
 
 ![Render_Mainboard](/img/Render_Mainboard.png)
@@ -353,6 +364,8 @@ ALso all boards are to be manufactured with regular 1.6mm thickness, lead free H
 [Interactive Bom / Online view](https://htmlpreview.github.io/?https://raw.githubusercontent.com/Chrismettal/PiPLC/master/pcb/PiPLC-Mainboard/bom/ibom.html)
 
 This board houses all logic and is the only one that benefits from a PCBA service. All other boards plug into here, including the Raspberry Pi.
+
+---
 
 #### HMI
 
@@ -364,6 +377,8 @@ While not strictly required, this board houses frontpanel LEDs for status view o
 
 Additionally, the Wago header to plug into a KNX network is housed on this board.
 
+---
+
 #### Frontpanel
 
 ![Render_Frontpanel](/img/Render_Frontpanel.png)
@@ -371,6 +386,8 @@ Additionally, the Wago header to plug into a KNX network is housed on this board
 [Interactive Bom / Online view](https://htmlpreview.github.io/?https://raw.githubusercontent.com/Chrismettal/PiPLC/master/pcb/PiPLC-Frontpanel/bom/ibom.html)
 
 Purely for decoration / labelling. No electrical connections here. Can theoretically be replaced by a sticker.
+
+---
 
 #### Pi Riser
 
@@ -380,6 +397,8 @@ Purely for decoration / labelling. No electrical connections here. Can theoretic
 
 Riser board to give the Pi enough clearance to connect face-down to the mainboard. Can theoretically be replaced by a ribbon cable.
 
+---
+
 #### HMI Riser
 
 ![Render_HmiRiser](/img/Render_HmiRiser.png)
@@ -388,11 +407,15 @@ Riser board to give the Pi enough clearance to connect face-down to the mainboar
 
 Riser board to connect the HMI board to the mainboard. Can theoretically be replaced by a ribbon cable
 
+---
+
 ### 3D printing
 
 3D printable parts are currently being designed.
 
 The case is intended to be printed in a isolating and/or flame retardant filament like PC or PETG VO. 
+
+---
 
 ## Tools used
 
@@ -400,15 +423,21 @@ The case is intended to be printed in a isolating and/or flame retardant filamen
   - KicadStepUp Workbench 10.20.7
 - KiCAD 7.0.9
 
+---
+
 ## Sources
 
 - Wago 243-211 KNX Connector 3D file - https://grabcad.com/library/knx-connector-1
 - Raspberry Pi 3D file - https://grabcad.com/library/raspberry-pi-4-model-b-1#!
 - PCB Standoffs 3D files - https://grabcad.com/library/ettinger-standoff-nickel-plated-brass-m-f-m2-m8-1/details?folder_id=12725833
 
+---
+
 ## Donations
 
 **If you like my work please consider [supporting me](https://github.com/Chrismettal#donations)!**
+
+---
 
 ## License
 
