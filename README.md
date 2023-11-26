@@ -25,8 +25,6 @@ All the parts are or will be stocked at Tindie!
   - [J1 | Power input](#j1--power-input)
     - [J1 Pinout](#j1-pinout)
   - [J10 - J12 | Digital Inputs (I1-8)](#j10---j12--digital-inputs-i1-8)
-    - [J11 Pinout](#j11-pinout)
-    - [J12 Pinout](#j12-pinout)
   - [J3 - J6 | Digital Outputs (Q1-8)](#j3---j6--digital-outputs-q1-8)
   - [J2 | Modbus](#j2--modbus)
   - [J7 | PWM](#j7--pwm)
@@ -87,7 +85,7 @@ Pins marked unusable with OpenPLC are either not broken out, or differ too much 
 
 #### J1 Pinout
 
-|    1    |    2    |   3   |   4   |
+|  J1.1   |  J1.2   | J1.3  | J1.4  |
 | :-----: | :-----: | :---: | :---: |
 | `+24 V` | `+24 V` | `GND` | `GND` |
  
@@ -101,21 +99,16 @@ At `J3`, 3V3 from the RPI can be used to draw up to 500mA (protected through a p
 
 ### J10 - J12 | Digital Inputs (I1-8)
 
-> [!NOTE] 
-> **J10 Pinout:**
->|    1    |    2    |    3    |    4    |
->| :-----: | :-----: | :-----: | :-----: |
->| `+24 V` | `+24 V` | `+24 V` | `+24 V` |
 
-#### J11 Pinout
+|  J10.1  |  J10.2  |  J10.3  | J10. 4  |
+| :-----: | :-----: | :-----: | :-----: |
+| `+24 V` | `+24 V` | `+24 V` | `+24 V` |
 
-|   1   |   2   |   3   |   4   |
+| J11.1 | J11.2 | J11.3 | J11.4 |
 | :---: | :---: | :---: | :---: |
 | `I4`  | `I3`  | `I2`  | `I1`  |
 
-#### J12 Pinout
-
-|   1   |   2   |   3   |   4   |
+| J12.1 | J12.2 | J12.3 | J12.4 |
 | :---: | :---: | :---: | :---: |
 | `I8`  | `I7`  | `I6`  | `I5`  |
 
