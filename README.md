@@ -350,7 +350,7 @@ ALso all boards are to be manufactured with regular 1.6mm thickness, lead free H
 
 ![Render_Mainboard](/img/Render_Mainboard.png)
 
-Online view with [KiCanvas](https://kicanvas.org/home/): [Mainboard](https://kicanvas.org/?github=https%3A%2F%2Fgithub.com%2FChrismettal%2FPiPLC%2Ftree%2Fmaster%2Fpcb%2FPiPLC-Mainboard)
+[Interactive Bom / Online view](https://htmlpreview.github.io/?https://raw.githubusercontent.com/Chrismettal/PiPLC/master/pcb/PiPLC-Mainboard/bom/ibom.html)
 
 This board houses all logic and is the only one that benefits from a PCBA service. All other boards plug into here, including the Raspberry Pi.
 
@@ -358,7 +358,7 @@ This board houses all logic and is the only one that benefits from a PCBA servic
 
 ![Render_HMI](/img/Render_HMI.png)
 
-Online view with [KiCanvas](https://kicanvas.org/home/): [HMI](https://kicanvas.org/?github=https%3A%2F%2Fgithub.com%2FChrismettal%2FPiPLC%2Ftree%2Fmaster%2Fpcb%2FPiPLC-HMI)
+[Interactive Bom](https://htmlpreview.github.io/?https://raw.githubusercontent.com/Chrismettal/PiPLC/master/pcb/PiPLC-HMI/bom/ibom.html)
 
 While not strictly required, this board houses frontpanel LEDs for status view of digital inputs and outputs, as well as 5V and 24V power status LEDs.
 
@@ -368,7 +368,7 @@ Additionally, the Wago header to plug into a KNX network is housed on this board
 
 ![Render_Frontpanel](/img/Render_Frontpanel.png)
 
-Online view with [KiCanvas](https://kicanvas.org/home/): [Frontpanel](https://kicanvas.org/?github=https%3A%2F%2Fgithub.com%2FChrismettal%2FPiPLC%2Ftree%2Fmaster%2Fpcb%2FPiPLC-Frontpanel)
+[Interactive Bom / Online view](https://htmlpreview.github.io/?https://raw.githubusercontent.com/Chrismettal/PiPLC/master/pcb/PiPLC-Frontpanel/bom/ibom.html)
 
 Purely for decoration / labelling. No electrical connections here. Can theoretically be replaced by a sticker.
 
@@ -376,7 +376,7 @@ Purely for decoration / labelling. No electrical connections here. Can theoretic
 
 ![Render_PiRiser](/img/Render_PiRiser.png)
 
-Online view with [KiCanvas](https://kicanvas.org/home/): [PiRiser](https://kicanvas.org/?github=https%3A%2F%2Fgithub.com%2FChrismettal%2FPiPLC%2Ftree%2Fmaster%2Fpcb%2FPiPLC-PiRiser)
+[Interactive Bom / Online view](https://htmlpreview.github.io/?https://raw.githubusercontent.com/Chrismettal/PiPLC/master/pcb/PiPLC-PiRiser/bom/ibom.html)
 
 Riser board to give the Pi enough clearance to connect face-down to the mainboard. Can theoretically be replaced by a ribbon cable.
 
@@ -384,7 +384,7 @@ Riser board to give the Pi enough clearance to connect face-down to the mainboar
 
 ![Render_HmiRiser](/img/Render_HmiRiser.png)
 
-Online view with [KiCanvas](https://kicanvas.org/home/): [HmiRiser](https://kicanvas.org/?github=https%3A%2F%2Fgithub.com%2FChrismettal%2FPiPLC%2Ftree%2Fmaster%2Fpcb%2FPiPLC-HmiRiser)
+[Interactive Bom / Online view](https://htmlpreview.github.io/?https://raw.githubusercontent.com/Chrismettal/PiPLC/master/pcb/PiPLC-HmiRiser/bom/ibom.html)
 
 Riser board to connect the HMI board to the mainboard. Can theoretically be replaced by a ribbon cable
 
