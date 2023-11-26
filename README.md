@@ -21,15 +21,16 @@ All the parts are or will be stocked at Tindie!
 
 - [Software](#software)
 - [GPIO mapping](#gpio-mapping)
+- [Pinout](#pinout)
 - [I/O](#io)
   - [J1 | Power input](#j1--power-input)
-  - [J10 - J12 | Digital Inputs (I1-8)](#j10---j12--digital-inputs-i1-8)
-  - [J3 - J6 | Digital Outputs (Q1-8)](#j3---j6--digital-outputs-q1-8)
   - [J2 | Modbus](#j2--modbus)
+  - [J3 - J6 | Digital Outputs (Q1-8)](#j3---j6--digital-outputs-q1-8)
   - [J7 | PWM](#j7--pwm)
   - [J8 | I²C](#j8--ic)
   - [J9 | 1-Wire](#j9--1-wire)
   - [Wago header | KNX / NCN5121](#wago-header--knx--ncn5121)
+  - [J10 - J12 | Digital Inputs (I1-8)](#j10---j12--digital-inputs-i1-8)
 - [Software](#software-1)
   - [OpenPLC](#openplc)
   - [HomeAssistant](#homeassistant)
@@ -78,6 +79,10 @@ Obviously, since it's just a breakout board for any Pi, you can run whatever sof
 
 Pins marked unusable with OpenPLC are either not broken out, or differ too much from OpenPLC's mapping. As OpenPLC's mapping is immutable, these pins might not be used if PiPLC is used with the OpenPLC runtime and Pi default hardware layer.
 
+## Pinout
+
+![Pinout](/doc/PiPLC_Pinout.drawio.svg)
+
 ## I/O
 
 ### J1 | Power input
@@ -96,41 +101,28 @@ At `J10` 12/24V is passed through unprotected from the power input.
 At `J2` and `J8` 5 V from the DC-DC can be used to draw up to 500mA (protected through a polyfuse). 
 At `J3`, 3V3 from the RPI can be used to draw up to 500mA (protected through a polyfuse)
 
-### J10 - J12 | Digital Inputs (I1-8)
+### J2 | Modbus
 
-**J10**
+**J2**
 
-|    1    |    2    |    3    |    4    |
-| :-----: | :-----: | :-----: | :-----: |
-| `+24 V` | `+24 V` | `+24 V` | `+24 V` |
+|   1    |            2             |            3             |   4   |
+| :----: | :----------------------: | :----------------------: | :---: |
+| `+5 V` | :blue_square: `Modbus A` | :blue_square: `Modbus B` | `GND` |
 
-**J11**
+TODO
 
-|          1           |          2           |          3           |          4           |
-| :------------------: | :------------------: | :------------------: | :------------------: |
-| :yellow_square: `I4` | :yellow_square: `I3` | :yellow_square: `I2` | :yellow_square: `I1` |
+https://raspberrypi.stackexchange.com/questions/104464/where-are-the-uarts-on-the-raspberry-pi-4 
 
-**J12**
+https://raspberrypi.stackexchange.com/questions/45570/how-do-i-make-serial-work-on-the-raspberry-pi3-pizerow-pi4-or-later-models/107780#107780
 
-|          1           |          2           |          3           |          4           |
-| :------------------: | :------------------: | :------------------: | :------------------: |
-| :yellow_square: `I8` | :yellow_square: `I7` | :yellow_square: `I6` | :yellow_square: `I5` |
-
-
-8 digital inputs are found at the top of the device. These inputs are 5-24 V tolerant current sinking inputs through `EL817C` optocouplers. 
-J10 features 24 V outputs to easily supply switches or other sensors feeding back into J11-J12 as inputs.
-
-All inputs feature a status LED driven by the optocoupler output, thus not loading the input. 
-
-On the Raspberry side, pullups need to be enabled on the GPIOs to enable reading from these input stages.
-
-Input currents are as follows:
-
-| Voltage | Input current |
-| ------- | ------------- |
-| 5 V     | TODO mA       |
-| 12 V    | TODO mA       |
-| 24 V    | 5 mA          |
+> [!IMPORTANT]  
+> To enable Modbus, make sure to enable `UART3` at GPIO5/06
+> This UART is not enabled by default and is only present on Raspberry Pi models 4 and up!
+>
+> In `/boot/config.txt` add:
+> TODO
+>
+> reboot
 
 ### J3 - J6 | Digital Outputs (Q1-8)
 
@@ -168,29 +160,6 @@ As with the digital inputs, each output features a status LED found on the HMI s
 > All components chosen are rated for 16 A at 250 V AC and should be capable of driving everything in a home environment.
 > 
 > Only certified electricians should ever be performing mains work, and home-built devices should never be connected to mains power unless you know what you are doing.
- 
-### J2 | Modbus
-
-**J2**
-
-|   1    |            2             |            3             |   4   |
-| :----: | :----------------------: | :----------------------: | :---: |
-| `+5 V` | :blue_square: `Modbus A` | :blue_square: `Modbus B` | `GND` |
-
-TODO
-
-https://raspberrypi.stackexchange.com/questions/104464/where-are-the-uarts-on-the-raspberry-pi-4 
-
-https://raspberrypi.stackexchange.com/questions/45570/how-do-i-make-serial-work-on-the-raspberry-pi3-pizerow-pi4-or-later-models/107780#107780
-
-> [!IMPORTANT]  
-> To enable Modbus, make sure to enable `UART3` at GPIO5/06
-> This UART is not enabled by default and is only present on Raspberry Pi models 4 and up!
->
-> In `/boot/config.txt` add:
-> TODO
->
-> reboot
 
 ### J7 | PWM
 
@@ -245,6 +214,42 @@ In this board, the NC5121 is NOT supplied through the KNX supply, but through th
 > `console=serial0,115200` or `console=ttyAMA0,115200` if found
 >
 > reboot
+
+### J10 - J12 | Digital Inputs (I1-8)
+
+**J10**
+
+|    1    |    2    |    3    |    4    |
+| :-----: | :-----: | :-----: | :-----: |
+| `+24 V` | `+24 V` | `+24 V` | `+24 V` |
+
+**J11**
+
+|          1           |          2           |          3           |          4           |
+| :------------------: | :------------------: | :------------------: | :------------------: |
+| :yellow_square: `I4` | :yellow_square: `I3` | :yellow_square: `I2` | :yellow_square: `I1` |
+
+**J12**
+
+|          1           |          2           |          3           |          4           |
+| :------------------: | :------------------: | :------------------: | :------------------: |
+| :yellow_square: `I8` | :yellow_square: `I7` | :yellow_square: `I6` | :yellow_square: `I5` |
+
+
+8 digital inputs are found at the top of the device. These inputs are 5-24 V tolerant current sinking inputs through `EL817C` optocouplers. 
+J10 features 24 V outputs to easily supply switches or other sensors feeding back into J11-J12 as inputs.
+
+All inputs feature a status LED driven by the optocoupler output, thus not loading the input. 
+
+On the Raspberry side, pullups need to be enabled on the GPIOs to enable reading from these input stages.
+
+Input currents are as follows:
+
+| Voltage | Input current |
+| ------- | ------------- |
+| 5 V     | TODO mA       |
+| 12 V    | TODO mA       |
+| 24 V    | 5 mA          |
 
 ## Software
 
