@@ -101,8 +101,8 @@ At `J3`, 3V3 from the RPI can be used to draw up to 500mA (protected through a p
 
 ### J10 - J12 | Digital Inputs (I1-8)
 
-> [!INFO] 
-> J10 Pinout:
+> [!NOTE] 
+> **J10 Pinout:**
 >|    1    |    2    |    3    |    4    |
 >| :-----: | :-----: | :-----: | :-----: |
 >| `+24 V` | `+24 V` | `+24 V` | `+24 V` |
