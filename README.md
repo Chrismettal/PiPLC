@@ -23,7 +23,6 @@ All the parts are or will be stocked at Tindie!
 - [GPIO mapping](#gpio-mapping)
 - [I/O](#io)
   - [J1 | Power input](#j1--power-input)
-    - [J1 Pinout](#j1-pinout)
   - [J10 - J12 | Digital Inputs (I1-8)](#j10---j12--digital-inputs-i1-8)
   - [J3 - J6 | Digital Outputs (Q1-8)](#j3---j6--digital-outputs-q1-8)
   - [J2 | Modbus](#j2--modbus)
@@ -48,34 +47,34 @@ Obviously, since it's just a breakout board for any Pi, you can run whatever sof
 
 ## GPIO mapping
 
-| GPIO Name | RPI Header<br>Pin Nbr | PiPLC naming                   | OpenPLC<br>RPI mapping | Usable with<br>OpenPLC                         |
-| :-------: | :-------------------: | :----------------------------- | :--------------------: | :--------------------------------------------- |
-| `GPIO_02` |         `03`          | :blue_square: I²C SDA          |        `%IX0.0`        | :ballot_box_with_check: Unprotected input      |
-| `GPIO_03` |         `05`          | :blue_square: I²C SCL          |        `%IX0.1`        | :ballot_box_with_check: Unprotected input      |
-| `GPIO_04` |         `07`          | :blue_square: Modbus UART TX   |        `%IX0.2`        | :warning: TODO Modbus through driver?          |
-| `GPIO_05` |         `29`          | :blue_square: Modbus UART RX   |        `%IX1.1`        | :warning: TODO Modbus through driver?          |
-| `GPIO_06` |         `31`          | :blue_square: Modbus UART RTS  |        `%IX1.2`        | :warning: TODO Modbus through driver?          |
-| `GPIO_07` |         `26`          | :red_square: Q4                |        `%QX0.6`        | :white_check_mark: Relay output                |
-| `GPIO_08` |         `24`          | :red_square: Q3                |        `%QX0.5`        | :white_check_mark: Relay output                |
-| `GPIO_09` |         `21`          | :yellow_square: I5             |        `%IX0.7`        | :white_check_mark: Protected input             |
-| `GPIO_10` |         `19`          | :yellow_square: I4             |        `%IX0.6`        | :white_check_mark: Protected input             |
-| `GPIO_11` |         `23`          | :yellow_square: I6             |        `%IX1.0`        | :white_check_mark: Protected input             |
-| `GPIO_12` |         `32`          | :red_square: Q5                |        `%QX0.7`        | :white_check_mark: Relay output                |
-| `GPIO_13` |         `33`          | :yellow_square: I7             |        `%IX1.3`        | :white_check_mark: Protected input             |
-| `GPIO_14` |         `08`          | :blue_square: KNX UART TX      |        `%QX0.0`        | :x: KNX not supported                          |
-| `GPIO_15` |         `10`          | :blue_square: KNX UART RX      |        `%QX0.1`        | :x: KNX not supported                          |
-| `GPIO_16` |         `36`          | :red_square: Q6                |        `%QX1.0`        | :white_check_mark: Relay output                |
-| `GPIO_17` |         `11`          | :yellow_square: I1             |        `%IX0.3`        | :white_check_mark: Protected input             |
-| `GPIO_18` |         `12`          | :orange_square: PWM_0 *@ TODO* |        `%QW0.0`        | :ballot_box_with_check: Unprotected PWM output |
-| `GPIO_19` |         `35`          | :orange_square: PWM_1 *@ TODO* |        `%QX1.0`        | :white_check_mark: Relay output                |
-| `GPIO_20` |         `38`          | :red_square: Q7                |        `%QX1.1`        | :white_check_mark: Relay output                |
-| `GPIO_21` |         `40`          | :red_square: Q8                |        `%QX1.2`        | :white_check_mark: Relay output                |
-| `GPIO_22` |         `15`          | :yellow_square: I3             |        `%IX0.5`        | :white_check_mark: Protected input             |
-| `GPIO_23` |         `16`          | :blue_square: 1-Wire           |        `%QX0.2`        | :white_check_mark: Relay output                |
-| `GPIO_24` |         `18`          | :red_square: Q1                |        `%QX0.3`        | :white_check_mark: Relay output                |
-| `GPIO_25` |         `22`          | :red_square: Q2                |        `%QX0.4`        | :white_check_mark: Relay output                |
-| `GPIO_26` |         `37`          | :yellow_square: I8             |        `%IX1.5`        | :white_check_mark: Protected input             |
-| `GPIO_27` |         `13`          | :yellow_square: I2             |        `%IX0.4`        | :white_check_mark: Protected input             |
+| GPIO Name | RPI Header<br>Pin Nbr | PiPLC naming                  | OpenPLC<br>RPI mapping | Usable with<br>OpenPLC                         |
+| :-------: | :-------------------: | :---------------------------- | :--------------------: | :--------------------------------------------- |
+| `GPIO_02` |         `03`          | :blue_square: I²C SDA         |        `%IX0.0`        | :ballot_box_with_check: Unprotected input      |
+| `GPIO_03` |         `05`          | :blue_square: I²C SCL         |        `%IX0.1`        | :ballot_box_with_check: Unprotected input      |
+| `GPIO_04` |         `07`          | :blue_square: Modbus UART TX  |        `%IX0.2`        | :warning: TODO Modbus through driver?          |
+| `GPIO_05` |         `29`          | :blue_square: Modbus UART RX  |        `%IX1.1`        | :warning: TODO Modbus through driver?          |
+| `GPIO_06` |         `31`          | :blue_square: Modbus UART RTS |        `%IX1.2`        | :warning: TODO Modbus through driver?          |
+| `GPIO_07` |         `26`          | :red_square: Q4               |        `%QX0.6`        | :white_check_mark: Relay output                |
+| `GPIO_08` |         `24`          | :red_square: Q3               |        `%QX0.5`        | :white_check_mark: Relay output                |
+| `GPIO_09` |         `21`          | :yellow_square: I5            |        `%IX0.7`        | :white_check_mark: Protected input             |
+| `GPIO_10` |         `19`          | :yellow_square: I4            |        `%IX0.6`        | :white_check_mark: Protected input             |
+| `GPIO_11` |         `23`          | :yellow_square: I6            |        `%IX1.0`        | :white_check_mark: Protected input             |
+| `GPIO_12` |         `32`          | :red_square: Q5               |        `%QX0.7`        | :white_check_mark: Relay output                |
+| `GPIO_13` |         `33`          | :yellow_square: I7            |        `%IX1.3`        | :white_check_mark: Protected input             |
+| `GPIO_14` |         `08`          | :blue_square: KNX UART TX     |        `%QX0.0`        | :x: KNX not supported                          |
+| `GPIO_15` |         `10`          | :blue_square: KNX UART RX     |        `%QX0.1`        | :x: KNX not supported                          |
+| `GPIO_16` |         `36`          | :red_square: Q6               |        `%QX1.0`        | :white_check_mark: Relay output                |
+| `GPIO_17` |         `11`          | :yellow_square: I1            |        `%IX0.3`        | :white_check_mark: Protected input             |
+| `GPIO_18` |         `12`          | :orange_square: PWM_0         |        `%QW0.0`        | :ballot_box_with_check: Unprotected PWM output |
+| `GPIO_19` |         `35`          | :orange_square: PWM_1         |        `%QX1.0`        | :white_check_mark: Relay output                |
+| `GPIO_20` |         `38`          | :red_square: Q7               |        `%QX1.1`        | :white_check_mark: Relay output                |
+| `GPIO_21` |         `40`          | :red_square: Q8               |        `%QX1.2`        | :white_check_mark: Relay output                |
+| `GPIO_22` |         `15`          | :yellow_square: I3            |        `%IX0.5`        | :white_check_mark: Protected input             |
+| `GPIO_23` |         `16`          | :blue_square: 1-Wire          |        `%QX0.2`        | :white_check_mark: Relay output                |
+| `GPIO_24` |         `18`          | :red_square: Q1               |        `%QX0.3`        | :white_check_mark: Relay output                |
+| `GPIO_25` |         `22`          | :red_square: Q2               |        `%QX0.4`        | :white_check_mark: Relay output                |
+| `GPIO_26` |         `37`          | :yellow_square: I8            |        `%IX1.5`        | :white_check_mark: Protected input             |
+| `GPIO_27` |         `13`          | :yellow_square: I2            |        `%IX0.4`        | :white_check_mark: Protected input             |
 
 Pins marked unusable with OpenPLC are either not broken out, or differ too much from OpenPLC's mapping. As OpenPLC's mapping is immutable, these pins might not be used if PiPLC is used with the OpenPLC runtime and Pi default hardware layer.
 
@@ -83,9 +82,9 @@ Pins marked unusable with OpenPLC are either not broken out, or differ too much 
 
 ### J1 | Power input
 
-#### J1 Pinout
+**J1**
 
-|  J1.1   |  J1.2   | J1.3  | J1.4  |
+|    1    |    2    |   3   |   4   |
 | :-----: | :-----: | :---: | :---: |
 | `+24 V` | `+24 V` | `GND` | `GND` |
  
@@ -99,18 +98,23 @@ At `J3`, 3V3 from the RPI can be used to draw up to 500mA (protected through a p
 
 ### J10 - J12 | Digital Inputs (I1-8)
 
+**J10**
 
-|  J10.1  |  J10.2  |  J10.3  | J10. 4  |
+|    1    |    2    |    3    |    4    |
 | :-----: | :-----: | :-----: | :-----: |
 | `+24 V` | `+24 V` | `+24 V` | `+24 V` |
 
-| J11.1 | J11.2 | J11.3 | J11.4 |
-| :---: | :---: | :---: | :---: |
-| `I4`  | `I3`  | `I2`  | `I1`  |
+**J11**
 
-| J12.1 | J12.2 | J12.3 | J12.4 |
-| :---: | :---: | :---: | :---: |
-| `I8`  | `I7`  | `I6`  | `I5`  |
+|          1           |          2           |          3           |          4           |
+| :------------------: | :------------------: | :------------------: | :------------------: |
+| :yellow_square: `I4` | :yellow_square: `I3` | :yellow_square: `I2` | :yellow_square: `I1` |
+
+**J12**
+
+|          1           |          2           |          3           |          4           |
+| :------------------: | :------------------: | :------------------: | :------------------: |
+| :yellow_square: `I8` | :yellow_square: `I7` | :yellow_square: `I6` | :yellow_square: `I5` |
 
 
 8 digital inputs are found at the top of the device. These inputs are 5-24 V tolerant current sinking inputs through `EL817C` optocouplers. 
@@ -130,6 +134,30 @@ Input currents are as follows:
 
 ### J3 - J6 | Digital Outputs (Q1-8)
 
+**J3**
+
+|         1         |         2         |         3         |         4         |
+| :---------------: | :---------------: | :---------------: | :---------------: |
+| :red_square: `Q1` | :red_square: `Q1` | :red_square: `Q2` | :red_square: `Q2` |
+
+**J4**
+
+|         1         |         2         |         3         |         4         |
+| :---------------: | :---------------: | :---------------: | :---------------: |
+| :red_square: `Q3` | :red_square: `Q3` | :red_square: `Q4` | :red_square: `Q4` |
+
+**J5**
+
+|         1         |         2         |         3         |         4         |
+| :---------------: | :---------------: | :---------------: | :---------------: |
+| :red_square: `Q5` | :red_square: `Q5` | :red_square: `Q6` | :red_square: `Q6` |
+
+**J6**
+
+|         1         |         2         |         3         |         4         |
+| :---------------: | :---------------: | :---------------: | :---------------: |
+| :red_square: `Q7` | :red_square: `Q7` | :red_square: `Q8` | :red_square: `Q8` |
+
 8 digital outputs are found at the pottom of the device. These outputs are driven by `G5RL-1A-E-TV8` relays theoretically capable of **16 A at 250 V AC** / **16 A at 24 V DC**. 
 
 As with the digital inputs, each output features a status LED found on the HMI subboard.
@@ -142,6 +170,12 @@ As with the digital inputs, each output features a status LED found on the HMI s
 > Only certified electricians should ever be performing mains work, and home-built devices should never be connected to mains power unless you know what you are doing.
  
 ### J2 | Modbus
+
+**J2**
+
+|   1    |            2             |            3             |   4   |
+| :----: | :----------------------: | :----------------------: | :---: |
+| `+5 V` | :blue_square: `Modbus A` | :blue_square: `Modbus B` | `GND` |
 
 TODO
 
@@ -160,15 +194,31 @@ https://raspberrypi.stackexchange.com/questions/45570/how-do-i-make-serial-work-
 
 ### J7 | PWM
 
-TODO which pins are here?
+**J7**
+
+|            1            |            2            |   3   |   4   |
+| :---------------------: | :---------------------: | :---: | :---: |
+| :orange_square: `PWM 0` | :orange_square: `PWM 1` | `GND` | `GND` |
 
 TODO how to enable PWM
 
 ### J8 | I²C
 
+**J8**
+
+|   1    |   2   |            3            |            4            |
+| :----: | :---: | :---------------------: | :---------------------: |
+| `+5 V` | `GND` | :blue_square: `I²C SDA` | :blue_square: `I²C SCL` |
+
 TODO
 
 ### J9 | 1-Wire
+
+**J9**
+
+|     1     |   2   |           3            |           4            |
+| :-------: | :---: | :--------------------: | :--------------------: |
+| `+ 3.3 V` | `GND` | :blue_square: `1-Wire` | :blue_square: `1-Wire` |
 
 This header contains `GPIO_04` for native 1-Wire capability, as well as `GPIO_26` since I couldn't find a better place for it. Bear in mind, both of these are unprotected just as `J?`.
 
