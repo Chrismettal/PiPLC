@@ -57,8 +57,8 @@ All the parts are or will be stocked at Tindie!
 
 | GPIO Name | RPI Header<br>Pin Nbr | PiPLC naming                  | OpenPLC<br>RPI mapping | Usable with<br>OpenPLC                         |
 | :-------: | :-------------------: | :---------------------------- | :--------------------: | :--------------------------------------------- |
-| `GPIO_02` |         `03`          | :blue_square: I²C SDA         |        `%IX0.0`        | :ballot_box_with_check: Unprotected input      |
-| `GPIO_03` |         `05`          | :blue_square: I²C SCL         |        `%IX0.1`        | :ballot_box_with_check: Unprotected input      |
+| `GPIO_02` |         `03`          | :blue_square: I²C SDA         |        `%IX0.0`        | :warning: TODO I²C through driver?             |
+| `GPIO_03` |         `05`          | :blue_square: I²C SCL         |        `%IX0.1`        | :warning: TODO I²C through driver?             |
 | `GPIO_04` |         `07`          | :blue_square: Modbus UART TX  |        `%IX0.2`        | :warning: TODO Modbus through driver?          |
 | `GPIO_05` |         `29`          | :blue_square: Modbus UART RX  |        `%IX1.1`        | :warning: TODO Modbus through driver?          |
 | `GPIO_06` |         `31`          | :blue_square: Modbus UART RTS |        `%IX1.2`        | :warning: TODO Modbus through driver?          |
@@ -428,7 +428,7 @@ The case is intended to be printed in a isolating and/or flame retardant filamen
 ## Sources
 
 - Wago 243-211 KNX Connector 3D file - https://grabcad.com/library/knx-connector-1
-- Raspberry Pi 3D file - https://grabcad.com/library/raspberry-pi-4-model-b-1#!
+- Raspberry Pi 3D file - https://grabcad.com/library/raspberry-pi-4-model-b-1
 - PCB Standoffs 3D files - https://grabcad.com/library/ettinger-standoff-nickel-plated-brass-m-f-m2-m8-1/details?folder_id=12725833
 
 ---
