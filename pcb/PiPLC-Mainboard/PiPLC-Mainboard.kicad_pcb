@@ -8452,7 +8452,7 @@
         (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 65dba35e-6547-436d-819b-90b97290cabf)
     )
-    (fp_text value "Modbus" (at 7.62 11.2) (layer "F.Fab")
+    (fp_text value "WJ2EDGRC-5.08-4P" (at 7.62 11.2) (layer "F.Fab")
         (effects (font (size 1 1) (thickness 0.15)))
       (tstamp ac80b6cf-d382-4c60-b8dc-f65047ec1ad9)
     )

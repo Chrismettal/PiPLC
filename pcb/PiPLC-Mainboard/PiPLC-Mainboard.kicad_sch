@@ -11439,7 +11439,7 @@
     (property "Reference" "J2" (at 411.48 187.96 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "Modbus" (at 411.48 190.5 0)
+    (property "Value" "WJ2EDGRC-5.08-4P" (at 416.56 190.5 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "Connector_Phoenix_MSTB:PhoenixContact_MSTBA_2,5_4-G-5,08_1x04_P5.08mm_Horizontal" (at 411.48 195.58 0)
