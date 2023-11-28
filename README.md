@@ -5,15 +5,21 @@
 [![Shop: Tindie](https://img.shields.io/badge/shop-Tindie-blue?style=flat-square)](https://www.tindie.com/stores/binary-6/?ref=offsite_badges&utm_source=sellers_Chrismettal&utm_medium=badges&utm_campaign=badge_medium)
 [![Donations: Coffee](https://img.shields.io/badge/donations-Coffee-brown?style=flat-square)](https://github.com/Chrismettal#donations)
 
-![Logo](img/Logo.png)
-
 This is a work in progress for a Raspberry Pi breakout board + DIN rail case to use Pis in PLC-like industrial situations.
 
 The design relies on a Raspberry Pi 4 for all functions to work. Pi 5 is currently untested, while Pi 3 and below don't allow for all functions to be used.
 
-The PiPLC is intended to be used with [Home Assistant](https://www.home-assistant.io/), as well as [Autonomy](https://autonomylogic.com/) / [OpenPLC](https://openplcproject.github.io/) (to be honest I don't exactly know why OpenPLC runs under two names and at this point I am too afraid to ask)
-
+The PiPLC is intended to be used with [Home Assistant](https://www.home-assistant.io/), as well as [OpenPLC](https://autonomylogic.com/).
 Obviously, since it's just a breakout board for any Pi, you can run whatever software you want, but Home Assistant and OpenPLC are the ones inspiring the design of this project.
+
+**IO featured on board the PLC are:**
+
+- 8 x 24 V tolerant optocoupled inputs
+- 8 x 16A Relays (250 V AC / 24 V DC)
+- KNX TP
+- Modbus RTU / RS-485
+- I²C
+- 2 x analog 3.3 V PWM outputs
 
 All the parts are or will be stocked at Tindie!
 
@@ -36,7 +42,7 @@ All the parts are or will be stocked at Tindie!
   - [Wago header | KNX / NCN5121](#wago-header--knx--ncn5121)
 - [Software](#software)
   - [OpenPLC](#openplc)
-  - [HomeAssistant](#homeassistant)
+  - [Home Assistant](#home-assistant)
   - [Codesys](#codesys)
 - [Making your own](#making-your-own)
   - [Boards](#boards)
@@ -117,7 +123,7 @@ At `J3`, 3V3 from the RPI can be used to draw up to 500mA (protected through a p
 | `+5 V` | :blue_square: `Modbus A` | :blue_square: `Modbus B` | `GND` |
 
 Modbus is an industrial communication protocol often used with PLCs communicating with I/O extensions or other PLCs. 
-The wire based one used here is called `Modbus RT` and is based on half-duplex RS-485 so the header can also be used for that if you dislike Modbus. 
+The wire based one used here is called `Modbus RTU` and is based on half-duplex RS-485 so the header can also be used for that if you dislike Modbus. 
 
 OpenPLC natively supports Modbus to talk to more I/O, while Homeassistant has a [Modbus integration](https://www.home-assistant.io/integrations/modbus/).
 
@@ -327,17 +333,49 @@ TODO usage example
 
 ### OpenPLC
 
-TODO own hardware driver? Dark mode?
+[OpenPLC](https://autonomylogic.com/) is a Fully IEC 61131-3 compliant, open source, multi-hardware programmable logic controller suite.
 
-### HomeAssistant
+Consisting of a separate runtime and editor, it can run on regular PCs as a soft PLC, as well as a multitude of embedded systems. (Think Beckhoff XAR / XAE)
 
+I am currently creating a hardware layer for PiPLC at https://github.com/Chrismettal/OpenPLC_v3. This should allow easy adressing of all IO while enabling native use of Modbus and other interfaces. The regular "Rpi" layer should also be compatible, but I²C, Modbus and KNX might not work, and I1-8 / Q1-8 adressing might be a bit unintuitive (See [GPIO mapping table](##-GPIO-mapping))
+
+<details>
+<summary>Installation</summary>
+TODO installation steps
+</details>
+
+<details>
+<summary>Example usage</summary>
+TODO usage example
+</details>
+
+### Home Assistant
+
+[Home Assistant](https://www.home-assistant.io/) is an open source smart-home automation software, that provides logic, visualization and automation in a single place. It allows you to connect practically everything to your home under one interface, awakening your smart home.
+
+Home Assistant seems to move away from local hardware IO a bit, instead focussing on devices in your LAN / WiFi. That doesn't mean though, that it isn't fully capable of running on an actual PLC, giving you control of your devices without a middle man or WiFi shenanigans. This is where the `NC5121` KNX interface comes into play, which enables you to talk to a vast variety of off-the-shelf decentralised ACTUAL smart home components (No supplier apps, no accounts, no telemetry) without needing to go through an KNX-IP interface first.
+
+<details>
+<summary>Installation</summary>
 TODO installation steps
 TODO knxd
 TODO modbus
 
+> [!NOTE]  
+> See also [Wago header | KNX / NCN5121](#wago-header--knx--ncn5121) for general knxd installation steps
+
+> [!NOTE]  
+> See also [J2 | Modbus](#j2--modbus) for general Modbus installation steps
+</details>
+
+<details>
+<summary>Example usage</summary>
+TODO usage example
+</details>
+
 ### Codesys
 
-TODO? Not open source so might not do. No reason why it shouldn't work tho.
+TODO? Not open source so might not do. No reason why it shouldn't work tho. Let me know if this is an interesting usecase for you, so I might invest the time (and licensing cost) to document compatibility. Sending a [license for the RPI runtime](https://store.codesys.com/codesys-control-for-raspberry-pi-sl.html) my way would ~~force~~ guarantee me to put in the time to make it compatible.
 
 ---
 
