@@ -140,7 +140,7 @@ OpenPLC natively supports Modbus to talk to more I/O, while Homeassistant has a 
 > After rebooting you should see the new serial port `/dev/ttyAMA3` when executing `ls /dev/tty*`
 
 <details>
-<summary>**Example usage**</summary>
+<summary>Example usage</summary>
 
 TODO usage example on OpenPLC
 TODO usage example on Homeassistant
@@ -189,7 +189,7 @@ https://raspberrypi.stackexchange.com/questions/45570/how-do-i-make-serial-work-
 As with the digital inputs, each output features a status LED found on the HMI subboard.
 
 <details>
-<summary>**Example usage**</summary>
+<summary>Example usage</summary>
 
 TODO usage example
 
@@ -216,7 +216,7 @@ If choosing to use the GPIO as inputs, bear in mind that the Pi's GPIO are only 
 Choosing to actually use the PWM outputs, you have both hardware PWM's available to you here.
 
 <details>
-<summary>**Example usage**</summary>
+<summary>Example usage</summary>
 
 TODO usage example
 
@@ -237,7 +237,7 @@ Here you have a protected, somewhat isolated 5 V tolerant I²C header with integ
 You do have the option however, to attach whatever I²C device you want, provided the runtime you are using supports I²C communication.
 
 <details>
-<summary>**Example usage**</summary>
+<summary>Example usage</summary>
 
 TODO usage example
 
@@ -259,7 +259,7 @@ This header contains `GPIO_04` for native 1-Wire capability.
 1-Wire is usually used for temperature sensors, like `DS18B20`, or battery voltage sensing, but is sometimes also used for access control with iButtons.
 
 <details>
-<summary>**Example usage**</summary>
+<summary>Example usage</summary>
 
 TODO usage example
 
@@ -307,7 +307,7 @@ Input currents are as follows:
 | 24 V    | 5 mA          |
 
 <details>
-<summary>**Example usage**</summary>
+<summary>Example usage</summary>
 
 TODO usage example
 
@@ -340,7 +340,7 @@ In this board, the NC5121 is NOT supplied through the KNX supply, but through th
 > reboot
 
 <details>
-<summary>**Example usage**</summary>
+<summary>Example usage</summary>
 
 TODO usage example
 
@@ -359,7 +359,7 @@ Consisting of a separate runtime and editor, it can run on regular PCs as a soft
 I am currently creating a hardware layer for PiPLC at https://github.com/Chrismettal/OpenPLC_v3. This should allow easy adressing of all IO while enabling native use of Modbus and other interfaces. The regular "Rpi" layer should also be compatible, but I²C, Modbus and KNX might not work, and I1-8 / Q1-8 adressing might be a bit unintuitive (See [GPIO mapping table](##-GPIO-mapping))
 
 <details>
-<summary>**Installation**</summary>
+<summary>Installation</summary>
 
 1. You are going to need a fresh installation of [Raspberry Pi OS](https://www.raspberrypi.com/software/) on your Pi 4. There is an official [getting started guide](https://www.raspberrypi.com/documentation/computers/getting-started.html) that is being kept up to date, so the first steps are not further described here.
 
@@ -383,14 +383,14 @@ I am currently creating a hardware layer for PiPLC at https://github.com/Chrisme
 
 9. After enabling UART3 [as described above](#j2--modbus) and rebooting your Pi, you should see /dev/AMA3 be available as a COM port for Modbus slaves:
 
-![ModbusCOM](/img/OpenPLCManualModbusCOM.png)
+![ModbusCOM](/img/OpenPLCManual/ModbusCOM.png)
 
 10. That's all there is to install the base OpenPLC install. There is currently no easy way to enable KNX connectivity, and while I²C connectivity from OpenPLC is possible, it is currently not implemented in the hardware layer. See the usage example below for further information. Also see the [OpenPLC getting started guide](https://autonomylogic.com/docs/openplc-overview/) for general instructions on how to upload code to your OpenPLC instance
 
 </details>
 
 <details>
-<summary>**Example usage**</summary>
+<summary>Example usage</summary>
 
 TODO usage example
 
@@ -405,7 +405,8 @@ TODO usage example
 Home Assistant seems to move away from local hardware IO a bit, instead focussing on devices in your LAN / WiFi. That doesn't mean though, that it isn't fully capable of running on an actual PLC, giving you control of your devices without a middle man or WiFi shenanigans. This is where the `NC5121` KNX interface comes into play, which enables you to talk to a vast variety of off-the-shelf decentralised ACTUAL smart home components (No supplier apps, no accounts, no telemetry) without needing to go through an KNX-IP interface first.
 
 <details>
-<summary>**Installation**</summary>
+<summary>Installation
+</summary>
 
 TODO installation steps
 TODO knxd
@@ -420,7 +421,7 @@ TODO modbus
 </details>
 
 <details>
-<summary>**Example usage**</summary>
+<summary>Example usage</summary>
 
 TODO usage example
 
