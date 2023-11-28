@@ -42,7 +42,11 @@ All the parts are or will be stocked at Tindie!
   - [Wago header | KNX / NCN5121](#wago-header--knx--ncn5121)
 - [Software](#software)
   - [OpenPLC](#openplc)
+    - [Installation](#installation)
+    - [Example](#example)
   - [Home Assistant](#home-assistant)
+    - [Installation](#installation-1)
+    - [Example](#example-1)
   - [Codesys](#codesys)
 - [Making your own](#making-your-own)
   - [Boards](#boards)
@@ -61,34 +65,34 @@ All the parts are or will be stocked at Tindie!
 
 ## GPIO mapping
 
-| GPIO Name | RPI Header<br>Pin Nbr | PiPLC naming                  | OpenPLC<br>RPI mapping | Usable with<br>OpenPLC                         |
-| :-------: | :-------------------: | :---------------------------- | :--------------------: | :--------------------------------------------- |
-| `GPIO_02` |         `03`          | :blue_square: I²C SDA         |        `%IX0.0`        | :warning: TODO I²C through driver?             |
-| `GPIO_03` |         `05`          | :blue_square: I²C SCL         |        `%IX0.1`        | :warning: TODO I²C through driver?             |
-| `GPIO_04` |         `07`          | :blue_square: Modbus UART TX  |        `%IX0.2`        | :warning: TODO Modbus through driver?          |
-| `GPIO_05` |         `29`          | :blue_square: Modbus UART RX  |        `%IX1.1`        | :warning: TODO Modbus through driver?          |
-| `GPIO_06` |         `31`          | :blue_square: Modbus UART RTS |        `%IX1.2`        | :warning: TODO Modbus through driver?          |
-| `GPIO_07` |         `26`          | :red_square: Q4               |        `%QX0.6`        | :white_check_mark: Relay output                |
-| `GPIO_08` |         `24`          | :red_square: Q3               |        `%QX0.5`        | :white_check_mark: Relay output                |
-| `GPIO_09` |         `21`          | :yellow_square: I5            |        `%IX0.7`        | :white_check_mark: Protected input             |
-| `GPIO_10` |         `19`          | :yellow_square: I4            |        `%IX0.6`        | :white_check_mark: Protected input             |
-| `GPIO_11` |         `23`          | :yellow_square: I6            |        `%IX1.0`        | :white_check_mark: Protected input             |
-| `GPIO_12` |         `32`          | :red_square: Q5               |        `%QX0.7`        | :white_check_mark: Relay output                |
-| `GPIO_13` |         `33`          | :yellow_square: I7            |        `%IX1.3`        | :white_check_mark: Protected input             |
-| `GPIO_14` |         `08`          | :blue_square: KNX UART TX     |        `%QX0.0`        | :x: KNX not supported                          |
-| `GPIO_15` |         `10`          | :blue_square: KNX UART RX     |        `%QX0.1`        | :x: KNX not supported                          |
-| `GPIO_16` |         `36`          | :red_square: Q6               |        `%QX1.0`        | :white_check_mark: Relay output                |
-| `GPIO_17` |         `11`          | :yellow_square: I1            |        `%IX0.3`        | :white_check_mark: Protected input             |
-| `GPIO_18` |         `12`          | :orange_square: PWM_0         |        `%QW0.0`        | :ballot_box_with_check: Unprotected PWM output |
-| `GPIO_19` |         `35`          | :orange_square: PWM_1         |        `%QX1.0`        | :ballot_box_with_check: Unprotected PWM output |
-| `GPIO_20` |         `38`          | :red_square: Q7               |        `%QX1.1`        | :white_check_mark: Relay output                |
-| `GPIO_21` |         `40`          | :red_square: Q8               |        `%QX1.2`        | :white_check_mark: Relay output                |
-| `GPIO_22` |         `15`          | :yellow_square: I3            |        `%IX0.5`        | :white_check_mark: Protected input             |
-| `GPIO_23` |         `16`          | :blue_square: 1-Wire          |        `%QX0.2`        | :warning: 1-Wire through driver?               |
-| `GPIO_24` |         `18`          | :red_square: Q1               |        `%QX0.3`        | :white_check_mark: Relay output                |
-| `GPIO_25` |         `22`          | :red_square: Q2               |        `%QX0.4`        | :white_check_mark: Relay output                |
-| `GPIO_26` |         `37`          | :yellow_square: I8            |        `%IX1.5`        | :white_check_mark: Protected input             |
-| `GPIO_27` |         `13`          | :yellow_square: I2            |        `%IX0.4`        | :white_check_mark: Protected input             |
+| GPIO Name | PiPLC function                | OpenPLC<br>"PiPLC" mapping | Usable with<br>OpenPLC                         |
+| :-------: | :---------------------------- | :------------------------: | :--------------------------------------------- |
+| `GPIO_02` | :blue_square: I²C SDA         |             -              | :warning: TODO I²C through driver?             |
+| `GPIO_03` | :blue_square: I²C SCL         |             -              | :warning: TODO I²C through driver?             |
+| `GPIO_04` | :blue_square: Modbus UART TX  |             -              | :white_check_mark: Full Modbus RTU @ /dev/AMA3 |
+| `GPIO_05` | :blue_square: Modbus UART RX  |             -              | :white_check_mark: Full Modbus RTU @ /dev/AMA3 |
+| `GPIO_06` | :blue_square: Modbus UART RTS |             -              | :white_check_mark: Full Modbus RTU @ /dev/AMA3 |
+| `GPIO_07` | :red_square: Q4               |          `%QX0.3`          | :white_check_mark: Relay output                |
+| `GPIO_08` | :red_square: Q3               |          `%QX0.2`          | :white_check_mark: Relay output                |
+| `GPIO_09` | :yellow_square: I5            |          `%IX0.4`          | :white_check_mark: Protected input             |
+| `GPIO_10` | :yellow_square: I4            |          `%IX0.3`          | :white_check_mark: Protected input             |
+| `GPIO_11` | :yellow_square: I6            |          `%IX1.5`          | :white_check_mark: Protected input             |
+| `GPIO_12` | :red_square: Q5               |          `%QX0.4`          | :white_check_mark: Relay output                |
+| `GPIO_13` | :yellow_square: I7            |          `%IX0.6`          | :white_check_mark: Protected input             |
+| `GPIO_14` | :blue_square: KNX UART TX     |             -              | :x: KNX not supported                          |
+| `GPIO_15` | :blue_square: KNX UART RX     |             -              | :x: KNX not supported                          |
+| `GPIO_16` | :red_square: Q6               |          `%QX0.5`          | :white_check_mark: Relay output                |
+| `GPIO_17` | :yellow_square: I1            |          `%IX0.0`          | :white_check_mark: Protected input             |
+| `GPIO_18` | :orange_square: PWM_0         |          `%QW0.0`          | :ballot_box_with_check: Unprotected PWM output |
+| `GPIO_19` | :orange_square: PWM_1         |          `%QW0.1`          | :ballot_box_with_check: Unprotected PWM output |
+| `GPIO_20` | :red_square: Q7               |          `%QX0.6`          | :white_check_mark: Relay output                |
+| `GPIO_21` | :red_square: Q8               |          `%QX0.7`          | :white_check_mark: Relay output                |
+| `GPIO_22` | :yellow_square: I3            |          `%IX0.2`          | :white_check_mark: Protected input             |
+| `GPIO_23` | :blue_square: 1-Wire          |             -              | :warning: TODO 1-Wire through driver?          |
+| `GPIO_24` | :red_square: Q1               |          `%QX0.0`          | :white_check_mark: Relay output                |
+| `GPIO_25` | :red_square: Q2               |          `%QX0.1`          | :white_check_mark: Relay output                |
+| `GPIO_26` | :yellow_square: I8            |          `%IX0.7`          | :white_check_mark: Protected input             |
+| `GPIO_27` | :yellow_square: I2            |          `%IX0.1`          | :white_check_mark: Protected input             |
 
 Pins marked unusable with OpenPLC are either not broken out, or differ too much from OpenPLC's mapping. As OpenPLC's mapping is immutable, these pins might not be used if PiPLC is used with the OpenPLC runtime and Pi default hardware layer.
 
@@ -140,7 +144,7 @@ OpenPLC natively supports Modbus to talk to more I/O, while Homeassistant has a 
 > After rebooting you should see the new serial port `/dev/ttyAMA3` when executing `ls /dev/tty*`
 
 <details>
-<summary>Example usage</summary>
+<summary>Example - click to expand</summary>
 
 TODO usage example on OpenPLC
 TODO usage example on Homeassistant
@@ -189,7 +193,7 @@ https://raspberrypi.stackexchange.com/questions/45570/how-do-i-make-serial-work-
 As with the digital inputs, each output features a status LED found on the HMI subboard.
 
 <details>
-<summary>Example usage</summary>
+<summary>Example - click to expand</summary>
 
 TODO usage example
 
@@ -216,7 +220,7 @@ If choosing to use the GPIO as inputs, bear in mind that the Pi's GPIO are only 
 Choosing to actually use the PWM outputs, you have both hardware PWM's available to you here.
 
 <details>
-<summary>Example usage</summary>
+<summary>Example - click to expand</summary>
 
 TODO usage example
 
@@ -237,7 +241,7 @@ Here you have a protected, somewhat isolated 5 V tolerant I²C header with integ
 You do have the option however, to attach whatever I²C device you want, provided the runtime you are using supports I²C communication.
 
 <details>
-<summary>Example usage</summary>
+<summary>Example - click to expand</summary>
 
 TODO usage example
 
@@ -259,7 +263,7 @@ This header contains `GPIO_04` for native 1-Wire capability.
 1-Wire is usually used for temperature sensors, like `DS18B20`, or battery voltage sensing, but is sometimes also used for access control with iButtons.
 
 <details>
-<summary>Example usage</summary>
+<summary>Example - click to expand</summary>
 
 TODO usage example
 
@@ -294,7 +298,8 @@ TODO usage example
 8 digital inputs are found at the top of the device. These inputs are 5-24 V tolerant current sinking inputs through `EL817C` optocouplers. 
 J10 features 24 V outputs to easily supply switches or other sensors feeding back into J11-J12 as inputs.
 
-All inputs feature a status LED driven by the optocoupler output, thus not loading the input. 
+All inputs feature a status//Order is intentional to match the GPIO mapping table of PiPLC at https://github.com/chrismettal/piplc#gpio-mapping
+//while having all relays mapped "in order" from left to right LED driven by the optocoupler output, thus not loading the input. 
 
 On the Raspberry side, pullups need to be enabled on the GPIOs to enable reading from these input stages.
 
@@ -307,7 +312,7 @@ Input currents are as follows:
 | 24 V    | 5 mA          |
 
 <details>
-<summary>Example usage</summary>
+<summary>Example - click to expand</summary>
 
 TODO usage example
 
@@ -340,7 +345,7 @@ In this board, the NC5121 is NOT supplied through the KNX supply, but through th
 > reboot
 
 <details>
-<summary>Example usage</summary>
+<summary>Example - click to expand</summary>
 
 TODO usage example
 
@@ -358,8 +363,10 @@ Consisting of a separate runtime and editor, it can run on regular PCs as a soft
 
 I am currently creating a hardware layer for PiPLC at https://github.com/Chrismettal/OpenPLC_v3. This should allow easy adressing of all IO while enabling native use of Modbus and other interfaces. The regular "Rpi" layer should also be compatible, but I²C, Modbus and KNX might not work, and I1-8 / Q1-8 adressing might be a bit unintuitive (See [GPIO mapping table](##-GPIO-mapping))
 
+#### Installation
+
 <details>
-<summary>Installation</summary>
+<summary>Click to expand</summary>
 
 1. You are going to need a fresh installation of [Raspberry Pi OS](https://www.raspberrypi.com/software/) on your Pi 4. There is an official [getting started guide](https://www.raspberrypi.com/documentation/computers/getting-started.html) that is being kept up to date, so the first steps are not further described here.
 
@@ -385,12 +392,14 @@ I am currently creating a hardware layer for PiPLC at https://github.com/Chrisme
 
 ![ModbusCOM](/img/OpenPLCManual/ModbusCOM.png)
 
-10. That's all there is to install the base OpenPLC install. There is currently no easy way to enable KNX connectivity, and while I²C connectivity from OpenPLC is possible, it is currently not implemented in the hardware layer. See the usage example below for further information. Also see the [OpenPLC getting started guide](https://autonomylogic.com/docs/openplc-overview/) for general instructions on how to upload code to your OpenPLC instance
+10. That's all there is to install the base OpenPLC install. There is currently no easy way to enable KNX or 1-Wire connectivity, and while I²C connectivity from OpenPLC is possible, it is currently not implemented in the hardware layer. All of these might be done in future within said hardware layer. See the usage example below for further information. Also see the [OpenPLC getting started guide](https://autonomylogic.com/docs/openplc-overview/) for general instructions on how to upload code to your OpenPLC instance
 
 </details>
 
+#### Example
+
 <details>
-<summary>Example usage</summary>
+<summary>Click to expand</summary>
 
 TODO usage example
 
@@ -404,24 +413,25 @@ TODO usage example
 
 Home Assistant seems to move away from local hardware IO a bit, instead focussing on devices in your LAN / WiFi. That doesn't mean though, that it isn't fully capable of running on an actual PLC, giving you control of your devices without a middle man or WiFi shenanigans. This is where the `NC5121` KNX interface comes into play, which enables you to talk to a vast variety of off-the-shelf decentralised ACTUAL smart home components (No supplier apps, no accounts, no telemetry) without needing to go through an KNX-IP interface first.
 
+#### Installation
+
 <details>
-<summary>Installation
-</summary>
+<summary>Click to expand</summary>
 
 TODO installation steps
 TODO knxd
 TODO modbus
 
-> [!NOTE]  
 > See also [Wago header | KNX / NCN5121](#wago-header--knx--ncn5121) for general knxd installation steps
 
-> [!NOTE]  
 > See also [J2 | Modbus](#j2--modbus) for general Modbus installation steps
 
 </details>
 
+#### Example
+
 <details>
-<summary>Example usage</summary>
+<summary>Click to expand</summary>
 
 TODO usage example
 
