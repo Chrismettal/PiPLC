@@ -128,25 +128,32 @@ The wire based one used here is called `Modbus RTU` and is based on half-duplex 
 OpenPLC natively supports Modbus to talk to more I/O, while Homeassistant has a [Modbus integration](https://www.home-assistant.io/integrations/modbus/).
 
 > [!NOTE]  
-> To enable Modbus on your pi, make sure to enable `UART3` at GPIO5/06
+> To enable Modbus on your pi, make sure to enable `UART3` at GPIO5/06. We also need to enable the `ctsrts` option.
 > This UART is not enabled by default and is only present on Raspberry Pi models 4 and up!
 >
 > In `/boot/config.txt` add:
-> TODO how to enable Modbus
+> 
+> `dtoverlay=uart3,ctsrts`
 >
-> reboot
+> and reboot afterwards
+>
+> After rebooting you should see the new serial port `/dev/ttyAMA3` when executing `ls /dev/tty*`
 
 <details>
-<summary>Example usage</summary>
+<summary>**Example usage**</summary>
+
 TODO usage example on OpenPLC
 TODO usage example on Homeassistant
+
 </details>
 
 <details>
 <summary>Further reading</summary>
+
 https://raspberrypi.stackexchange.com/questions/104464/where-are-the-uarts-on-the-raspberry-pi-4 
 
 https://raspberrypi.stackexchange.com/questions/45570/how-do-i-make-serial-work-on-the-raspberry-pi3-pizerow-pi4-or-later-models/107780#107780
+
 </details>
 
 ---
@@ -182,8 +189,10 @@ https://raspberrypi.stackexchange.com/questions/45570/how-do-i-make-serial-work-
 As with the digital inputs, each output features a status LED found on the HMI subboard.
 
 <details>
-<summary>Example usage</summary>
+<summary>**Example usage**</summary>
+
 TODO usage example
+
 </details>
 
 > [!WARNING]
@@ -207,8 +216,10 @@ If choosing to use the GPIO as inputs, bear in mind that the Pi's GPIO are only 
 Choosing to actually use the PWM outputs, you have both hardware PWM's available to you here.
 
 <details>
-<summary>Example usage</summary>
+<summary>**Example usage**</summary>
+
 TODO usage example
+
 </details>
 
 > [!WARNING]
@@ -226,8 +237,10 @@ Here you have a protected, somewhat isolated 5 V tolerant I²C header with integ
 You do have the option however, to attach whatever I²C device you want, provided the runtime you are using supports I²C communication.
 
 <details>
-<summary>Example usage</summary>
+<summary>**Example usage**</summary>
+
 TODO usage example
+
 </details>
 
 > [!WARNING]
@@ -246,8 +259,10 @@ This header contains `GPIO_04` for native 1-Wire capability.
 1-Wire is usually used for temperature sensors, like `DS18B20`, or battery voltage sensing, but is sometimes also used for access control with iButtons.
 
 <details>
-<summary>Example usage</summary>
+<summary>**Example usage**</summary>
+
 TODO usage example
+
 </details>
 
 > [!WARNING]
@@ -292,8 +307,10 @@ Input currents are as follows:
 | 24 V    | 5 mA          |
 
 <details>
-<summary>Example usage</summary>
+<summary>**Example usage**</summary>
+
 TODO usage example
+
 </details>
 
 ---
@@ -323,8 +340,10 @@ In this board, the NC5121 is NOT supplied through the KNX supply, but through th
 > reboot
 
 <details>
-<summary>Example usage</summary>
+<summary>**Example usage**</summary>
+
 TODO usage example
+
 </details>
 
 ---
@@ -340,10 +359,11 @@ Consisting of a separate runtime and editor, it can run on regular PCs as a soft
 I am currently creating a hardware layer for PiPLC at https://github.com/Chrismettal/OpenPLC_v3. This should allow easy adressing of all IO while enabling native use of Modbus and other interfaces. The regular "Rpi" layer should also be compatible, but I²C, Modbus and KNX might not work, and I1-8 / Q1-8 adressing might be a bit unintuitive (See [GPIO mapping table](##-GPIO-mapping))
 
 <details>
-<summary>Installation</summary>
+<summary>**Installation**</summary>
+
 1. You are going to need a fresh installation of [Raspberry Pi OS](https://www.raspberrypi.com/software/) on your Pi 4. There is an official [getting started guide](https://www.raspberrypi.com/documentation/computers/getting-started.html) that is being kept up to date, so the first steps are not further described here.
 
-2. Execute `git clone https://github.com/chrismettal/OpenPLC_v3` on your Pi
+2. Execute `git clone https://github.com/chrismettal/OpenPLC_v3` on your Pi.
 
 3. `cd OpenPLC_v3` to enter the just cloned folder
 
@@ -351,7 +371,7 @@ I am currently creating a hardware layer for PiPLC at https://github.com/Chrisme
 
 5. After a reboot, your OpenPLC installation's webinterface should be accessible on port 8080 on your Pi. Either try to access it at `127.0.0.1:8080` locally on your pi, or access it through your Pi's IP adress in your host computer.
 
-6. The default credentials will be `Name: openplc`, `Password: openplc`. You should change these right after logging in for the first time. To do so, use the "Users" tab and edit the default "openplc" account:
+6. The default credentials will be `Name: openplc`, `Password: openplc`. You might want to change these right after logging in for the first time. To do so, use the "Users" tab and edit the default "openplc" account:
 
 ![OpenPLCUsers](/img/OpenPLCManual/Users.png)
 
@@ -359,13 +379,24 @@ I am currently creating a hardware layer for PiPLC at https://github.com/Chrisme
 
 ![OpenPLCHardware](/img/OpenPLCManual/Hardware.png)
 
+8. That should be it for a base installation. You should now have access to D1-8 and Q1-8 already, but you won't see Modbus RTU yet for slave devices. Instructions how to enable the Modbus COM port are found at [J2 | Modbus](#j2--modbus).
+
+9. After enabling UART3 [as described above](#j2--modbus) and rebooting your Pi, you should see /dev/AMA3 be available as a COM port for Modbus slaves:
+
+![ModbusCOM](/img/OpenPLCManualModbusCOM.png)
+
+10. That's all there is to install the base OpenPLC install. There is currently no easy way to enable KNX connectivity, and while I²C connectivity from OpenPLC is possible, it is currently not implemented in the hardware layer. See the usage example below for further information. Also see the [OpenPLC getting started guide](https://autonomylogic.com/docs/openplc-overview/) for general instructions on how to upload code to your OpenPLC instance
 
 </details>
 
 <details>
-<summary>Example usage</summary>
+<summary>**Example usage**</summary>
+
 TODO usage example
+
 </details>
+
+---
 
 ### Home Assistant
 
@@ -374,7 +405,8 @@ TODO usage example
 Home Assistant seems to move away from local hardware IO a bit, instead focussing on devices in your LAN / WiFi. That doesn't mean though, that it isn't fully capable of running on an actual PLC, giving you control of your devices without a middle man or WiFi shenanigans. This is where the `NC5121` KNX interface comes into play, which enables you to talk to a vast variety of off-the-shelf decentralised ACTUAL smart home components (No supplier apps, no accounts, no telemetry) without needing to go through an KNX-IP interface first.
 
 <details>
-<summary>Installation</summary>
+<summary>**Installation**</summary>
+
 TODO installation steps
 TODO knxd
 TODO modbus
@@ -384,12 +416,17 @@ TODO modbus
 
 > [!NOTE]  
 > See also [J2 | Modbus](#j2--modbus) for general Modbus installation steps
+
 </details>
 
 <details>
-<summary>Example usage</summary>
+<summary>**Example usage**</summary>
+
 TODO usage example
+
 </details>
+
+---
 
 ### Codesys
 
