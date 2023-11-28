@@ -74,11 +74,11 @@ All the parts are or will be stocked at Tindie!
 | `GPIO_16` |         `36`          | :red_square: Q6               |        `%QX1.0`        | :white_check_mark: Relay output                |
 | `GPIO_17` |         `11`          | :yellow_square: I1            |        `%IX0.3`        | :white_check_mark: Protected input             |
 | `GPIO_18` |         `12`          | :orange_square: PWM_0         |        `%QW0.0`        | :ballot_box_with_check: Unprotected PWM output |
-| `GPIO_19` |         `35`          | :orange_square: PWM_1         |        `%QX1.0`        | :white_check_mark: Relay output                |
+| `GPIO_19` |         `35`          | :orange_square: PWM_1         |        `%QX1.0`        | :ballot_box_with_check: Unprotected PWM output |
 | `GPIO_20` |         `38`          | :red_square: Q7               |        `%QX1.1`        | :white_check_mark: Relay output                |
 | `GPIO_21` |         `40`          | :red_square: Q8               |        `%QX1.2`        | :white_check_mark: Relay output                |
 | `GPIO_22` |         `15`          | :yellow_square: I3            |        `%IX0.5`        | :white_check_mark: Protected input             |
-| `GPIO_23` |         `16`          | :blue_square: 1-Wire          |        `%QX0.2`        | :white_check_mark: Relay output                |
+| `GPIO_23` |         `16`          | :blue_square: 1-Wire          |        `%QX0.2`        | :warning: 1-Wire through driver?               |
 | `GPIO_24` |         `18`          | :red_square: Q1               |        `%QX0.3`        | :white_check_mark: Relay output                |
 | `GPIO_25` |         `22`          | :red_square: Q2               |        `%QX0.4`        | :white_check_mark: Relay output                |
 | `GPIO_26` |         `37`          | :yellow_square: I8            |        `%IX1.5`        | :white_check_mark: Protected input             |
