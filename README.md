@@ -341,7 +341,25 @@ I am currently creating a hardware layer for PiPLC at https://github.com/Chrisme
 
 <details>
 <summary>Installation</summary>
-TODO installation steps
+1. You are going to need a fresh installation of [Raspberry Pi OS](https://www.raspberrypi.com/software/) on your Pi 4. There is an official [getting started guide](https://www.raspberrypi.com/documentation/computers/getting-started.html) that is being kept up to date, so the first steps are not further described here.
+
+2. Execute `git clone https://github.com/chrismettal/OpenPLC_v3` on your Pi
+
+3. `cd OpenPLC_v3` to enter the just cloned folder
+
+4. `./install rpi` will start the full OpenPLC installation. (This will take a few minutes)
+
+5. After a reboot, your OpenPLC installation's webinterface should be accessible on port 8080 on your Pi. Either try to access it at `127.0.0.1:8080` locally on your pi, or access it through your Pi's IP adress in your host computer.
+
+6. The default credentials will be `Name: openplc`, `Password: openplc`. You should change these right after logging in for the first time. To do so, use the "Users" tab and edit the default "openplc" account:
+
+![OpenPLCUsers](/img/OpenPLCManual/Users.png)
+
+7. Head over to the "Hardware" tab to select the hardware layer. Select and save the "PiPLC" layer (Exact name might differ once merged upstream):
+
+![OpenPLCHardware](/img/OpenPLCManual/Hardware.png)
+
+
 </details>
 
 <details>
