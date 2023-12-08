@@ -1,0 +1,186 @@
+<?xml version='1.0' encoding='utf-8'?>
+<project xmlns:ns1="http://www.plcopen.org/xml/tc6_0201" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.plcopen.org/xml/tc6_0201">
+  <fileHeader companyName="Binary-6" productName="PiPLC_DemoProduct" productVersion="1" creationDateTime="2023-12-08T21:28:31" companyURL="Binary-6.de"/>
+  <contentHeader name="OpenPLC_Testing" modificationDateTime="2023-12-08T22:07:56" author="Chrismettal" language="en-US">
+    <coordinateInfo>
+      <fbd>
+        <scaling x="10" y="10"/>
+      </fbd>
+      <ld>
+        <scaling x="10" y="10"/>
+      </ld>
+      <sfc>
+        <scaling x="10" y="10"/>
+      </sfc>
+    </coordinateInfo>
+  </contentHeader>
+  <types>
+    <dataTypes/>
+    <pous>
+      <pou name="MAIN" pouType="program">
+        <interface>
+          <localVars>
+            <variable name="Input_I1" address="%IX0.0">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="Input_I2" address="%IX0.1">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="Input_I3" address="%IX0.2">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="Input_I4" address="%IX0.3">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="Input_I5" address="%IX0.4">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="Input_I6" address="%IX0.5">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="Input_I7" address="%IX0.6">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="Input_I8" address="%IX0.7">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="Output_Q1" address="%QX0.0">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="Output_Q2" address="%QX0.1">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="Output_Q3" address="%QX0.2">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="Output_Q4" address="%QX0.3">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="Output_Q5" address="%QX0.4">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="Output_Q6" address="%QX0.5">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="Output_Q7" address="%QX0.6">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="Output_Q8" address="%QX0.7">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="PWM_0" address="%QW0.0">
+              <type>
+                <WORD/>
+              </type>
+              <initialValue>
+                <simpleValue value="0"/>
+              </initialValue>
+            </variable>
+            <variable name="PWM_1" address="%QW0.1">
+              <type>
+                <WORD/>
+              </type>
+              <initialValue>
+                <simpleValue value="0"/>
+              </initialValue>
+            </variable>
+          </localVars>
+          <localVars>
+            <variable name="InitDone">
+              <type>
+                <BOOL/>
+              </type>
+              <initialValue>
+                <simpleValue value="FALSE"/>
+              </initialValue>
+            </variable>
+          </localVars>
+        </interface>
+        <body>
+          <ST>
+            <xhtml:p><![CDATA[(* This is a testing program to test most functions on a PiPLC *)
+
+IF NOT InitDone THEN
+  (* Oneshots at init *)
+
+  (* PWM demo, set an arbitrary duty cycle to PWM outputs. *)
+  PWM_0 := 32767; (* ~50% Duty Cycle *)
+  PWM_1 := 16383; (* ~25% Duty Cycle *)
+    
+  (* Set InitDone so we execute cyclic tasks starting next scan *)
+  InitDone := TRUE;
+
+ELSE
+  (* Cyclic calls after init oneshots*)
+  
+  (* Digital I/O demo. Pass Ix to Qx live *)
+  Output_Q1 := Input_I1;
+  Output_Q2 := Input_I2;
+  Output_Q3 := Input_I3;
+  Output_Q4 := Input_I4;
+  Output_Q5 := Input_I5;
+  Output_Q6 := Input_I6;
+  Output_Q7 := Input_I7;
+  Output_Q8 := Input_I8;
+
+  (* TODO 1-Wire demo here *)
+  
+  (* TODO I2C demo here *)
+  
+  (* TODO Modbus demo here *)
+  
+  
+  
+  
+END_IF;
+
+]]></xhtml:p>
+          </ST>
+        </body>
+      </pou>
+    </pous>
+  </types>
+  <instances>
+    <configurations>
+      <configuration name="Config0">
+        <resource name="Res0">
+          <task name="PlcTask" priority="0" interval="T#20ms">
+            <pouInstance name="instance0" typeName="MAIN"/>
+          </task>
+        </resource>
+      </configuration>
+    </configurations>
+  </instances>
+</project>

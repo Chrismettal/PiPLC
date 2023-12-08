@@ -55,3 +55,6 @@ Notebook.md
 # Drawio
 *.dtmp
 *.drawio.bkp
+
+# OpenPLC
+build/
