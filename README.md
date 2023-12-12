@@ -84,8 +84,8 @@ All the parts are or will be stocked at Tindie!
 | `GPIO_15` | :blue_square: KNX RX     |               -               | :x: KNX not supported                   | :white_check_mark: TODO Link  |
 | `GPIO_16` | :red_square: Q6          |           `%QX0.5`            | :white_check_mark: Relay output         | :white_check_mark: TODO Link  |
 | `GPIO_17` | :yellow_square: I1       |           `%IX0.0`            | :white_check_mark: Protected input      | :white_check_mark: TODO Link  |
-| `GPIO_18` | :orange_square: PWM_0    |           `%QW0.0`            | :ballot_box_with_check: PWM output      | :white_check_mark: TODO Link  |
-| `GPIO_19` | :orange_square: PWM_1    |           `%QW0.1`            | :ballot_box_with_check:  PWM output     | :white_check_mark: TODO Link  |
+| `GPIO_18` | :orange_square: PWM_0    |           `%QW0`              | :ballot_box_with_check: PWM output      | :white_check_mark: TODO Link  |
+| `GPIO_19` | :orange_square: PWM_1    |           `%QW1`              | :ballot_box_with_check:  PWM output     | :white_check_mark: TODO Link  |
 | `GPIO_20` | :red_square: Q7          |           `%QX0.6`            | :white_check_mark: Relay output         | :white_check_mark: TODO Link  |
 | `GPIO_21` | :red_square: Q8          |           `%QX0.7`            | :white_check_mark: Relay output         | :white_check_mark: TODO Link  |
 | `GPIO_22` | :yellow_square: I3       |           `%IX0.2`            | :white_check_mark: Protected input      | :white_check_mark: TODO Link  |
