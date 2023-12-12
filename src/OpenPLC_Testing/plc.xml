@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <project xmlns:ns1="http://www.plcopen.org/xml/tc6_0201" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.plcopen.org/xml/tc6_0201">
   <fileHeader companyName="Binary-6" productName="PiPLC_DemoProduct" productVersion="1" creationDateTime="2023-12-08T21:28:31" companyURL="Binary-6.de"/>
-  <contentHeader name="OpenPLC_Testing" modificationDateTime="2023-12-09T18:12:15" author="Chrismettal" language="en-US">
+  <contentHeader name="OpenPLC_Testing" modificationDateTime="2023-12-12T16:54:12" author="Chrismettal" language="en-US">
     <coordinateInfo>
       <fbd>
         <scaling x="10" y="10"/>
@@ -104,17 +104,11 @@
               <type>
                 <WORD/>
               </type>
-              <initialValue>
-                <simpleValue value="0"/>
-              </initialValue>
             </variable>
             <variable name="PWM_1" address="%QW1">
               <type>
                 <WORD/>
               </type>
-              <initialValue>
-                <simpleValue value="0"/>
-              </initialValue>
             </variable>
           </localVars>
           <localVars>
@@ -128,36 +122,27 @@
             </variable>
           </localVars>
           <localVars>
-            <variable name="ChingIO_Q1" address="%QX100.0">
+            <variable name="ModIO_Q1" address="%QX100.0">
               <type>
                 <BOOL/>
               </type>
-              <initialValue>
-                <simpleValue value="FALSE"/>
-              </initialValue>
             </variable>
-            <variable name="ChingIO_Q2" address="%QX100.1">
+            <variable name="ModIO_Q2" address="%QX100.1">
               <type>
                 <BOOL/>
               </type>
-              <initialValue>
-                <simpleValue value="TRUE"/>
-              </initialValue>
             </variable>
-            <variable name="ChingIO_Q3" address="%QX100.2">
+            <variable name="ModIO_Q3" address="%QX100.2">
               <type>
                 <BOOL/>
               </type>
-              <initialValue>
-                <simpleValue value="FALSE"/>
-              </initialValue>
             </variable>
-            <variable name="ChingIO_Q4" address="%QX100.3">
+            <variable name="ModIO_Q4" address="%QX100.3">
               <type>
                 <BOOL/>
               </type>
               <initialValue>
-                <simpleValue value="TRUE"/>
+                <simpleValue value=""/>
               </initialValue>
             </variable>
           </localVars>
@@ -190,20 +175,17 @@ ELSE
   Output_Q7 := Input_I7;
   Output_Q8 := Input_I8;
 
-  ChingIO_Q1 := Input_I1;
-  ChingIO_Q2 := Input_I2;
-  ChingIO_Q3 := Input_I3;
-  ChingIO_Q4 := Input_I4;
-
+  (* Write out Modbus outputs *)
+  ModIO_Q1  := Input_I1;
+  ModIO_Q2  := Input_I2;
+  ModIO_Q3  := Input_I3;
+  ModIO_Q4  := Input_I4;
 
   (* TODO 1-Wire demo here *)
   
   (* TODO I2C demo here *)
   
-  (* TODO Modbus demo here *)
-  
 END_IF;
-
 ]]></xhtml:p>
           </ST>
         </body>
