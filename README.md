@@ -132,19 +132,25 @@ At `J3`, 3V3 from the RPI can be used to draw up to 500mA (protected through a p
 Modbus is an industrial communication protocol often used with PLCs communicating with I/O extensions or other PLCs. 
 The wire based one used here is called `Modbus RTU` and is based on half-duplex RS-485 so the header can also be used for that if you dislike Modbus. 
 
-OpenPLC natively supports Modbus to talk to more I/O, while Home Assistant has a [Modbus integration](https://www.home-assistant.io/integrations/modbus/).
+OpenPLC natively supports Modbus to talk to I/O, while Home Assistant has a [Modbus integration](https://www.home-assistant.io/integrations/modbus/).
 
 > [!NOTE]  
-> To enable Modbus on your pi, make sure to enable `UART3` at GPIO5/06. We also need to enable the `ctsrts` option.
+> To enable Modbus on your Pi, make sure to enable `UART3` at GPIO5/06.
 > This UART is not enabled by default and is only present on Raspberry Pi models 4 and up!
+>
+> We do NOT enable the `ctsrts` option as we don't want to run with hardware handshakes. We do however need to set/unset the `DE/NRE` pins of the RS485 transceiver IC. How to do this differs based on the chose OS.
 >
 > In `/boot/config.txt` add:
 > 
-> `dtoverlay=uart3,ctsrts`
+> `dtoverlay=uart3`
 >
 > and reboot afterwards
 >
 > After rebooting you should see the new serial port `/dev/ttyAMA3` when executing `ls /dev/tty*`
+>
+> For OpenPLC, if you followed the [installation guide](#installation) you should have installed my fork that includes `DE/NRE` control via `GPIO_6` so there should be nothing else for you to do
+>
+> For Home Assistant, TODO hardware change documentation
 
 <details>
 <summary>Example - click to expand</summary>
@@ -373,7 +379,7 @@ I am currently creating a hardware layer for PiPLC at https://github.com/Chrisme
 
 1. You are going to need a fresh installation of [Raspberry Pi OS](https://www.raspberrypi.com/software/) on your Pi 4. There is an official [getting started guide](https://www.raspberrypi.com/documentation/computers/getting-started.html) that is being kept up to date, so the first steps are not further described here.
 
-2. Execute `git clone https://github.com/chrismettal/OpenPLC_v3` on your Pi.
+2. Execute `git clone https://github.com/chrismettal/OpenPLC_v3` on your Pi. This will clone a forked version of the OpenPLC runtime that contains some changes to make it compatible with PiPLC. Should these changes get merged, this link will be changed to point to the official version.
 
 3. `cd OpenPLC_v3` to enter the just cloned folder
 
@@ -391,7 +397,7 @@ I am currently creating a hardware layer for PiPLC at https://github.com/Chrisme
 
 8. That should be it for a base installation. You should now have access to D1-8 and Q1-8 already, but you won't see Modbus RTU yet for slave devices. Instructions how to enable the Modbus COM port are found at [J2 | Modbus](#j2--modbus).
 
-9. After enabling UART3 [as described above](#j2--modbus) and rebooting your Pi, you should see /dev/AMA3 be available as a COM port for Modbus slaves:
+9. After enabling UART3 [as described above](#j2--modbus) and rebooting your Pi, you should see `/dev/AMA3` be available as a COM port for Modbus slaves:
 
 ![ModbusCOM](/img/OpenPLCManual/ModbusCOM.png)
 
