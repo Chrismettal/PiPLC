@@ -440,19 +440,29 @@ Home Assistant seems to move away from local hardware IO a bit, instead focussin
 ```
 mkdir ~/TempMount
 
-sudo mount -t vfat /dev/sdc1 ~/TempMount
+sudo mount -t vfat /dev/sdx1 ~/TempMount
 
 ```
 
 6. In the now mounted TempMount directory, you will find `Config.txt` where we can set dtoverlays to enable additional serial ports etc.
 
-7. Follow both the [KNX enabling guide](#wago-header--knx--ncn5121) as well as the [Modbus enabling guide](#j2--modbus), adding their specific dtoverlays to Config.txt. This will make sure the Pi knows to enable the required UART connections there.
+7. Follow both the [KNX enabling guide](#wago-header--knx--ncn5121) as well as the [Modbus enabling guide](#j2--modbus), adding their specific dtoverlays to `Config.txt`. This will make sure the Pi knows to enable the required UART connections there.
 
 8. You can now unmount the drive with `sudo umount ~/TempMount` and put the SD card back in your Pi before booting Home Assistant back up
 
-TODO installation steps
-TODO knxd
-TODO modbus
+9. To enable KNX communication, you'll need to install the [knxd addon](https://github.com/da-anda/hass-io-addons). 
+
+10. Configure the `knxd` daemon as shown in the following picture. The TODO interface makes sure we are talking to our on-board `NC5121`. Theoretically you could also use a KNX-USB interface if you weren't using the PiPLC board. Don't forget to start the daemon and set it to autostart.
+
+TODO knxd config picture
+
+11. Once the `knxd` deamon is running install the `KNX` integration:
+
+![KNX integration](knxintegration.png)
+
+12. During initial setup of the `KNX` integration, it should find your local `knxd` daemon instance as a valid interface.
+
+13. TODO modbus
 
 </details>
 
