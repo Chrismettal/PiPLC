@@ -337,7 +337,7 @@ For Home Assistant, there is [an addon for knxd](https://github.com/da-anda/hass
 
 See the [knxd documentation](https://github.com/knxd/knxd/blob/main/doc/inifile.rst#ncn5120) for specifics on how to use the driver if you are not using Home Assistant.
 
-In this board, the NC5121 is NOT supplied through the KNX supply, but through the Pi's 3v3 rail. This means that it doesn't need to be taken into account when calculating the KNX power supply needs.
+In this board, the `NC5121` is NOT supplied through the KNX supply, but through the Pi's `3v3` rail. This means that it doesn't need to be taken into account when calculating the KNX power supply needs.
 
 > [!NOTE]  
 > To enable KNX, make sure to disable bluetooth and the serial console on your Pi
@@ -366,7 +366,7 @@ TODO usage example
 
 ### OpenPLC
 
-[OpenPLC](https://autonomylogic.com/) is a Fully IEC 61131-3 compliant, open source, multi-hardware programmable logic controller suite.
+[OpenPLC](https://autonomylogic.com/) is a Fully `IEC 61131-3` compliant, open source, multi-hardware programmable logic controller suite.
 
 Consisting of a separate runtime and editor, it can run on regular PCs as a soft PLC, as well as a multitude of embedded systems. (Think Beckhoff XAR / XAE)
 
@@ -441,10 +441,9 @@ Home Assistant seems to move away from local hardware IO a bit, instead focussin
 mkdir ~/TempMount
 
 sudo mount -t vfat /dev/sdx1 ~/TempMount
-
 ```
 
-6. In the now mounted TempMount directory, you will find `Config.txt` where we can set dtoverlays to enable additional serial ports etc.
+6. In the now mounted `TempMount` directory, you will find `Config.txt` where we can set dtoverlays to enable additional serial ports etc.
 
 7. Follow both the [KNX enabling guide](#wago-header--knx--ncn5121) as well as the [Modbus enabling guide](#j2--modbus), adding their specific dtoverlays to `Config.txt`. This will make sure the Pi knows to enable the required UART connections there.
 
@@ -561,7 +560,7 @@ The case is intended to be printed in a isolating and/or flame retardant filamen
 
 ### Testing
 
-The following commands can be used to test your hardware configuration without installing PLC code or a full Home Assistant install. These are to be executed on a regular Pi OS install with WiringPi and raspi-gpio installed.
+The following commands can be used to test your hardware configuration without installing PLC code or a full Home Assistant install. These are to be executed on a regular Pi OS install with `WiringPi` and `raspi-gpio` installed.
 
 - Enable pull ups on all input pins
 
