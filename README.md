@@ -32,33 +32,33 @@ All the parts are or will be stocked at Tindie!
 - [GPIO mapping](#gpio-mapping)
 - [Pinout](#pinout)
 - [I/O](#io)
-  - [J1 | Power Input](#j1--power-input)
-  - [J2 | Modbus](#j2--modbus)
-  - [J3 - J6 | Digital Outputs (Q1-8)](#j3---j6--digital-outputs-q1-8)
-  - [J7 | PWM](#j7--pwm)
-  - [J8 | I²C](#j8--ic)
-  - [J9 | 1-Wire](#j9--1-wire)
-  - [J10 - J12 | Digital Inputs (I1-8)](#j10---j12--digital-inputs-i1-8)
-  - [Wago header | KNX / NCN5121](#wago-header--knx--ncn5121)
+    - [J1 | Power Input](#j1--power-input)
+    - [J2 | Modbus](#j2--modbus)
+    - [J3 - J6 | Digital Outputs (Q1-8)](#j3---j6--digital-outputs-q1-8)
+    - [J7 | PWM](#j7--pwm)
+    - [J8 | I²C](#j8--ic)
+    - [J9 | 1-Wire](#j9--1-wire)
+    - [J10 - J12 | Digital Inputs (I1-8)](#j10---j12--digital-inputs-i1-8)
+    - [Wago header | KNX / NCN5121](#wago-header--knx--ncn5121)
 - [Software](#software)
-  - [OpenPLC](#openplc)
-    - [Installation](#installation)
-    - [Example](#example)
-  - [Home Assistant](#home-assistant)
-    - [Installation](#installation-1)
-    - [Example](#example-1)
-  - [Codesys](#codesys)
-    - [Installation](#installation-2)
-    - [Example](#example-2)
+    - [OpenPLC](#openplc)
+        - [Installation](#installation)
+        - [Example](#example)
+    - [Home Assistant](#home-assistant)
+        - [Installation](#installation-1)
+        - [Example](#example-1)
+    - [Codesys](#codesys)
+        - [Installation](#installation-2)
+        - [Example](#example-2)
 - [Making your own](#making-your-own)
-  - [Boards](#boards)
-    - [Mainboard](#mainboard)
-    - [HMI](#hmi)
-    - [Frontpanel](#frontpanel)
-    - [Pi Riser](#pi-riser)
-    - [HMI Riser](#hmi-riser)
-  - [3D printing](#3d-printing)
-  - [Testing](#testing)
+    - [Boards](#boards)
+        - [Mainboard](#mainboard)
+        - [HMI](#hmi)
+        - [Frontpanel](#frontpanel)
+        - [Pi Riser](#pi-riser)
+        - [HMI Riser](#hmi-riser)
+    - [3D printing](#3d-printing)
+    - [Testing](#testing)
 - [Tools used](#tools-used)
 - [Sources](#sources)
 - [Donations](#donations)
@@ -156,9 +156,20 @@ OpenPLC natively supports Modbus to talk to I/O, while Home Assistant has a [Mod
 
 <details>
 <summary>Example - click to expand</summary>
+    <details>
+    <summary>OpenPLC</summary>
+        TODO
+    </details>
 
-TODO usage example on OpenPLC
-TODO usage example on Home Assistant
+    <details>
+    <summary>Home Assitant</summary>
+        TODO
+    </details>
+
+    <details>
+    <summary>Codesys</summary>
+        TODO
+    </details>
 
 </details>
 
