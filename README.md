@@ -48,6 +48,8 @@ All the parts are or will be stocked at Tindie!
     - [Installation](#installation-1)
     - [Example](#example-1)
   - [Codesys](#codesys)
+    - [Installation](#installation-2)
+    - [Example](#example-2)
 - [Making your own](#making-your-own)
   - [Boards](#boards)
     - [Mainboard](#mainboard)
@@ -66,34 +68,34 @@ All the parts are or will be stocked at Tindie!
 
 ## GPIO mapping
 
-| GPIO Name | PiPLC function           | OpenPLC<br>"PiPLC"<br>mapping | Usable with<br>OpenPLC                  | Usable with<br>Home Assistant |
-| :-------: | :----------------------- | :---------------------------: | :-------------------------------------- | :---------------------------- |
-| `GPIO_02` | :blue_square: I²C SDA    |               -               | :warning: TODO I²C through driver?      | :warning: To be tested        |
-| `GPIO_03` | :blue_square: I²C SCL    |               -               | :warning: TODO I²C through driver?      | :warning: To be tested        |
-| `GPIO_04` | :blue_square: Modbus TX  |               -               | :white_check_mark: Modbus @ `/dev/AMA3` | :white_check_mark: TODO Link  |
-| `GPIO_05` | :blue_square: Modbus RX  |               -               | :white_check_mark: Modbus @ `/dev/AMA3` | :white_check_mark: TODO Link  |
-| `GPIO_06` | :blue_square: Modbus RTS |               -               | :white_check_mark: Modbus @ `/dev/AMA3` | :white_check_mark: TODO Link  |
-| `GPIO_07` | :red_square: Q4          |           `%QX0.3`            | :white_check_mark: Relay output         | :white_check_mark: TODO Link  |
-| `GPIO_08` | :red_square: Q3          |           `%QX0.2`            | :white_check_mark: Relay output         | :white_check_mark: TODO Link  |
-| `GPIO_09` | :yellow_square: I5       |           `%IX0.4`            | :white_check_mark: Protected input      | :white_check_mark: TODO Link  |
-| `GPIO_10` | :yellow_square: I4       |           `%IX0.3`            | :white_check_mark: Protected input      | :white_check_mark: TODO Link  |
-| `GPIO_11` | :yellow_square: I6       |           `%IX1.5`            | :white_check_mark: Protected input      | :white_check_mark: TODO Link  |
-| `GPIO_12` | :red_square: Q5          |           `%QX0.4`            | :white_check_mark: Relay output         | :white_check_mark: TODO Link  |
-| `GPIO_13` | :yellow_square: I7       |           `%IX0.6`            | :white_check_mark: Protected input      | :white_check_mark: TODO Link  |
-| `GPIO_14` | :blue_square: KNX TX     |               -               | :x: KNX not supported                   | :white_check_mark: TODO Link  |
-| `GPIO_15` | :blue_square: KNX RX     |               -               | :x: KNX not supported                   | :white_check_mark: TODO Link  |
-| `GPIO_16` | :red_square: Q6          |           `%QX0.5`            | :white_check_mark: Relay output         | :white_check_mark: TODO Link  |
-| `GPIO_17` | :yellow_square: I1       |           `%IX0.0`            | :white_check_mark: Protected input      | :white_check_mark: TODO Link  |
-| `GPIO_18` | :orange_square: PWM_0    |           `%QW0`              | :ballot_box_with_check: PWM output      | :white_check_mark: TODO Link  |
-| `GPIO_19` | :orange_square: PWM_1    |           `%QW1`              | :ballot_box_with_check:  PWM output     | :white_check_mark: TODO Link  |
-| `GPIO_20` | :red_square: Q7          |           `%QX0.6`            | :white_check_mark: Relay output         | :white_check_mark: TODO Link  |
-| `GPIO_21` | :red_square: Q8          |           `%QX0.7`            | :white_check_mark: Relay output         | :white_check_mark: TODO Link  |
-| `GPIO_22` | :yellow_square: I3       |           `%IX0.2`            | :white_check_mark: Protected input      | :white_check_mark: TODO Link  |
-| `GPIO_23` | :blue_square: 1-Wire     |               -               | :warning: TODO 1-Wire through driver?   | :warning: To be tested        |
-| `GPIO_24` | :red_square: Q1          |           `%QX0.0`            | :white_check_mark: Relay output         | :white_check_mark: TODO Link  |
-| `GPIO_25` | :red_square: Q2          |           `%QX0.1`            | :white_check_mark: Relay output         | :white_check_mark: TODO Link  |
-| `GPIO_26` | :yellow_square: I8       |           `%IX0.7`            | :white_check_mark: Protected input      | :white_check_mark: TODO Link  |
-| `GPIO_27` | :yellow_square: I2       |           `%IX0.1`            | :white_check_mark: Protected input      | :white_check_mark: TODO Link  |
+| GPIO Name | PiPLC function           | OpenPLC                | Home Assistant               | Codesys                |
+| :-------: | :----------------------- | :--------------------- | :--------------------------- | :--------------------- |
+| `GPIO_02` | :blue_square: I²C SDA    | :warning: TODO driver? | :warning: To be tested       | :warning: To be tested |
+| `GPIO_03` | :blue_square: I²C SCL    | :warning: TODO driver? | :warning: To be tested       | :warning: To be tested |
+| `GPIO_04` | :blue_square: Modbus TX  | `/dev/AMA3`            | :white_check_mark: TODO Link | :warning: To be tested |
+| `GPIO_05` | :blue_square: Modbus RX  | `/dev/AMA3`            | :white_check_mark: TODO Link | :warning: To be tested |
+| `GPIO_06` | :blue_square: Modbus RTS | `/dev/AMA3`            | :white_check_mark: TODO Link | :warning: To be tested |
+| `GPIO_07` | :red_square: Q4          | `%QX0.3`               | :white_check_mark: TODO Link | :warning: To be tested |
+| `GPIO_08` | :red_square: Q3          | `%QX0.2`               | :white_check_mark: TODO Link | :warning: To be tested |
+| `GPIO_09` | :yellow_square: I5       | `%IX0.4`               | :white_check_mark: TODO Link | :warning: To be tested |
+| `GPIO_10` | :yellow_square: I4       | `%IX0.3`               | :white_check_mark: TODO Link | :warning: To be tested |
+| `GPIO_11` | :yellow_square: I6       | `%IX1.5`               | :white_check_mark: TODO Link | :warning: To be tested |
+| `GPIO_12` | :red_square: Q5          | `%QX0.4`               | :white_check_mark: TODO Link | :warning: To be tested |
+| `GPIO_13` | :yellow_square: I7       | `%IX0.6`               | :white_check_mark: TODO Link | :warning: To be tested |
+| `GPIO_14` | :blue_square: KNX TX     | :x:                    | :white_check_mark: TODO Link | :warning: To be tested |
+| `GPIO_15` | :blue_square: KNX RX     | :x:                    | :white_check_mark: TODO Link | :warning: To be tested |
+| `GPIO_16` | :red_square: Q6          | `%QX0.5`               | :white_check_mark: TODO Link | :warning: To be tested |
+| `GPIO_17` | :yellow_square: I1       | `%IX0.0`               | :white_check_mark: TODO Link | :warning: To be tested |
+| `GPIO_18` | :orange_square: PWM_0    | `%QW0`                 | :white_check_mark: TODO Link | :warning: To be tested |
+| `GPIO_19` | :orange_square: PWM_1    | `%QW1`                 | :white_check_mark: TODO Link | :warning: To be tested |
+| `GPIO_20` | :red_square: Q7          | `%QX0.6`               | :white_check_mark: TODO Link | :warning: To be tested |
+| `GPIO_21` | :red_square: Q8          | `%QX0.7`               | :white_check_mark: TODO Link | :warning: To be tested |
+| `GPIO_22` | :yellow_square: I3       | `%IX0.2`               | :white_check_mark: TODO Link | :warning: To be tested |
+| `GPIO_23` | :blue_square: 1-Wire     | :warning: TODO driver? | :warning: To be tested       | :warning: To be tested |
+| `GPIO_24` | :red_square: Q1          | `%QX0.0`               | :white_check_mark: TODO Link | :warning: To be tested |
+| `GPIO_25` | :red_square: Q2          | `%QX0.1`               | :white_check_mark: TODO Link | :warning: To be tested |
+| `GPIO_26` | :yellow_square: I8       | `%IX0.7`               | :white_check_mark: TODO Link | :warning: To be tested |
+| `GPIO_27` | :yellow_square: I2       | `%IX0.1`               | :white_check_mark: TODO Link | :warning: To be tested |
 
 Pins marked unusable with OpenPLC are either not broken out, or differ too much from OpenPLC's mapping. As OpenPLC's mapping is immutable, these pins might not be used if PiPLC is used with the OpenPLC runtime and Pi default hardware layer.
 
@@ -478,7 +480,34 @@ TODO usage example
 
 ### Codesys
 
-TODO? Not open source so might not do. No reason why it shouldn't work tho. Let me know if this is an interesting usecase for you, so I might invest the time (and licensing cost) to document compatibility. Sending a [license for the RPI runtime](https://store.codesys.com/codesys-control-for-raspberry-pi-sl.html) my way would ~~force~~ guarantee me to put in the time to make it compatible.
+Codesys, like OpenPLC is a `IEC 61131-3` compliant PLC runtime, compatible with PiPLC. It is not open source and the [license for the RPI runtime](https://store.codesys.com/codesys-control-for-raspberry-pi-sl.html) costs about 55€. PiPLC was designed for OpenPLC but Codesys (as of 2024-01) is a much more robust runtime with more features.
+
+As Codesys is proprietary, I won't be focussing much on it, but I want to make sure that most functions work well with PiPLC.
+
+#### Installation
+
+<details>
+<summary>Click to expand</summary>
+
+1. Follow the [Codesys Pi FAQ](https://faq.codesys.com/display/CDSFAQ/Raspberry+Pi%3A+FAQ) to install the runtime on your Pi as well as to get your engineering system set up
+
+2. After enabling UART3 [as described above](#j2--modbus) and rebooting your Pi, you can set `/dev/AMA3` to be your Modbus master port:
+
+TODO Modbus port image
+
+TODO I²C port settings
+TODO 1-Wire port settings
+
+</details>
+
+#### Example
+
+<details>
+<summary>Click to expand</summary>
+
+TODO usage example
+
+</details>
 
 ---
 
