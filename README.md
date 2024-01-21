@@ -155,22 +155,18 @@ OpenPLC natively supports Modbus to talk to I/O, while Home Assistant has a [Mod
 > For Home Assistant, TODO hardware change documentation
 
 <details>
-<summary>Example - click to expand</summary>
-    <details>
-    <summary>OpenPLC</summary>
-        TODO
-    </details>
+<summary>Example OpenPLC - click to expand</summary>
+    TODO
+</details>
 
-    <details>
-    <summary>Home Assitant</summary>
-        TODO
-    </details>
+<details>
+<summary>Example Home Assistant - click to expand</summary>
+    TODO
+</details>
 
-    <details>
-    <summary>Codesys</summary>
-        TODO
-    </details>
-
+<details>
+<summary>Example Codesys - click to expand</summary>
+    TODO
 </details>
 
 <details>
