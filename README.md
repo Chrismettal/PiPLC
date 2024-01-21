@@ -34,12 +34,19 @@ All the parts are or will be stocked at Tindie!
 - [I/O](#io)
     - [J1 | Power Input](#j1--power-input)
     - [J2 | Modbus](#j2--modbus)
+        - [Examples](#examples)
     - [J3 - J6 | Digital Outputs (Q1-8)](#j3---j6--digital-outputs-q1-8)
+        - [Examples](#examples-1)
     - [J7 | PWM](#j7--pwm)
+        - [Examples](#examples-2)
     - [J8 | I²C](#j8--ic)
+        - [Examples](#examples-3)
     - [J9 | 1-Wire](#j9--1-wire)
+        - [Examples](#examples-4)
     - [J10 - J12 | Digital Inputs (I1-8)](#j10---j12--digital-inputs-i1-8)
+        - [Examples](#examples-5)
     - [Wago header | KNX / NCN5121](#wago-header--knx--ncn5121)
+        - [Examples](#examples-6)
 - [Software](#software)
     - [OpenPLC](#openplc)
         - [Installation](#installation)
@@ -72,9 +79,9 @@ All the parts are or will be stocked at Tindie!
 | :-------: | :----------------------- | :--------------------- | :--------------------------- | :--------------------- |
 | `GPIO_02` | :blue_square: I²C SDA    | :warning: TODO driver? | :warning: To be tested       | :warning: To be tested |
 | `GPIO_03` | :blue_square: I²C SCL    | :warning: TODO driver? | :warning: To be tested       | :warning: To be tested |
-| `GPIO_04` | :blue_square: Modbus TX  | `/dev/AMA3`            | :white_check_mark: TODO Link | :warning: To be tested |
-| `GPIO_05` | :blue_square: Modbus RX  | `/dev/AMA3`            | :white_check_mark: TODO Link | :warning: To be tested |
-| `GPIO_06` | :blue_square: Modbus RTS | `/dev/AMA3`            | :white_check_mark: TODO Link | :warning: To be tested |
+| `GPIO_04` | :blue_square: Modbus TX  | `/dev/ttyAMA3`         | `/dev/ttyAMA3`               | :warning: To be tested |
+| `GPIO_05` | :blue_square: Modbus RX  | `/dev/ttyAMA3`         | `/dev/ttyAMA3`               | :warning: To be tested |
+| `GPIO_06` | :blue_square: Modbus RTS | `/dev/ttyAMA3`         | `/dev/ttyAMA3`               | :warning: To be tested |
 | `GPIO_07` | :red_square: Q4          | `%QX0.3`               | :white_check_mark: TODO Link | :warning: To be tested |
 | `GPIO_08` | :red_square: Q3          | `%QX0.2`               | :white_check_mark: TODO Link | :warning: To be tested |
 | `GPIO_09` | :yellow_square: I5       | `%IX0.4`               | :white_check_mark: TODO Link | :warning: To be tested |
@@ -82,8 +89,8 @@ All the parts are or will be stocked at Tindie!
 | `GPIO_11` | :yellow_square: I6       | `%IX1.5`               | :white_check_mark: TODO Link | :warning: To be tested |
 | `GPIO_12` | :red_square: Q5          | `%QX0.4`               | :white_check_mark: TODO Link | :warning: To be tested |
 | `GPIO_13` | :yellow_square: I7       | `%IX0.6`               | :white_check_mark: TODO Link | :warning: To be tested |
-| `GPIO_14` | :blue_square: KNX TX     | :x:                    | :white_check_mark: TODO Link | :warning: To be tested |
-| `GPIO_15` | :blue_square: KNX RX     | :x:                    | :white_check_mark: TODO Link | :warning: To be tested |
+| `GPIO_14` | :blue_square: KNX TX     | :x:                    | `/dev/ttyAMA0`               | :warning: To be tested |
+| `GPIO_15` | :blue_square: KNX RX     | :x:                    | `/dev/ttyAMA0`               | :warning: To be tested |
 | `GPIO_16` | :red_square: Q6          | `%QX0.5`               | :white_check_mark: TODO Link | :warning: To be tested |
 | `GPIO_17` | :yellow_square: I1       | `%IX0.0`               | :white_check_mark: TODO Link | :warning: To be tested |
 | `GPIO_18` | :orange_square: PWM_0    | `%QW0`                 | :white_check_mark: TODO Link | :warning: To be tested |
@@ -154,6 +161,8 @@ OpenPLC natively supports Modbus to talk to I/O, while Home Assistant has a [Mod
 >
 > For Home Assistant, TODO hardware change documentation
 
+#### Examples
+
 <details>
 <summary>Example OpenPLC - click to expand</summary>
     TODO
@@ -210,19 +219,31 @@ https://raspberrypi.stackexchange.com/questions/45570/how-do-i-make-serial-work-
 
 As with the digital inputs, each output features a status LED found on the HMI subboard.
 
-<details>
-<summary>Example - click to expand</summary>
-
-TODO usage example
-
-</details>
-
 > [!WARNING]
 > As this the PiPLC is an open source passion project and not externally rated by TÜV or a similar agency, usage of these relays in mains powered systems is at your own risk.
 > 
 > All components chosen are rated for 16 A at 250 V AC and should be capable of driving everything in a home environment.
 > 
 > Only certified electricians should ever be performing mains work, and home-built devices should never be connected to mains power unless you know what you are doing.
+
+
+#### Examples
+
+
+<details>
+<summary>Example OpenPLC - click to expand</summary>
+    TODO
+</details>
+
+<details>
+<summary>Example Home Assistant - click to expand</summary>
+    TODO
+</details>
+
+<details>
+<summary>Example Codesys - click to expand</summary>
+    TODO
+</details>
 
 ---
 
@@ -237,15 +258,26 @@ If choosing to use the GPIO as inputs, bear in mind that the Pi's GPIO are only 
 
 Choosing to actually use the PWM outputs, you have both hardware PWM's available to you here.
 
-<details>
-<summary>Example - click to expand</summary>
-
-TODO usage example
-
-</details>
-
 > [!WARNING]
 > Unprotected access to `GPIO_18` and `GPIO_19`. Take care not to damage your Pi!
+
+#### Examples
+
+<details>
+<summary>Example OpenPLC - click to expand</summary>
+    TODO
+</details>
+
+<details>
+<summary>Example Home Assistant - click to expand</summary>
+    TODO
+</details>
+
+<details>
+<summary>Example Codesys - click to expand</summary>
+    TODO
+</details>
+
 
 ---
 
@@ -258,15 +290,25 @@ TODO usage example
 Here you have a protected, somewhat isolated 5 V tolerant I²C header with integrated pullups. This was at first intended for connecting to extensions, but the Modbus header takes care of that now.
 You do have the option however, to attach whatever I²C device you want, provided the runtime you are using supports I²C communication.
 
-<details>
-<summary>Example - click to expand</summary>
-
-TODO usage example
-
-</details>
-
 > [!WARNING]
 > The I²C contacts are already pulled up to 5 V so do not connect any 3.3 V only I²C devices directly without isolation!
+> 
+#### Examples
+
+<details>
+<summary>Example OpenPLC - click to expand</summary>
+    TODO
+</details>
+
+<details>
+<summary>Example Home Assistant - click to expand</summary>
+    TODO
+</details>
+
+<details>
+<summary>Example Codesys - click to expand</summary>
+    TODO
+</details>
 
 ---
 
@@ -280,15 +322,25 @@ This header contains `GPIO_04` for native 1-Wire capability.
 
 1-Wire is usually used for temperature sensors, like `DS18B20`, or battery voltage sensing, but is sometimes also used for access control with iButtons.
 
-<details>
-<summary>Example - click to expand</summary>
-
-TODO usage example
-
-</details>
-
 > [!WARNING]
 > Unprotected access to `GPIO_04`. Take care not to damage your Pi!
+
+#### Examples
+
+<details>
+<summary>Example OpenPLC - click to expand</summary>
+    TODO
+</details>
+
+<details>
+<summary>Example Home Assistant - click to expand</summary>
+    TODO
+</details>
+
+<details>
+<summary>Example Codesys - click to expand</summary>
+    TODO
+</details>
 
 ---
 
@@ -329,11 +381,21 @@ Input currents are as follows:
 | 12 V    | TODO mA       |
 | 24 V    | 5 mA          |
 
+#### Examples
+
 <details>
-<summary>Example - click to expand</summary>
+<summary>Example OpenPLC - click to expand</summary>
+    TODO
+</details>
 
-TODO usage example
+<details>
+<summary>Example Home Assistant - click to expand</summary>
+    TODO
+</details>
 
+<details>
+<summary>Example Codesys - click to expand</summary>
+    TODO
 </details>
 
 ---
@@ -362,11 +424,21 @@ In this board, the `NC5121` is NOT supplied through the KNX supply, but through 
 >
 > reboot
 
+#### Examples
+
 <details>
-<summary>Example - click to expand</summary>
+<summary>Example OpenPLC - click to expand</summary>
+    TODO
+</details>
 
-TODO usage example
+<details>
+<summary>Example Home Assistant - click to expand</summary>
+    TODO
+</details>
 
+<details>
+<summary>Example Codesys - click to expand</summary>
+    TODO
 </details>
 
 ---
@@ -406,7 +478,7 @@ I am currently creating a hardware layer for PiPLC at https://github.com/Chrisme
 
 8. That should be it for a base installation. You should now have access to D1-8 and Q1-8 already, but you won't see Modbus RTU yet for slave devices. Instructions how to enable the Modbus COM port are found at [J2 | Modbus](#j2--modbus).
 
-9. After enabling UART3 [as described above](#j2--modbus) and rebooting your Pi, you should see `/dev/AMA3` be available as a COM port for Modbus slaves:
+9. After enabling UART3 [as described above](#j2--modbus) and rebooting your Pi, you should see `/dev/ttyAMA3` be available as a COM port for Modbus slaves:
 
 ![ModbusCOM](/img/OpenPLCManual/ModbusCOM.png)
 
@@ -416,12 +488,7 @@ I am currently creating a hardware layer for PiPLC at https://github.com/Chrisme
 
 #### Example
 
-<details>
-<summary>Click to expand</summary>
-
-TODO usage example
-
-</details>
+TODO link to project
 
 ---
 
@@ -476,12 +543,7 @@ TODO knxd config picture
 
 #### Example
 
-<details>
-<summary>Click to expand</summary>
-
-TODO usage example
-
-</details>
+TODO link to project
 
 ---
 
@@ -498,7 +560,7 @@ As Codesys is proprietary, I won't be focussing much on it, but I want to make s
 
 1. Follow the [Codesys Pi FAQ](https://faq.codesys.com/display/CDSFAQ/Raspberry+Pi%3A+FAQ) to install the runtime on your Pi as well as to get your engineering system set up
 
-2. After enabling UART3 [as described above](#j2--modbus) and rebooting your Pi, you can set `/dev/AMA3` to be your Modbus master port:
+2. After enabling UART3 [as described above](#j2--modbus) and rebooting your Pi, you can set `/dev/ttyAMA3` to be your Modbus master port:
 
 TODO Modbus port image
 
@@ -509,12 +571,7 @@ TODO 1-Wire port settings
 
 #### Example
 
-<details>
-<summary>Click to expand</summary>
-
-TODO usage example
-
-</details>
+TODO link to project
 
 ---
 
