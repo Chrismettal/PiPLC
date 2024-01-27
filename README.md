@@ -546,9 +546,9 @@ sudo mount -t vfat /dev/sdx1 ~/TempMount
 
 9. To enable KNX communication, you'll need to install the [knxd addon](https://github.com/da-anda/hass-io-addons). 
 
-10. Configure the `knxd` daemon as shown in the following picture. The TODO interface makes sure we are talking to our on-board `NC5121`. Theoretically you could also use a KNX-USB interface if you weren't using the PiPLC board. Don't forget to start the daemon and set it to autostart.
+10. Configure the `knxd` daemon as shown in the following picture. The `/dev/ttyAMA0` interface makes sure we are talking to our on-board `NC5121`. Theoretically you could also use a KNX-USB interface if you weren't using the PiPLC board. Don't forget to start the daemon and set it to autostart.
 
-TODO knxd config picture
+![knxaddon](/img/HAManual/knxaddon.png)
 
 11. Once the `knxd` deamon is running install the `KNX` integration:
 
