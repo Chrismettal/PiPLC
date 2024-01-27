@@ -325,6 +325,16 @@ This header contains `GPIO_04` for native 1-Wire capability.
 > [!WARNING]
 > Unprotected access to `GPIO_04`. Take care not to damage your Pi!
 
+> [!NOTE]  
+> To enable 1-Wire, add the following to `/boot/config.txt`:
+> 
+> `dtoverlay=w1-gpio,gpiopin=23`
+>
+> reboot
+>
+> You should be able to find any connected 1-Wire devices automatically with `ls /sys/bus/w1/devices/` afterwards
+
+
 #### Examples
 
 <details>
