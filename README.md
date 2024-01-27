@@ -292,7 +292,15 @@ You do have the option however, to attach whatever I²C device you want, provide
 
 > [!WARNING]
 > The I²C contacts are already pulled up to 5 V so do not connect any 3.3 V only I²C devices directly without isolation!
-> 
+
+> [!NOTE]
+> To enable I²C, go into `/boot/config.txt` and uncomment `dtparam=i2c_arm=on`, or alternatively enable I²C through `sudo raspi-config`
+>
+> You might need to install `i2c-tools` with `sudo apt install i2c-tools` to test your I²C connections. 
+>
+> `i2cdetect -y 1` should show the adresses of all found I²C devices afterwards
+
+
 #### Examples
 
 <details>
@@ -325,7 +333,7 @@ This header contains `GPIO_04` for native 1-Wire capability.
 > [!WARNING]
 > Unprotected access to `GPIO_04`. Take care not to damage your Pi!
 
-> [!NOTE]  
+> [!NOTE]
 > To enable 1-Wire, add the following to `/boot/config.txt`:
 > 
 > `dtoverlay=w1-gpio,gpiopin=23`
