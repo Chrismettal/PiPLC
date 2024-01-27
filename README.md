@@ -441,6 +441,10 @@ In this board, the `NC5121` is NOT supplied through the KNX supply, but through 
 > `console=serial0,115200` or `console=ttyAMA0,115200` if found
 >
 > reboot
+>
+> In your OS, `/dev/ttyAMA0` can now be used as your KNX interface
+>
+> TODO add OpenPLC installation steps
 
 #### Examples
 
