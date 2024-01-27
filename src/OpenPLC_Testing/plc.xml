@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <project xmlns:ns1="http://www.plcopen.org/xml/tc6_0201" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.plcopen.org/xml/tc6_0201">
   <fileHeader companyName="Binary-6" productName="PiPLC_DemoProduct" productVersion="1" creationDateTime="2023-12-08T21:28:31" companyURL="Binary-6.de"/>
-  <contentHeader name="OpenPLC_Testing" modificationDateTime="2023-12-12T16:54:12" author="Chrismettal" language="en-US">
+  <contentHeader name="OpenPLC_Testing" modificationDateTime="2024-01-27T15:38:44" author="Chrismettal" language="en-US">
     <coordinateInfo>
       <fbd>
         <scaling x="10" y="10"/>
@@ -126,23 +126,32 @@
               <type>
                 <BOOL/>
               </type>
+              <initialValue>
+                <simpleValue value="FALSE"/>
+              </initialValue>
             </variable>
             <variable name="ModIO_Q2" address="%QX100.1">
               <type>
                 <BOOL/>
               </type>
+              <initialValue>
+                <simpleValue value="FALSE"/>
+              </initialValue>
             </variable>
             <variable name="ModIO_Q3" address="%QX100.2">
               <type>
                 <BOOL/>
               </type>
+              <initialValue>
+                <simpleValue value="FALSE"/>
+              </initialValue>
             </variable>
             <variable name="ModIO_Q4" address="%QX100.3">
               <type>
                 <BOOL/>
               </type>
               <initialValue>
-                <simpleValue value=""/>
+                <simpleValue value="FALSE"/>
               </initialValue>
             </variable>
           </localVars>
