@@ -459,6 +459,7 @@ I am currently creating a hardware layer for PiPLC at https://github.com/Chrisme
 <summary>Click to expand</summary>
 
 1. You are going to need a fresh installation of [Raspberry Pi OS](https://www.raspberrypi.com/software/) on your Pi 4. There is an official [getting started guide](https://www.raspberrypi.com/documentation/computers/getting-started.html) that is being kept up to date, so the first steps are not further described here.
+**Make sure to install the legacy Debian Buster version until OpenPLC has moved on from WiringPi, as WiringPi is incompatible to Debian Bookworm!**
 
 2. Execute `git clone https://github.com/chrismettal/OpenPLC_v3` on your Pi. This will clone a forked version of the OpenPLC runtime that contains some changes to make it compatible with PiPLC. Should these changes get merged, this link will be changed to point to the official version.
 
