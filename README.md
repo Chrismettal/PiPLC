@@ -47,6 +47,8 @@ All the parts are or will be stocked at Tindie!
         - [Examples](#examples-5)
     - [Wago header | KNX / NCN5121](#wago-header--knx--ncn5121)
         - [Examples](#examples-6)
+- [On board devices](#on-board-devices)
+    - [PCF8523 RTC](#pcf8523-rtc)
 - [Software](#software)
     - [OpenPLC](#openplc)
         - [Installation](#installation)
@@ -57,6 +59,9 @@ All the parts are or will be stocked at Tindie!
     - [Codesys](#codesys)
         - [Installation](#installation-2)
         - [Example](#example-2)
+- [Raspberry pi configuration](#raspberry-pi-configuration)
+    - [`/boot/config.txt`](#bootconfigtxt)
+    - [`/boot/cmdline.txt`](#bootcmdlinetxt)
 - [Making your own](#making-your-own)
     - [Boards](#boards)
         - [Mainboard](#mainboard)
@@ -465,6 +470,24 @@ In this board, the `NC5121` is NOT supplied through the KNX supply, but through 
 
 ---
 
+## On board devices
+
+### PCF8523 RTC
+
+A `PCF8523` based realtime clock is present on the board so the PiPLC can keep track of time even when its 24 V input drops.
+
+> [!NOTE]  
+>
+> To enable the real time clock on your Pi, add the following to `/boot/config.txt`:
+>
+> `dtoverlay=i2c-rtc,pcf8523`
+>
+> And reboot afterwards.
+>
+> Enabling RTC in the Pi and setting the time correctly is explained well in [Adafruit's RTC guide](https://learn.adafruit.com/adding-a-real-time-clock-to-raspberry-pi/set-rtc-time).
+
+---
+
 ## Software
 
 ### OpenPLC
@@ -595,6 +618,24 @@ TODO 1-Wire port settings
 #### Example
 
 TODO link to project
+
+---
+
+## Raspberry pi configuration
+
+### `/boot/config.txt`
+
+```
+# PiPLC
+dtoverlay=uart3
+dtoverlay=pi3-disable-bt
+dtoverlay=w1-gpio,gpiopin=23
+dtoverlay=i2c-rtc,pcf8523
+```
+
+### `/boot/cmdline.txt`
+
+remove `console=serial0,115200` and/or `console=ttyAMA0,115200` if found.
 
 ---
 
