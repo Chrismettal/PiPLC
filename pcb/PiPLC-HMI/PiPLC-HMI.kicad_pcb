@@ -301,7 +301,7 @@
     (descr "Resistor, Axial_DIN0207 series, Axial, Horizontal, pin pitch=7.62mm, 0.25W = 1/4W, length*diameter=6.3*2.5mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf")
     (tags "Resistor Axial_DIN0207 series Axial Horizontal pin pitch 7.62mm 0.25W = 1/4W length 6.3mm diameter 2.5mm")
     (zone_connect 0)
-    (attr exclude_from_pos_files exclude_from_bom)
+    (attr board_only exclude_from_pos_files exclude_from_bom)
     (fp_text reference "H7" (at 6.761 1.661) (layer "F.SilkS") hide
         (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 15dd27b3-2a20-432d-9fca-26b1ccd2d152)
@@ -826,7 +826,7 @@
     (at 137.077 104.646)
     (descr "Open Source Hardware Symbol")
     (tags "Logo Symbol OSHW")
-    (attr exclude_from_pos_files exclude_from_bom)
+    (attr board_only exclude_from_pos_files exclude_from_bom)
     (fp_text reference "REF**" (at 0 0) (layer "F.SilkS") hide
         (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 4d6d99d8-7635-4771-9f1f-9034a5c98ebe)
