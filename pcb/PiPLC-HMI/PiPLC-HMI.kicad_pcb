@@ -2608,7 +2608,7 @@
   (gr_text "Chrismettal - 2024    CC-BY-SA 4.0" (at 135.807 116.584) (layer "F.SilkS") (tstamp 38d59bc1-e433-4ecd-b977-409ec230af89)
     (effects (font (size 1 1) (thickness 0.15)) (justify left bottom))
   )
-  (gr_text "HMI Board\nCOMMITXY" (at 143.554 87.882) (layer "F.SilkS") (tstamp 473dab74-ad9a-415b-a76c-77bba0a6d2c9)
+  (gr_text "HMI Board\n774f47b" (at 143.554 87.882) (layer "F.SilkS") (tstamp 473dab74-ad9a-415b-a76c-77bba0a6d2c9)
     (effects (font (size 1 1) (thickness 0.15)) (justify left bottom))
   )
   (gr_text "I2" (at 157.142 75.69) (layer "F.SilkS") (tstamp 4fcb9910-997d-4ea7-92f2-48904e6da710)
