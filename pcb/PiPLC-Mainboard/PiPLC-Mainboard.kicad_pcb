@@ -1022,10 +1022,10 @@
       (net 35 "Net-(D15-A)") (pintype "passive") (tstamp 0134aa7c-5c27-4064-aa12-b7f6f2f38854))
     (pad "GND" thru_hole circle (at 3.75 0) (size 2 2) (drill 1.3) (layers "*.Cu" "*.Mask")
       (net 135 "GND") (pintype "passive") (tstamp ddf929fd-a5af-459e-919e-a2f817bdfafa))
-    (model "${KICAD7_3DMODEL_DIR}/Relay_THT.3dshapes/Relay_SPST_Omron_G2RL-1A-E.wrl"
-      (offset (xyz 0 0 0))
+    (model "${MEINE_BIBS}/MeineBib.3dshapes/G5RL-1A-E-TV8-Body.step"
+      (offset (xyz 3.75 -12.5 0))
       (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
+      (rotate (xyz 0 0 90))
     )
   )
 
@@ -1736,10 +1736,10 @@
       (net 38 "Net-(D18-A)") (pintype "passive") (tstamp fe8e974e-6b04-45cf-bb43-eed7f41185ea))
     (pad "GND" thru_hole circle (at 3.75 0) (size 2 2) (drill 1.3) (layers "*.Cu" "*.Mask")
       (net 135 "GND") (pintype "passive") (tstamp 126eebda-5246-4aeb-8626-91b392b0878d))
-    (model "${KICAD7_3DMODEL_DIR}/Relay_THT.3dshapes/Relay_SPST_Omron_G2RL-1A-E.wrl"
-      (offset (xyz 0 0 0))
+    (model "${MEINE_BIBS}/MeineBib.3dshapes/G5RL-1A-E-TV8-Body.step"
+      (offset (xyz 3.75 -12.5 0))
       (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
+      (rotate (xyz 0 0 90))
     )
   )
 
@@ -4353,10 +4353,10 @@
       (net 36 "Net-(D16-A)") (pintype "passive") (tstamp 5aaee802-fc85-45ae-a4a8-f2c5d4facf4e))
     (pad "GND" thru_hole circle (at 3.75 0) (size 2 2) (drill 1.3) (layers "*.Cu" "*.Mask")
       (net 135 "GND") (pintype "passive") (tstamp d4216576-a61f-45df-96b1-279a2784447d))
-    (model "${KICAD7_3DMODEL_DIR}/Relay_THT.3dshapes/Relay_SPST_Omron_G2RL-1A-E.wrl"
-      (offset (xyz 0 0 0))
+    (model "${MEINE_BIBS}/MeineBib.3dshapes/G5RL-1A-E-TV8-Body.step"
+      (offset (xyz 3.75 -12.5 0))
       (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
+      (rotate (xyz 0 0 90))
     )
   )
 
@@ -5786,10 +5786,10 @@
       (net 32 "Net-(D12-A)") (pintype "passive") (tstamp 697ac834-a371-4b3e-b777-8568bbb2a343))
     (pad "GND" thru_hole circle (at 3.75 0) (size 2 2) (drill 1.3) (layers "*.Cu" "*.Mask")
       (net 135 "GND") (pintype "passive") (tstamp 6f8edc0b-e5e4-4181-819f-69d7c753a69b))
-    (model "${KICAD7_3DMODEL_DIR}/Relay_THT.3dshapes/Relay_SPST_Omron_G2RL-1A-E.wrl"
-      (offset (xyz 0 0 0))
+    (model "${MEINE_BIBS}/MeineBib.3dshapes/G5RL-1A-E-TV8-Body.step"
+      (offset (xyz 3.75 -12.5 0))
       (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
+      (rotate (xyz 0 0 90))
     )
   )
 
@@ -7331,10 +7331,10 @@
       (net 34 "Net-(D14-A)") (pintype "passive") (tstamp f63133f1-529f-4988-9e09-ab707369050a))
     (pad "GND" thru_hole circle (at 3.75 0) (size 2 2) (drill 1.3) (layers "*.Cu" "*.Mask")
       (net 135 "GND") (pintype "passive") (tstamp 76ddc388-b545-418f-b414-ca8a00a09f19))
-    (model "${KICAD7_3DMODEL_DIR}/Relay_THT.3dshapes/Relay_SPST_Omron_G2RL-1A-E.wrl"
-      (offset (xyz 0 0 0))
+    (model "${MEINE_BIBS}/MeineBib.3dshapes/G5RL-1A-E-TV8-Body.step"
+      (offset (xyz 3.75 -12.5 0))
       (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
+      (rotate (xyz 0 0 90))
     )
   )
 
@@ -7613,10 +7613,10 @@
       (net 39 "Net-(D19-A)") (pintype "passive") (tstamp d8ffe911-4e81-4e13-9938-3d27c480c75e))
     (pad "GND" thru_hole circle (at 3.75 0) (size 2 2) (drill 1.3) (layers "*.Cu" "*.Mask")
       (net 135 "GND") (pintype "passive") (tstamp a6cb70ea-0e89-4984-b861-aa101f0b47fe))
-    (model "${KICAD7_3DMODEL_DIR}/Relay_THT.3dshapes/Relay_SPST_Omron_G2RL-1A-E.wrl"
-      (offset (xyz 0 0 0))
+    (model "${MEINE_BIBS}/MeineBib.3dshapes/G5RL-1A-E-TV8-Body.step"
+      (offset (xyz 3.75 -12.5 0))
       (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
+      (rotate (xyz 0 0 90))
     )
   )
 
@@ -8761,10 +8761,10 @@
       (net 33 "Net-(D13-A)") (pintype "passive") (tstamp f1de0fd1-a679-423b-9c03-1fd7d67f2cd0))
     (pad "GND" thru_hole circle (at 3.75 0) (size 2 2) (drill 1.3) (layers "*.Cu" "*.Mask")
       (net 135 "GND") (pintype "passive") (tstamp 4726288e-c63b-4fb9-920f-f4f5262be08e))
-    (model "${KICAD7_3DMODEL_DIR}/Relay_THT.3dshapes/Relay_SPST_Omron_G2RL-1A-E.wrl"
-      (offset (xyz 0 0 0))
+    (model "${MEINE_BIBS}/MeineBib.3dshapes/G5RL-1A-E-TV8-Body.step"
+      (offset (xyz 3.75 -12.5 0))
       (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
+      (rotate (xyz 0 0 90))
     )
   )
 
@@ -12185,10 +12185,10 @@
       (net 37 "Net-(D17-A)") (pintype "passive") (tstamp 355d9a98-1509-490d-bf84-3449ab1c4508))
     (pad "GND" thru_hole circle (at 3.75 0) (size 2 2) (drill 1.3) (layers "*.Cu" "*.Mask")
       (net 135 "GND") (pintype "passive") (tstamp 46e84704-76a0-4f86-a058-4529628289b5))
-    (model "${KICAD7_3DMODEL_DIR}/Relay_THT.3dshapes/Relay_SPST_Omron_G2RL-1A-E.wrl"
-      (offset (xyz 0 0 0))
+    (model "${MEINE_BIBS}/MeineBib.3dshapes/G5RL-1A-E-TV8-Body.step"
+      (offset (xyz 3.75 -12.5 0))
       (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
+      (rotate (xyz 0 0 90))
     )
   )
 
