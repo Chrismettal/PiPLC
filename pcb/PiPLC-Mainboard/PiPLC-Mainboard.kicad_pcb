@@ -1586,7 +1586,7 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
-    (model "${MEINE_BIBS}/MeineBib.3dshapes/PhoenixContact_MSTB_2,5⁄ 4-ST-5,08.stp"
+    (model "${MEINE_BIBS}/MeineBib.3dshapes/PhoenixContact_MSTB_2,5_4-ST-5,08.stp"
       (offset (xyz -2.5 -19.8 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -2117,7 +2117,7 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
-    (model "${MEINE_BIBS}/MeineBib.3dshapes/PhoenixContact_MSTB_2,5⁄ 4-ST-5,08.stp"
+    (model "${MEINE_BIBS}/MeineBib.3dshapes/PhoenixContact_MSTB_2,5_4-ST-5,08.stp"
       (offset (xyz -2.5 -19.8 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -2648,7 +2648,7 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
-    (model "${MEINE_BIBS}/MeineBib.3dshapes/PhoenixContact_MSTB_2,5⁄ 4-ST-5,08.stp"
+    (model "${MEINE_BIBS}/MeineBib.3dshapes/PhoenixContact_MSTB_2,5_4-ST-5,08.stp"
       (offset (xyz -2.5 -19.8 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -3242,7 +3242,7 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
-    (model "${MEINE_BIBS}/MeineBib.3dshapes/PhoenixContact_MSTB_2,5⁄ 4-ST-5,08.stp"
+    (model "${MEINE_BIBS}/MeineBib.3dshapes/PhoenixContact_MSTB_2,5_4-ST-5,08.stp"
       (offset (xyz -2.5 -19.8 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -4085,7 +4085,7 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
-    (model "${MEINE_BIBS}/MeineBib.3dshapes/PhoenixContact_MSTB_2,5⁄ 4-ST-5,08.stp"
+    (model "${MEINE_BIBS}/MeineBib.3dshapes/PhoenixContact_MSTB_2,5_4-ST-5,08.stp"
       (offset (xyz -2.5 -19.8 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -4258,7 +4258,7 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
-    (model "${MEINE_BIBS}/MeineBib.3dshapes/PhoenixContact_MSTB_2,5⁄ 4-ST-5,08.stp"
+    (model "${MEINE_BIBS}/MeineBib.3dshapes/PhoenixContact_MSTB_2,5_4-ST-5,08.stp"
       (offset (xyz -2.5 -19.8 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -6079,7 +6079,7 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
-    (model "${MEINE_BIBS}/MeineBib.3dshapes/PhoenixContact_MSTB_2,5⁄ 4-ST-5,08.stp"
+    (model "${MEINE_BIBS}/MeineBib.3dshapes/PhoenixContact_MSTB_2,5_4-ST-5,08.stp"
       (offset (xyz -2.5 -19.8 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -6716,7 +6716,7 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
-    (model "${MEINE_BIBS}/MeineBib.3dshapes/PhoenixContact_MSTB_2,5⁄ 4-ST-5,08.stp"
+    (model "${MEINE_BIBS}/MeineBib.3dshapes/PhoenixContact_MSTB_2,5_4-ST-5,08.stp"
       (offset (xyz -2.5 -19.8 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -8101,7 +8101,7 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
-    (model "${MEINE_BIBS}/MeineBib.3dshapes/PhoenixContact_MSTB_2,5⁄ 4-ST-5,08.stp"
+    (model "${MEINE_BIBS}/MeineBib.3dshapes/PhoenixContact_MSTB_2,5_4-ST-5,08.stp"
       (offset (xyz -2.5 -19.8 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -9325,7 +9325,7 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
-    (model "${MEINE_BIBS}/MeineBib.3dshapes/PhoenixContact_MSTB_2,5⁄ 4-ST-5,08.stp"
+    (model "${MEINE_BIBS}/MeineBib.3dshapes/PhoenixContact_MSTB_2,5_4-ST-5,08.stp"
       (offset (xyz -2.5 -19.8 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -9850,7 +9850,7 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
-    (model "${MEINE_BIBS}/MeineBib.3dshapes/PhoenixContact_MSTB_2,5⁄ 4-ST-5,08.stp"
+    (model "${MEINE_BIBS}/MeineBib.3dshapes/PhoenixContact_MSTB_2,5_4-ST-5,08.stp"
       (offset (xyz -2.5 -19.8 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -12035,7 +12035,7 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
-    (model "${MEINE_BIBS}/MeineBib.3dshapes/PhoenixContact_MSTB_2,5⁄ 4-ST-5,08.stp"
+    (model "${MEINE_BIBS}/MeineBib.3dshapes/PhoenixContact_MSTB_2,5_4-ST-5,08.stp"
       (offset (xyz -2.5 -19.8 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
