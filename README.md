@@ -604,9 +604,11 @@ As Codesys is proprietary, I won't be focussing much on it, but I want to make s
 <details>
 <summary>Click to expand</summary>
 
-1. Follow the [Codesys Pi FAQ](https://faq.codesys.com/display/CDSFAQ/Raspberry+Pi%3A+FAQ) to install the runtime on your Pi as well as to get your engineering system set up
+1. Setup your Pi with a fresh install of Pi OS. I only had luck using the "legacy" 32 Bit Debian Buster install and not the most recent (as of 2024-02) Debian Bookworm.
 
-2. After enabling UART3 [as described above](#j2--modbus) and rebooting your Pi, you can set `/dev/ttyAMA3` to be your Modbus master port:
+2. Follow the [Codesys Pi FAQ](https://faq.codesys.com/display/CDSFAQ/Raspberry+Pi%3A+FAQ) to install the runtime on your Pi as well as to get your engineering system set up
+
+3. After enabling UART3 [as described above](#j2--modbus) and rebooting your Pi, you can set `/dev/ttyAMA3` to be your Modbus master port:
 
 TODO Modbus port image
 
