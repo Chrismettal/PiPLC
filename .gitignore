@@ -59,3 +59,9 @@ Notebook.md
 
 # OpenPLC
 build/
+
+# Codesys
+*.bootinfo
+*.bootinfo_guids
+*.compileinfo
+*.~u
