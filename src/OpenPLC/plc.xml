@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <project xmlns:ns1="http://www.plcopen.org/xml/tc6_0201" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.plcopen.org/xml/tc6_0201">
   <fileHeader companyName="Binary-6" productName="PiPLC_DemoProduct" productVersion="1" creationDateTime="2023-12-08T21:28:31" companyURL="Binary-6.de"/>
-  <contentHeader name="OpenPLC_Testing" modificationDateTime="2024-01-27T15:38:44" author="Chrismettal" language="en-US">
+  <contentHeader name="OpenPLC_Testing" modificationDateTime="2024-02-19T19:57:38" author="Chrismettal" language="en-US">
     <coordinateInfo>
       <fbd>
         <scaling x="10" y="10"/>
@@ -155,6 +155,16 @@
               </initialValue>
             </variable>
           </localVars>
+          <localVars>
+            <variable name="toggleBool">
+              <type>
+                <BOOL/>
+              </type>
+              <initialValue>
+                <simpleValue value="FALSE"/>
+              </initialValue>
+            </variable>
+          </localVars>
         </interface>
         <body>
           <ST>
@@ -193,6 +203,9 @@ ELSE
   (* TODO 1-Wire demo here *)
   
   (* TODO I2C demo here *)
+  
+  
+  toggleBool := NOT toggleBool;
   
 END_IF;
 ]]></xhtml:p>
