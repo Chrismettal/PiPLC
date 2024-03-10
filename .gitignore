@@ -58,7 +58,7 @@ Notebook.md
 *.svg.bkp
 
 # OpenPLC
-build/
+/src/OpenPLC/build
 
 # Codesys
 *.bootinfo

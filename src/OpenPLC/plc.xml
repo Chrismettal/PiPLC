@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <project xmlns:ns1="http://www.plcopen.org/xml/tc6_0201" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.plcopen.org/xml/tc6_0201">
   <fileHeader companyName="Binary-6" productName="PiPLC_DemoProduct" productVersion="1" creationDateTime="2023-12-08T21:28:31" companyURL="Binary-6.de"/>
-  <contentHeader name="OpenPLC_Testing" modificationDateTime="2024-02-19T19:57:38" author="Chrismettal" language="en-US">
+  <contentHeader name="OpenPLC_Testing" modificationDateTime="2024-03-10T18:35:59" author="Chrismettal" language="en-US">
     <coordinateInfo>
       <fbd>
         <scaling x="10" y="10"/>
@@ -20,47 +20,47 @@
       <pou name="MAIN" pouType="program">
         <interface>
           <localVars>
-            <variable name="Input_I1" address="%IX0.0">
+            <variable name="Input_I1_S0Powermeter" address="%IX0.0">
               <type>
                 <BOOL/>
               </type>
             </variable>
-            <variable name="Input_I2" address="%IX0.1">
+            <variable name="Input_I2_LightSwitch" address="%IX0.1">
               <type>
                 <BOOL/>
               </type>
             </variable>
-            <variable name="Input_I3" address="%IX0.2">
+            <variable name="Input_I3_EstopNO" address="%IX0.2">
               <type>
                 <BOOL/>
               </type>
             </variable>
-            <variable name="Input_I4" address="%IX0.3">
+            <variable name="Input_I4_EstopNC" address="%IX0.3">
               <type>
                 <BOOL/>
               </type>
             </variable>
-            <variable name="Input_I5" address="%IX0.4">
+            <variable name="Input_I5_ToggleLeft" address="%IX0.4">
               <type>
                 <BOOL/>
               </type>
             </variable>
-            <variable name="Input_I6" address="%IX0.5">
+            <variable name="Input_I6_ToggleRight" address="%IX0.5">
               <type>
                 <BOOL/>
               </type>
             </variable>
-            <variable name="Input_I7" address="%IX0.6">
+            <variable name="Input_I7_ButtonGreen" address="%IX0.6">
               <type>
                 <BOOL/>
               </type>
             </variable>
-            <variable name="Input_I8" address="%IX0.7">
+            <variable name="Input_I8_ButtonRed" address="%IX0.7">
               <type>
                 <BOOL/>
               </type>
             </variable>
-            <variable name="Output_Q1" address="%QX0.0">
+            <variable name="Output_Q1_230vLight" address="%QX0.0">
               <type>
                 <BOOL/>
               </type>
@@ -70,17 +70,17 @@
                 <BOOL/>
               </type>
             </variable>
-            <variable name="Output_Q3" address="%QX0.2">
+            <variable name="Output_Q3_StacklightGreen" address="%QX0.2">
               <type>
                 <BOOL/>
               </type>
             </variable>
-            <variable name="Output_Q4" address="%QX0.3">
+            <variable name="Output_Q4_StacklightYellow" address="%QX0.3">
               <type>
                 <BOOL/>
               </type>
             </variable>
-            <variable name="Output_Q5" address="%QX0.4">
+            <variable name="Output_Q5_StacklightRed" address="%QX0.4">
               <type>
                 <BOOL/>
               </type>
@@ -100,14 +100,34 @@
                 <BOOL/>
               </type>
             </variable>
-            <variable name="PWM_0" address="%QW0">
+            <variable name="PWM_0_LED1" address="%QW0">
               <type>
-                <WORD/>
+                <UINT/>
               </type>
             </variable>
-            <variable name="PWM_1" address="%QW1">
+            <variable name="PWM_1_LED2" address="%QW1">
               <type>
-                <WORD/>
+                <UINT/>
+              </type>
+            </variable>
+            <variable name="ModIO_Q1" address="%QX100.0">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="ModIO_Q2" address="%QX100.1">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="ModIO_Q3" address="%QX100.2">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="ModIO_Q4" address="%QX100.3">
+              <type>
+                <BOOL/>
               </type>
             </variable>
           </localVars>
@@ -120,9 +140,36 @@
                 <simpleValue value="FALSE"/>
               </initialValue>
             </variable>
-          </localVars>
-          <localVars>
-            <variable name="ModIO_Q1" address="%QX100.0">
+            <variable name="CurrentPower">
+              <type>
+                <REAL/>
+              </type>
+              <documentation>
+                <xhtml:p><![CDATA[Current power calculated from S0 input]]></xhtml:p>
+              </documentation>
+            </variable>
+            <variable name="msSinceLastEdge">
+              <type>
+                <REAL/>
+              </type>
+              <documentation>
+                <xhtml:p><![CDATA[Milliseconds since last edge on S0]]></xhtml:p>
+              </documentation>
+            </variable>
+            <variable name="S0Timer">
+              <type>
+                <derived name="TON"/>
+              </type>
+              <documentation>
+                <xhtml:p><![CDATA[Timer for CurrentPower measurement]]></xhtml:p>
+              </documentation>
+            </variable>
+            <variable name="rtrigLightSwitch">
+              <type>
+                <derived name="R_TRIG"/>
+              </type>
+            </variable>
+            <variable name="MachineRunning">
               <type>
                 <BOOL/>
               </type>
@@ -130,7 +177,12 @@
                 <simpleValue value="FALSE"/>
               </initialValue>
             </variable>
-            <variable name="ModIO_Q2" address="%QX100.1">
+            <variable name="tonBlinker">
+              <type>
+                <derived name="TON"/>
+              </type>
+            </variable>
+            <variable name="Blinker">
               <type>
                 <BOOL/>
               </type>
@@ -138,30 +190,17 @@
                 <simpleValue value="FALSE"/>
               </initialValue>
             </variable>
-            <variable name="ModIO_Q3" address="%QX100.2">
+            <variable name="rtrigStepModRelay">
               <type>
-                <BOOL/>
+                <derived name="R_TRIG"/>
               </type>
-              <initialValue>
-                <simpleValue value="FALSE"/>
-              </initialValue>
             </variable>
-            <variable name="ModIO_Q4" address="%QX100.3">
+            <variable name="ActiveRelay">
               <type>
-                <BOOL/>
+                <USINT/>
               </type>
               <initialValue>
-                <simpleValue value="FALSE"/>
-              </initialValue>
-            </variable>
-          </localVars>
-          <localVars>
-            <variable name="toggleBool">
-              <type>
-                <BOOL/>
-              </type>
-              <initialValue>
-                <simpleValue value="FALSE"/>
+                <simpleValue value="0"/>
               </initialValue>
             </variable>
           </localVars>
@@ -173,39 +212,120 @@
 
 IF NOT InitDone THEN
   (* Oneshots at init *)
-
-  (* PWM demo, set an arbitrary duty cycle to PWM outputs. *)
-  PWM_0 := 32760; (* ~50% Duty Cycle *)
-  PWM_1 := 8000; (* ~12% Duty Cycle *)
     
   (* Set InitDone so we execute cyclic tasks starting next scan *)
   InitDone := TRUE;
 
 ELSE
-  (* Cyclic calls after init oneshots*)
+  (*----------------------------------------*)
+  (* Cyclic calls after init oneshots       *)
+  (*----------------------------------------*)
+  (* Global blinker *)
+  tonBlinker(IN := NOT tonBlinker.Q, PT := T#500ms);
+  IF tonBlinker.Q THEN
+    Blinker := NOT Blinker;
+  END_IF;
   
-  (* Digital I/O demo. Pass Ix to Qx live *)
-  Output_Q1 := Input_I1;
-  Output_Q2 := Input_I2;
-  Output_Q3 := Input_I3;
-  Output_Q4 := Input_I4;
-  Output_Q5 := Input_I5;
-  Output_Q6 := Input_I6;
-  Output_Q7 := Input_I7;
-  Output_Q8 := Input_I8;
+  (* "Safety" handling (Yeah, not real safety, but bear with me) *)  
+  IF NOT (Input_I3_EstopNO AND NOT Input_I4_EstopNC) THEN
+    (* If either of the Estop channels fail, kill all power outputs *)
+    Output_Q1_230vLight         := FALSE;
+    Output_Q2                   := FALSE;
+    Output_Q6                   := FALSE;
+    Output_Q7                   := FALSE;
+    Output_Q8                   := FALSE;
+    
+    ModIO_Q1    := FALSE;
+    ModIO_Q2    := FALSE;
+    ModIO_Q3    := FALSE;
+    ModIO_Q4    := FALSE;
+    
+    PWM_0_LED1  := 0;
+    PWM_1_LED2  := 0;
+    
+    ActiveRelay := 0;
+    
+    (* Update stacklight *)
+    Output_Q3_StacklightGreen   := FALSE;
+    Output_Q4_StacklightYellow  := FALSE;
+    Output_Q5_StacklightRed     := Blinker;
+    
+  ELSE
+    (* As long as Estop is good, execute regular logic *)
+    
+    (* S0 Current Power for 1000 imp/kWh meter*)
+    (* PowerInW := 1000ms / TimeSinceLastEdge in ms * 60 s * 60 min * 1000 / 1000 imp/kwh *)
+    S0Timer(IN := NOT Input_I1_S0PowerMeter, PT := T#600S);
+    msSinceLastEdge := TIME_TO_REAL(S0Timer.ET);
+    CurrentPower := 1000.0 / msSinceLastEdge * 3600.0;
+            
+                  
+    (* Light switch toggle*)
+    rtrigLightswitch(CLK := Input_I2_LightSwitch);
+    IF rtrigLightswitch.Q THEN
+      Output_Q1_230vLight := NOT Output_Q1_230vLight;
+    END_IF;
 
-  (* Write out Modbus outputs *)
-  ModIO_Q1  := Input_I1;
-  ModIO_Q2  := Input_I2;
-  ModIO_Q3  := Input_I3;
-  ModIO_Q4  := Input_I4;
-
-  (* TODO 1-Wire demo here *)
-  
-  (* TODO I2C demo here *)
-  
-  
-  toggleBool := NOT toggleBool;
+            
+    (*----------------------------------------*)
+    (* Machine Automode                       *)
+    (*----------------------------------------*)
+    (* Buttons to start / stop machine *)
+    MachineRunning := MachineRunning OR      Input_I7_ButtonGreen;
+    MachineRunning := MachineRunning AND NOT Input_I8_ButtonRed;
+    (* Automode vs Manual mode *)
+    IF MachineRunning THEN
+      (* Show running state in stacklight *)
+      Output_Q3_StacklightGreen   := TRUE;
+      Output_Q4_StacklightYellow  := FALSE;
+      Output_Q5_StacklightRed     := FALSE;
+    
+      (* Dimming lights *)
+      PWM_0_LED1 := PWM_0_LED1 + 1000;
+      IF PWM_0_LED1 > 64000 THEN
+        PWM_0_LED1 := 0;
+      END_IF;
+      PWM_1_LED2 := 65535 - PWM_0_LED1;
+      
+      
+      (* Modbus IO *)
+      rtrigStepModRelay(CLK := Blinker);
+      IF rtrigStepModRelay.Q THEN
+        
+        ActiveRelay := ActiveRelay + 1;
+        
+        IF ActiveRelay > 4 THEN
+          ActiveRelay := 1;
+        END_IF;
+        
+        ModIO_Q1    := ActiveRelay = 1;
+        ModIO_Q2    := ActiveRelay = 2;
+        ModIO_Q3    := ActiveRelay = 3;
+        ModIO_Q4    := ActiveRelay = 4;
+      END_IF;
+      
+      (* Modbus temp probe *)
+      
+      
+      (* 1-Wire temp probe *)
+      
+      
+      (* Arduino Slave *)
+      
+      
+      (* I²C Servos *)
+      
+      
+      (* EtherCAT *) 
+      
+    ELSE
+      (* Show idle state in stacklight *)
+      Output_Q3_StacklightGreen   := FALSE;
+      Output_Q4_StacklightYellow  := Blinker;
+      Output_Q5_StacklightRed     := FALSE;
+    END_IF;
+            
+  END_IF;
   
 END_IF;
 ]]></xhtml:p>
