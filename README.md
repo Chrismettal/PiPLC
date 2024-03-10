@@ -32,45 +32,39 @@ All the parts are or will be stocked at Tindie!
 - [GPIO mapping](#gpio-mapping)
 - [Pinout](#pinout)
 - [I/O](#io)
-  - [J1 | Power Input](#j1--power-input)
-  - [J2 | Modbus](#j2--modbus)
-    - [Examples](#examples)
-  - [J3 - J6 | Digital Outputs (Q1-8)](#j3---j6--digital-outputs-q1-8)
-    - [Examples](#examples-1)
-  - [J7 | PWM](#j7--pwm)
-    - [Examples](#examples-2)
-  - [J8 | I²C](#j8--ic)
-    - [Examples](#examples-3)
-  - [J9 | 1-Wire](#j9--1-wire)
-    - [Examples](#examples-4)
-  - [J10 - J12 | Digital Inputs (I1-8)](#j10---j12--digital-inputs-i1-8)
-    - [Examples](#examples-5)
-  - [Wago header | KNX / NCN5121](#wago-header--knx--ncn5121)
-    - [Examples](#examples-6)
+    - [J1 | Power Input](#j1--power-input)
+    - [J2 | Modbus](#j2--modbus)
+    - [J3 - J6 | Digital Outputs (Q1-8)](#j3---j6--digital-outputs-q1-8)
+    - [J7 | PWM](#j7--pwm)
+    - [J8 | I²C](#j8--ic)
+    - [J9 | 1-Wire](#j9--1-wire)
+    - [J10 - J12 | Digital Inputs (I1-8)](#j10---j12--digital-inputs-i1-8)
+    - [Wago header | KNX / NCN5121](#wago-header--knx--ncn5121)
 - [On board devices](#on-board-devices)
-  - [PCF8523 RTC](#pcf8523-rtc)
+    - [PCF8523 RTC](#pcf8523-rtc)
+- [Example Hardware](#example-hardware)
 - [Software](#software)
-  - [OpenPLC](#openplc)
-    - [Installation](#installation)
-    - [Example](#example)
-  - [Home Assistant](#home-assistant)
-    - [Installation](#installation-1)
-    - [Example](#example-1)
-  - [Codesys](#codesys)
-    - [Installation](#installation-2)
-    - [Example](#example-2)
+    - [OpenPLC](#openplc)
+        - [Installation](#installation)
+        - [Example](#example)
+    - [Home Assistant](#home-assistant)
+        - [Installation](#installation-1)
+        - [Example](#example-1)
+    - [Codesys](#codesys)
+        - [Installation](#installation-2)
+        - [Example](#example-2)
 - [Raspberry pi configuration](#raspberry-pi-configuration)
-  - [`/boot/config.txt`](#bootconfigtxt)
-  - [`/boot/cmdline.txt`](#bootcmdlinetxt)
+    - [`/boot/config.txt`](#bootconfigtxt)
+    - [`/boot/cmdline.txt`](#bootcmdlinetxt)
 - [Making your own](#making-your-own)
-  - [Boards](#boards)
-    - [Mainboard](#mainboard)
-    - [HMI](#hmi)
-    - [Frontpanel](#frontpanel)
-    - [Pi Riser](#pi-riser)
-    - [HMI Riser](#hmi-riser)
-  - [3D printing](#3d-printing)
-  - [Testing](#testing)
+    - [Boards](#boards)
+        - [Mainboard](#mainboard)
+        - [HMI](#hmi)
+        - [Frontpanel](#frontpanel)
+        - [Pi Riser](#pi-riser)
+        - [HMI Riser](#hmi-riser)
+    - [3D printing](#3d-printing)
+    - [Testing](#testing)
 - [Tools used](#tools-used)
 - [Sources](#sources)
 - [Donations](#donations)
@@ -166,23 +160,6 @@ OpenPLC natively supports Modbus to talk to I/O, while Home Assistant has a [Mod
 >
 > For Home Assistant, TODO hardware change documentation
 
-#### Examples
-
-<details>
-<summary>Example OpenPLC - click to expand</summary>
-    TODO
-</details>
-
-<details>
-<summary>Example Home Assistant - click to expand</summary>
-    TODO
-</details>
-
-<details>
-<summary>Example Codesys - click to expand</summary>
-    TODO
-</details>
-
 <details>
 <summary>Further reading</summary>
 
@@ -231,25 +208,6 @@ As with the digital inputs, each output features a status LED found on the HMI s
 > 
 > Only certified electricians should ever be performing mains work, and home-built devices should never be connected to mains power unless you know what you are doing.
 
-
-#### Examples
-
-
-<details>
-<summary>Example OpenPLC - click to expand</summary>
-    TODO
-</details>
-
-<details>
-<summary>Example Home Assistant - click to expand</summary>
-    TODO
-</details>
-
-<details>
-<summary>Example Codesys - click to expand</summary>
-    TODO
-</details>
-
 ---
 
 ### J7 | PWM
@@ -265,24 +223,6 @@ Choosing to actually use the PWM outputs, you have both hardware PWM's available
 
 > [!WARNING]
 > Unprotected access to `GPIO_18` and `GPIO_19`. Take care not to damage your Pi!
-
-#### Examples
-
-<details>
-<summary>Example OpenPLC - click to expand</summary>
-    TODO
-</details>
-
-<details>
-<summary>Example Home Assistant - click to expand</summary>
-    TODO
-</details>
-
-<details>
-<summary>Example Codesys - click to expand</summary>
-    TODO
-</details>
-
 
 ---
 
@@ -304,24 +244,6 @@ You do have the option however, to attach whatever I²C device you want, provide
 > You might need to install `i2c-tools` with `sudo apt install i2c-tools` to test your I²C connections. 
 >
 > `i2cdetect -y 1` should show the adresses of all found I²C devices afterwards
-
-
-#### Examples
-
-<details>
-<summary>Example OpenPLC - click to expand</summary>
-    TODO
-</details>
-
-<details>
-<summary>Example Home Assistant - click to expand</summary>
-    TODO
-</details>
-
-<details>
-<summary>Example Codesys - click to expand</summary>
-    TODO
-</details>
 
 ---
 
@@ -346,24 +268,6 @@ This header contains `GPIO_04` for native 1-Wire capability.
 > reboot
 >
 > You should be able to find any connected 1-Wire devices automatically with `ls /sys/bus/w1/devices/` afterwards
-
-
-#### Examples
-
-<details>
-<summary>Example OpenPLC - click to expand</summary>
-    TODO
-</details>
-
-<details>
-<summary>Example Home Assistant - click to expand</summary>
-    TODO
-</details>
-
-<details>
-<summary>Example Codesys - click to expand</summary>
-    TODO
-</details>
 
 ---
 
@@ -404,23 +308,6 @@ Input currents are as follows:
 | 12 V    | TODO mA       |
 | 24 V    | 5 mA          |
 
-#### Examples
-
-<details>
-<summary>Example OpenPLC - click to expand</summary>
-    TODO
-</details>
-
-<details>
-<summary>Example Home Assistant - click to expand</summary>
-    TODO
-</details>
-
-<details>
-<summary>Example Codesys - click to expand</summary>
-    TODO
-</details>
-
 ---
 
 ### Wago header | KNX / NCN5121
@@ -451,23 +338,6 @@ In this board, the `NC5121` is NOT supplied through the KNX supply, but through 
 >
 > TODO add OpenPLC installation steps
 
-#### Examples
-
-<details>
-<summary>Example OpenPLC - click to expand</summary>
-    TODO
-</details>
-
-<details>
-<summary>Example Home Assistant - click to expand</summary>
-    TODO
-</details>
-
-<details>
-<summary>Example Codesys - click to expand</summary>
-    TODO
-</details>
-
 ---
 
 ## On board devices
@@ -485,6 +355,41 @@ A `PCF8523` based realtime clock is present on the board so the PiPLC can keep t
 > And reboot afterwards.
 >
 > Enabling RTC in the Pi and setting the time correctly is explained well in [Adafruit's RTC guide](https://learn.adafruit.com/adding-a-real-time-clock-to-raspberry-pi/set-rtc-time).
+
+---
+
+
+## Example Hardware
+
+![TestBoardSchematic](/doc/PiPLC_Testboard.drawio.svg)
+
+This is the testing "schematic" used for all software examples. It demonstrates all interfaces present on-board and all testing of PiPLC was done in this configuration.
+
+|   GPIO Name    | PiPLC function        | Device                               |
+| :------------: | :-------------------- | :----------------------------------- |
+| `GPIO_02 - 03` | :blue_square: I²C     | `PCA9685` 16 Ch. PWM servo driver    |
+| `GPIO_04 - 06` | :blue_square: Modbus  | EBYTE `MA01-XACX0440` I/O Module     |
+| `GPIO_04 - 06` | :blue_square: Modbus  | ARCELI `SHT20` Temp + Humidity probe |
+|   `GPIO_24`    | :red_square: Q1       | 230 V Light                          |
+|   `GPIO_08`    | :red_square: Q3       | Stacklight Green Channel             |
+|   `GPIO_07`    | :red_square: Q4       | Stacklight Yellow Channel            |
+|   `GPIO_12`    | :red_square: Q5       | Stacklight Red Channel               |
+|   `GPIO_17`    | :yellow_square: I1    | `S0` Home power meter                |
+|   `GPIO_27`    | :yellow_square: I2    | Light switch                         |
+|   `GPIO_22`    | :yellow_square: I3    | Emergency Stop NO                    |
+|   `GPIO_10`    | :yellow_square: I4    | Emergency Stop NC                    |
+|   `GPIO_09`    | :yellow_square: I5    | Toggle Switch left                   |
+|   `GPIO_11`    | :yellow_square: I6    | Toggle Switch right                  |
+|   `GPIO_13`    | :yellow_square: I7    | Green button                         |
+|   `GPIO_26`    | :yellow_square: I8    | Red button                           |
+| `GPIO_14 - 15` | :blue_square: KNX     | 4 Ch. Relay                          |
+|   `GPIO_18`    | :orange_square: PWM_0 | Dimmable LED                         |
+|   `GPIO_19`    | :orange_square: PWM_1 | Dimmable LED                         |
+|   `GPIO_23`    | :blue_square: 1-Wire  | `DS18B20` Temperature probe          |
+|      USB       | USB                   | Arduino Uno (OpenPLC Slave Firmware) |
+|   RJ45 Jack    | EtherCAT              | TBD                                  |
+|      Wifi      | LAN access            | Android Tablet as HMI                |
+|      Wifi      | LAN access            | Programming device (Laptop)          |
 
 ---
 
