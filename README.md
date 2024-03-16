@@ -391,6 +391,26 @@ This is the testing "schematic" used for all software examples. It demonstrates 
 |      Wifi      | LAN access            | Android Tablet as HMI                |
 |      Wifi      | LAN access            | Programming device (Laptop)          |
 
+
+There is an example chinesium Modbus I/O module on the testing board with the following information:
+
+| Parameter                 | Value                     |
+| :------------------------ | :------------------------ |
+| Device Type               | Generic Modbus RTU Device |
+| Slave ID                  | 32                        |
+| COM Port                  | `/dev/ttyAMA3`            |
+| Baudrate                  | 9600                      |
+| Parity                    | None                      |
+| Data bits                 | 8                         |
+| Stop bits                 | 1                         |
+| Transmission Pause        | 0                         |
+| Discrete Inputs           | Address 0, Size 0         |
+| Coils                     | Address 0, Size 4         |
+| Input Registers           | Address 0, Size 0         |
+| Holding Registers - Read  | Address 0, Size 0         |
+| Holding Registers - Write | Address 0, Size 0         |
+
+
 ---
 
 ## Software

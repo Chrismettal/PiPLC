@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <project xmlns:ns1="http://www.plcopen.org/xml/tc6_0201" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.plcopen.org/xml/tc6_0201">
   <fileHeader companyName="Binary-6" productName="PiPLC_DemoProduct" productVersion="1" creationDateTime="2023-12-08T21:28:31" companyURL="Binary-6.de"/>
-  <contentHeader name="OpenPLC_Testing" modificationDateTime="2024-03-10T18:35:59" author="Chrismettal" language="en-US">
+  <contentHeader name="OpenPLC_Testing" modificationDateTime="2024-03-16T18:25:39" author="Chrismettal" language="en-US">
     <coordinateInfo>
       <fbd>
         <scaling x="10" y="10"/>
@@ -204,6 +204,72 @@
               </initialValue>
             </variable>
           </localVars>
+          <localVars>
+            <variable name="Arduino_LED1" address="%QX100.4">
+              <type>
+                <BOOL/>
+              </type>
+              <initialValue>
+                <simpleValue value="0"/>
+              </initialValue>
+            </variable>
+            <variable name="Arduino_LED2" address="%QX100.5">
+              <type>
+                <BOOL/>
+              </type>
+              <initialValue>
+                <simpleValue value="0"/>
+              </initialValue>
+            </variable>
+            <variable name="Arduino_LED3" address="%QX100.6">
+              <type>
+                <BOOL/>
+              </type>
+              <initialValue>
+                <simpleValue value="0"/>
+              </initialValue>
+            </variable>
+            <variable name="Arduino_LED4" address="%QX100.7">
+              <type>
+                <BOOL/>
+              </type>
+              <initialValue>
+                <simpleValue value="0"/>
+              </initialValue>
+            </variable>
+            <variable name="Arduino_Pot" address="%IW100">
+              <type>
+                <UINT/>
+              </type>
+              <initialValue>
+                <simpleValue value="0"/>
+              </initialValue>
+            </variable>
+            <variable name="Arduino_Butt1" address="%IW101">
+              <type>
+                <UINT/>
+              </type>
+              <initialValue>
+                <simpleValue value="0"/>
+              </initialValue>
+            </variable>
+            <variable name="Arduino_Butt2" address="%IW102">
+              <type>
+                <UINT/>
+              </type>
+              <initialValue>
+                <simpleValue value="0"/>
+              </initialValue>
+            </variable>
+            <variable name="Arduino_Butt3" address="%IW103">
+              <type>
+                <UINT/>
+              </type>
+              <initialValue>
+                <simpleValue value="0"/>
+              </initialValue>
+            </variable>
+          </localVars>
         </interface>
         <body>
           <ST>
@@ -227,7 +293,7 @@ ELSE
   END_IF;
   
   (* "Safety" handling (Yeah, not real safety, but bear with me) *)  
-  IF NOT (Input_I3_EstopNO AND NOT Input_I4_EstopNC) THEN
+  IF NOT (NOT Input_I3_EstopNO AND Input_I4_EstopNC) THEN
     (* If either of the Estop channels fail, kill all power outputs *)
     Output_Q1_230vLight         := FALSE;
     Output_Q2                   := FALSE;
@@ -235,20 +301,26 @@ ELSE
     Output_Q7                   := FALSE;
     Output_Q8                   := FALSE;
     
-    ModIO_Q1    := FALSE;
-    ModIO_Q2    := FALSE;
-    ModIO_Q3    := FALSE;
-    ModIO_Q4    := FALSE;
+    ModIO_Q1        := FALSE;
+    ModIO_Q2        := FALSE;
+    ModIO_Q3        := FALSE;
+    ModIO_Q4        := FALSE;
     
-    PWM_0_LED1  := 0;
-    PWM_1_LED2  := 0;
+    Arduino_LED1    := TRUE;
+    Arduino_LED2    := TRUE;
+    Arduino_LED3    := TRUE;
+    Arduino_LED4    := TRUE;
     
-    ActiveRelay := 0;
+    PWM_0_LED1      := 0;
+    PWM_1_LED2      := 0;
+    
+    ActiveRelay     := 0;
+    MachineRunning  := FALSE;
     
     (* Update stacklight *)
     Output_Q3_StacklightGreen   := FALSE;
     Output_Q4_StacklightYellow  := FALSE;
-    Output_Q5_StacklightRed     := Blinker;
+    Output_Q5_StacklightRed     := TRUE;
     
   ELSE
     (* As long as Estop is good, execute regular logic *)
@@ -259,20 +331,18 @@ ELSE
     msSinceLastEdge := TIME_TO_REAL(S0Timer.ET);
     CurrentPower := 1000.0 / msSinceLastEdge * 3600.0;
             
-                  
     (* Light switch toggle*)
     rtrigLightswitch(CLK := Input_I2_LightSwitch);
     IF rtrigLightswitch.Q THEN
       Output_Q1_230vLight := NOT Output_Q1_230vLight;
     END_IF;
 
-            
     (*----------------------------------------*)
     (* Machine Automode                       *)
     (*----------------------------------------*)
     (* Buttons to start / stop machine *)
-    MachineRunning := MachineRunning OR      Input_I7_ButtonGreen;
-    MachineRunning := MachineRunning AND NOT Input_I8_ButtonRed;
+    MachineRunning := MachineRunning OR  Input_I7_ButtonGreen;
+    MachineRunning := MachineRunning AND Input_I8_ButtonRed;
     (* Automode vs Manual mode *)
     IF MachineRunning THEN
       (* Show running state in stacklight *)
@@ -288,29 +358,29 @@ ELSE
       PWM_1_LED2 := 65535 - PWM_0_LED1;
       
       
-      (* Modbus IO *)
       rtrigStepModRelay(CLK := Blinker);
       IF rtrigStepModRelay.Q THEN
         
         ActiveRelay := ActiveRelay + 1;
-        
         IF ActiveRelay > 4 THEN
           ActiveRelay := 1;
         END_IF;
+      
+        (* Modbus IO *)  
+        ModIO_Q1      := ActiveRelay = 1;
+        ModIO_Q2      := ActiveRelay = 2;
+        ModIO_Q3      := ActiveRelay = 3;
+        ModIO_Q4      := ActiveRelay = 4;
         
-        ModIO_Q1    := ActiveRelay = 1;
-        ModIO_Q2    := ActiveRelay = 2;
-        ModIO_Q3    := ActiveRelay = 3;
-        ModIO_Q4    := ActiveRelay = 4;
+        (* Arduino Slave *)
+        Arduino_LED1  := NOT (ActiveRelay = 1);
+        Arduino_LED2  := NOT (ActiveRelay = 2);
+        Arduino_LED3  := NOT (ActiveRelay = 3);
+        Arduino_LED4  := NOT (ActiveRelay = 4);
+        
       END_IF;
-      
-      (* Modbus temp probe *)
-      
-      
+
       (* 1-Wire temp probe *)
-      
-      
-      (* Arduino Slave *)
       
       
       (* I²C Servos *)
@@ -321,7 +391,7 @@ ELSE
     ELSE
       (* Show idle state in stacklight *)
       Output_Q3_StacklightGreen   := FALSE;
-      Output_Q4_StacklightYellow  := Blinker;
+      Output_Q4_StacklightYellow  := TRUE;
       Output_Q5_StacklightRed     := FALSE;
     END_IF;
             

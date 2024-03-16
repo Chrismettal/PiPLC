@@ -35,6 +35,16 @@ PROGRAM MAIN
     rtrigStepModRelay : R_TRIG;
     ActiveRelay : USINT := 0;
   END_VAR
+  VAR
+    Arduino_LED1 AT %QX100.4 : BOOL := 0;
+    Arduino_LED2 AT %QX100.5 : BOOL := 0;
+    Arduino_LED3 AT %QX100.6 : BOOL := 0;
+    Arduino_LED4 AT %QX100.7 : BOOL := 0;
+    Arduino_Pot AT %IW100 : UINT := 0;
+    Arduino_Butt1 AT %IW101 : UINT := 0;
+    Arduino_Butt2 AT %IW102 : UINT := 0;
+    Arduino_Butt3 AT %IW103 : UINT := 0;
+  END_VAR
 
   (* This is a testing program to test most functions on a PiPLC                                      *)
   (* Make sure to activate the "Binary-6 PiPLC" hardware layer on your PLC before uploading this code *)
@@ -56,7 +66,7 @@ PROGRAM MAIN
     END_IF;
     
     (* "Safety" handling (Yeah, not real safety, but bear with me) *)  
-    IF NOT (Input_I3_EstopNO AND NOT Input_I4_EstopNC) THEN
+    IF NOT (NOT Input_I3_EstopNO AND Input_I4_EstopNC) THEN
       (* If either of the Estop channels fail, kill all power outputs *)
       Output_Q1_230vLight         := FALSE;
       Output_Q2                   := FALSE;
@@ -64,20 +74,26 @@ PROGRAM MAIN
       Output_Q7                   := FALSE;
       Output_Q8                   := FALSE;
       
-      ModIO_Q1    := FALSE;
-      ModIO_Q2    := FALSE;
-      ModIO_Q3    := FALSE;
-      ModIO_Q4    := FALSE;
+      ModIO_Q1        := FALSE;
+      ModIO_Q2        := FALSE;
+      ModIO_Q3        := FALSE;
+      ModIO_Q4        := FALSE;
       
-      PWM_0_LED1  := 0;
-      PWM_1_LED2  := 0;
+      Arduino_LED1    := TRUE;
+      Arduino_LED2    := TRUE;
+      Arduino_LED3    := TRUE;
+      Arduino_LED4    := TRUE;
       
-      ActiveRelay := 0;
+      PWM_0_LED1      := 0;
+      PWM_1_LED2      := 0;
+      
+      ActiveRelay     := 0;
+      MachineRunning  := FALSE;
       
       (* Update stacklight *)
       Output_Q3_StacklightGreen   := FALSE;
       Output_Q4_StacklightYellow  := FALSE;
-      Output_Q5_StacklightRed     := Blinker;
+      Output_Q5_StacklightRed     := TRUE;
       
     ELSE
       (* As long as Estop is good, execute regular logic *)
@@ -100,8 +116,8 @@ PROGRAM MAIN
       (* Machine Automode                       *)
       (*----------------------------------------*)
       (* Buttons to start / stop machine *)
-      MachineRunning := MachineRunning OR      Input_I7_ButtonGreen;
-      MachineRunning := MachineRunning AND NOT Input_I8_ButtonRed;
+      MachineRunning := MachineRunning OR  Input_I7_ButtonGreen;
+      MachineRunning := MachineRunning AND Input_I8_ButtonRed;
       (* Automode vs Manual mode *)
       IF MachineRunning THEN
         (* Show running state in stacklight *)
@@ -127,15 +143,18 @@ PROGRAM MAIN
             ActiveRelay := 1;
           END_IF;
           
-          ModIO_Q1    := ActiveRelay = 1;
-          ModIO_Q2    := ActiveRelay = 2;
-          ModIO_Q3    := ActiveRelay = 3;
-          ModIO_Q4    := ActiveRelay = 4;
+          ModIO_Q1      := ActiveRelay = 1;
+          ModIO_Q2      := ActiveRelay = 2;
+          ModIO_Q3      := ActiveRelay = 3;
+          ModIO_Q4      := ActiveRelay = 4;
+          
+          Arduino_LED1  := NOT (ActiveRelay = 1);
+          Arduino_LED2  := NOT (ActiveRelay = 2);
+          Arduino_LED3  := NOT (ActiveRelay = 3);
+          Arduino_LED4  := NOT (ActiveRelay = 4);
+          
         END_IF;
-        
-        (* Modbus temp probe *)
-        
-        
+
         (* 1-Wire temp probe *)
         
         
@@ -150,7 +169,7 @@ PROGRAM MAIN
       ELSE
         (* Show idle state in stacklight *)
         Output_Q3_StacklightGreen   := FALSE;
-        Output_Q4_StacklightYellow  := Blinker;
+        Output_Q4_StacklightYellow  := TRUE;
         Output_Q5_StacklightRed     := FALSE;
       END_IF;
               
