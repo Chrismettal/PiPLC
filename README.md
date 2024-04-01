@@ -507,7 +507,13 @@ sudo mount -t vfat /dev/sdx1 ~/TempMount
 
 12. During initial setup of the `KNX` integration, it should find your local `knxd` daemon instance as a valid interface.
 
-13. TODO modbus
+13. To control / read your local GPIO, you'll want to install the following custom integration:
+
+[ha-rpi_gpio](https://github.com/thecode/ha-rpi_gpio)
+
+14. To read 1-wire sensors through GPIO, you'll want to install the following custom integration:
+
+[ha-onewire-sysbus](https://github.com/thecode/ha-onewire-sysbus)
 
 </details>
 
