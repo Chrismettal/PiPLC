@@ -429,7 +429,6 @@ I am currently creating a hardware layer for PiPLC at https://github.com/Chrisme
 <summary>Click to expand</summary>
 
 1. You are going to need a fresh installation of [Raspberry Pi OS](https://www.raspberrypi.com/software/) on your Pi 4. There is an official [getting started guide](https://www.raspberrypi.com/documentation/computers/getting-started.html) that is being kept up to date, so the first steps are not further described here.
-**Make sure to install the legacy Debian Buster version until OpenPLC has moved on from WiringPi, as WiringPi is incompatible to Debian Bookworm!**
 
 2. Execute `git clone https://github.com/chrismettal/OpenPLC_v3` on your Pi. This will clone a forked version of the OpenPLC runtime that contains some changes to make it compatible with PiPLC. Should these changes get merged, this link will be changed to point to the official version.
 
@@ -529,7 +528,7 @@ As Codesys is proprietary, I won't be focussing much on it, but I want to make s
 <details>
 <summary>Click to expand</summary>
 
-1. Setup your Pi with a fresh install of Pi OS. I only had luck using the "legacy" 32 Bit Debian Buster install and not the most recent (as of 2024-02) Debian Bookworm.
+1. Setup your Pi with a fresh install of Pi OS. I only had luck using the "legacy" 32 Bit Debian Buster install and not the most recent (as of 2024-02) Debian Bookworm. (Wiringpi?)
 
 2. Follow the [Codesys Pi FAQ](https://faq.codesys.com/display/CDSFAQ/Raspberry+Pi%3A+FAQ) to install the runtime on your Pi as well as to get your engineering system set up
 
@@ -644,7 +643,7 @@ The case is intended to be printed in a isolating and/or flame retardant filamen
 
 ### Testing
 
-The following commands can be used to test your hardware configuration without installing PLC code or a full Home Assistant install. These are to be executed on a regular Pi OS install with `WiringPi` and `raspi-gpio` installed.
+The following commands can be used to test your hardware configuration without installing PLC code or a full Home Assistant install. These are to be executed on a regular Pi OS install with `raspi-gpio` installed.
 
 - Enable pull ups on all input pins
 
@@ -661,10 +660,6 @@ The following commands can be used to test your hardware configuration without i
 - Set individual relays HIGH/LOW (See [GPIO mapping](#gpio-mapping))
 
 `raspi-gpio set 24 dh` / `raspi-gpio set 24 dl`
-
-- Read all pin states with WiringPi
-
-`gpio readall`
 
 - Detect connected I²C devices (Should show found addresses in the grid if properly connected)
 
