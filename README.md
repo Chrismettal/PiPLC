@@ -559,11 +559,16 @@ TODO link to project
 
 ```
 # PiPLC
-dtoverlay=uart3
-dtoverlay=pi3-disable-bt
-dtoverlay=w1-gpio,gpiopin=23
-dtoverlay=i2c-rtc,pcf8523
+dtoverlay=uart3                     # Enable UART3 for Modbus
+dtoverlay=pi3-disable-bt            # Disable Bluetooth so that UART0 is free for KNX
+dtoverlay=w1-gpio,gpiopin=23        # Enable the 1-Wire pus on pin 23
+dtoverlay=i2c-rtc,pcf8523           # Enable the I²C RTC
+gpio=24,25,8,7,12,16,20,21=op,dl    # Set all relay pins to outputs and turn them off
+gpio=17,27,22,10,9,11,13,26=ip,pu   # Set all digital input pins as pulled-up inputs
 ```
+
+remove any mention of I²S or SPI if found, otherwise relay GPIOs might be driven HIGH on boot. Sometimes `dtparam=spi=on
+` is set which will ruin your day so comment that one out if found.
 
 ### `/boot/cmdline.txt`
 
