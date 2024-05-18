@@ -1,16 +1,19 @@
-<!-- TODO, J? -->
 # PiPLC <!-- omit in toc -->
 
 [![License: CC BY-SA 4.0](https://img.shields.io/badge/license-CC%20BY--SA%204.0-blue?style=flat-square)](https://creativecommons.org/licenses/by-sa/4.0/)
 [![Shop: Tindie](https://img.shields.io/badge/shop-Tindie-blue?style=flat-square)](https://www.tindie.com/stores/binary-6/?ref=offsite_badges&utm_source=sellers_Chrismettal&utm_medium=badges&utm_campaign=badge_medium)
 [![Donations: Coffee](https://img.shields.io/badge/donations-Coffee-brown?style=flat-square)](https://github.com/Chrismettal#donations)
 
-This is a work in progress for a Raspberry Pi breakout board + DIN rail case to use Pis in PLC-like industrial situations.
+![Nice](/img/Nice.jpg)
 
-The design relies on a Raspberry Pi 4 for all functions to work. Pi 5 is currently untested, while Pi 3 and below don't allow for all functions to be used.
+This is a Raspberry Pi breakout board + DIN rail case to use Pis in PLC-like industrial situations.
+
+The design relies on a Raspberry Pi 4 for all functions to work. Pi 5 does also work but won't fit the 3D printed case, while Pi 3 and below don't allow for all functions to be used.
 
 The PiPLC is intended to be used with [Home Assistant](https://www.home-assistant.io/), as well as [OpenPLC](https://autonomylogic.com/).
 Obviously, since it's just a breakout board for any Pi, you can run whatever software you want, but Home Assistant and OpenPLC are the ones inspiring the design of this project.
+
+For an example use with your own software, check out [Grass](https://github.com/chrismettal/grass)!
 
 **IO featured on board the PLC are:**
 
@@ -59,11 +62,11 @@ All the parts are or will be stocked at Tindie!
 - [Making your own](#making-your-own)
     - [Boards](#boards)
         - [Mainboard](#mainboard)
-        - [HMI](#hmi)
         - [Frontpanel](#frontpanel)
         - [Pi Riser](#pi-riser)
         - [HMI Riser](#hmi-riser)
     - [3D printing](#3d-printing)
+    - [Impressions](#impressions)
     - [Testing](#testing)
 - [Tools used](#tools-used)
 - [Sources](#sources)
@@ -74,34 +77,34 @@ All the parts are or will be stocked at Tindie!
 
 ## GPIO mapping
 
-| GPIO Name | PiPLC function           | OpenPLC                | Home Assistant               | Codesys                |
-| :-------: | :----------------------- | :--------------------- | :--------------------------- | :--------------------- |
-| `GPIO_02` | :blue_square: I²C SDA    | :warning: TODO driver? | :warning: To be tested       | :warning: To be tested |
-| `GPIO_03` | :blue_square: I²C SCL    | :warning: TODO driver? | :warning: To be tested       | :warning: To be tested |
-| `GPIO_04` | :blue_square: Modbus TX  | `/dev/ttyAMA3`         | `/dev/ttyAMA3`               | :warning: To be tested |
-| `GPIO_05` | :blue_square: Modbus RX  | `/dev/ttyAMA3`         | `/dev/ttyAMA3`               | :warning: To be tested |
-| `GPIO_06` | :blue_square: Modbus RTS | `/dev/ttyAMA3`         | `/dev/ttyAMA3`               | :warning: To be tested |
-| `GPIO_07` | :red_square: Q4          | `%QX0.3`               | :white_check_mark: TODO Link | :warning: To be tested |
-| `GPIO_08` | :red_square: Q3          | `%QX0.2`               | :white_check_mark: TODO Link | :warning: To be tested |
-| `GPIO_09` | :yellow_square: I5       | `%IX0.4`               | :white_check_mark: TODO Link | :warning: To be tested |
-| `GPIO_10` | :yellow_square: I4       | `%IX0.3`               | :white_check_mark: TODO Link | :warning: To be tested |
-| `GPIO_11` | :yellow_square: I6       | `%IX1.5`               | :white_check_mark: TODO Link | :warning: To be tested |
-| `GPIO_12` | :red_square: Q5          | `%QX0.4`               | :white_check_mark: TODO Link | :warning: To be tested |
-| `GPIO_13` | :yellow_square: I7       | `%IX0.6`               | :white_check_mark: TODO Link | :warning: To be tested |
-| `GPIO_14` | :blue_square: KNX TX     | :x:                    | `/dev/ttyAMA0`               | :warning: To be tested |
-| `GPIO_15` | :blue_square: KNX RX     | :x:                    | `/dev/ttyAMA0`               | :warning: To be tested |
-| `GPIO_16` | :red_square: Q6          | `%QX0.5`               | :white_check_mark: TODO Link | :warning: To be tested |
-| `GPIO_17` | :yellow_square: I1       | `%IX0.0`               | :white_check_mark: TODO Link | :warning: To be tested |
-| `GPIO_18` | :orange_square: PWM_0    | `%QW0`                 | :white_check_mark: TODO Link | :warning: To be tested |
-| `GPIO_19` | :orange_square: PWM_1    | `%QW1`                 | :white_check_mark: TODO Link | :warning: To be tested |
-| `GPIO_20` | :red_square: Q7          | `%QX0.6`               | :white_check_mark: TODO Link | :warning: To be tested |
-| `GPIO_21` | :red_square: Q8          | `%QX0.7`               | :white_check_mark: TODO Link | :warning: To be tested |
-| `GPIO_22` | :yellow_square: I3       | `%IX0.2`               | :white_check_mark: TODO Link | :warning: To be tested |
-| `GPIO_23` | :blue_square: 1-Wire     | :warning: TODO driver? | :warning: To be tested       | :warning: To be tested |
-| `GPIO_24` | :red_square: Q1          | `%QX0.0`               | :white_check_mark: TODO Link | :warning: To be tested |
-| `GPIO_25` | :red_square: Q2          | `%QX0.1`               | :white_check_mark: TODO Link | :warning: To be tested |
-| `GPIO_26` | :yellow_square: I8       | `%IX0.7`               | :white_check_mark: TODO Link | :warning: To be tested |
-| `GPIO_27` | :yellow_square: I2       | `%IX0.1`               | :white_check_mark: TODO Link | :warning: To be tested |
+| GPIO Name | PiPLC function           | OpenPLC                 | Home Assistant         | Codesys                |
+| :-------: | :----------------------- | :---------------------- | :--------------------- | :--------------------- |
+| `GPIO_02` | :blue_square: I²C SDA    | :warning: No driver yet | :warning: To be tested | :warning: To be tested |
+| `GPIO_03` | :blue_square: I²C SCL    | :warning: No driver yet | :warning: To be tested | :warning: To be tested |
+| `GPIO_04` | :blue_square: Modbus TX  | `/dev/ttyAMA3`          | `/dev/ttyAMA3`         | :warning: To be tested |
+| `GPIO_05` | :blue_square: Modbus RX  | `/dev/ttyAMA3`          | `/dev/ttyAMA3`         | :warning: To be tested |
+| `GPIO_06` | :blue_square: Modbus RTS | `/dev/ttyAMA3`          | `/dev/ttyAMA3`         | :warning: To be tested |
+| `GPIO_07` | :red_square: Q4          | `%QX0.3`                | :white_check_mark:     | :warning: To be tested |
+| `GPIO_08` | :red_square: Q3          | `%QX0.2`                | :white_check_mark:     | :warning: To be tested |
+| `GPIO_09` | :yellow_square: I5       | `%IX0.4`                | :white_check_mark:     | :warning: To be tested |
+| `GPIO_10` | :yellow_square: I4       | `%IX0.3`                | :white_check_mark:     | :warning: To be tested |
+| `GPIO_11` | :yellow_square: I6       | `%IX1.5`                | :white_check_mark:     | :warning: To be tested |
+| `GPIO_12` | :red_square: Q5          | `%QX0.4`                | :white_check_mark:     | :warning: To be tested |
+| `GPIO_13` | :yellow_square: I7       | `%IX0.6`                | :white_check_mark:     | :warning: To be tested |
+| `GPIO_14` | :blue_square: KNX TX     | :x:                     | `/dev/ttyAMA0`         | :warning: To be tested |
+| `GPIO_15` | :blue_square: KNX RX     | :x:                     | `/dev/ttyAMA0`         | :warning: To be tested |
+| `GPIO_16` | :red_square: Q6          | `%QX0.5`                | :white_check_mark:     | :warning: To be tested |
+| `GPIO_17` | :yellow_square: I1       | `%IX0.0`                | :white_check_mark:     | :warning: To be tested |
+| `GPIO_18` | :orange_square: PWM_0    | `%QW0`                  | :white_check_mark:     | :warning: To be tested |
+| `GPIO_19` | :orange_square: PWM_1    | `%QW1`                  | :white_check_mark:     | :warning: To be tested |
+| `GPIO_20` | :red_square: Q7          | `%QX0.6`                | :white_check_mark:     | :warning: To be tested |
+| `GPIO_21` | :red_square: Q8          | `%QX0.7`                | :white_check_mark:     | :warning: To be tested |
+| `GPIO_22` | :yellow_square: I3       | `%IX0.2`                | :white_check_mark:     | :warning: To be tested |
+| `GPIO_23` | :blue_square: 1-Wire     | :warning: No driver yet | :white_check_mark:     | :warning: To be tested |
+| `GPIO_24` | :red_square: Q1          | `%QX0.0`                | :white_check_mark:     | :warning: To be tested |
+| `GPIO_25` | :red_square: Q2          | `%QX0.1`                | :white_check_mark:     | :warning: To be tested |
+| `GPIO_26` | :yellow_square: I8       | `%IX0.7`                | :white_check_mark:     | :warning: To be tested |
+| `GPIO_27` | :yellow_square: I2       | `%IX0.1`                | :white_check_mark:     | :warning: To be tested |
 
 Pins marked unusable with OpenPLC are either not broken out, or differ too much from OpenPLC's mapping. As OpenPLC's mapping is immutable, these pins might not be used if PiPLC is used with the OpenPLC runtime and Pi default hardware layer.
 
@@ -119,8 +122,7 @@ Pins marked unusable with OpenPLC are either not broken out, or differ too much 
 | :-----: | :-----: | :---: | :---: |
 | `+24 V` | `+24 V` | `GND` | `GND` |
  
-The PiPLC is to be supplied with 24 V and requires at least a TODO power supply under full load.
-(Full load measured with TODO mA @ 24 V with all relays closed, all DI HIGH, transmitting over KNX and I²C, connected to Wifi and with the Pi at 100% CPU load without overclocking)
+The PiPLC is to be supplied with 24 V and requires at least a 1 A power supply under full load.
 
 While it will theoretically work at 12 V, the relays used for `Q1-8` require 24V coil voltage to trigger. If you are not placing the relays, feel free to supply your PLC with 12 V though.
 
@@ -158,7 +160,6 @@ OpenPLC natively supports Modbus to talk to I/O, while Home Assistant has a [Mod
 >
 > For OpenPLC, if you followed the [installation guide](#installation) you should have installed my fork that includes `DE/NRE` control via `GPIO_6` so there should be nothing else for you to do
 >
-> For Home Assistant, TODO hardware change documentation
 
 <details>
 <summary>Further reading</summary>
@@ -300,13 +301,7 @@ All inputs feature a status//Order is intentional to match the GPIO mapping tabl
 
 On the Raspberry side, pullups need to be enabled on the GPIOs to enable reading from these input stages.
 
-Input currents are as follows:
-
-| Voltage | Input current |
-| ------- | ------------- |
-| 5 V     | TODO mA       |
-| 12 V    | TODO mA       |
-| 24 V    | 5 mA          |
+The inputs require 5mA of input current to reliably trigger at 24 V.
 
 ---
 
@@ -336,7 +331,6 @@ In this board, the `NC5121` is NOT supplied through the KNX supply, but through 
 >
 > In your OS, `/dev/ttyAMA0` can now be used as your KNX interface
 >
-> TODO add OpenPLC installation steps
 
 ---
 
@@ -458,7 +452,7 @@ I am currently creating a hardware layer for PiPLC at https://github.com/Chrisme
 
 #### Example
 
-TODO link to project
+Check out `/src/OpenPLC`!
 
 ---
 
@@ -519,7 +513,7 @@ sudo mount -t vfat /dev/sdx1 ~/TempMount
 
 #### Example
 
-TODO link to project
+TODO Upload example `configuration.yaml`
 
 ---
 
@@ -541,7 +535,6 @@ As Codesys is proprietary, I won't be focussing much on it, but I want to make s
 3. After enabling UART3 [as described above](#j2--modbus) and rebooting your Pi, you can set `/dev/ttyAMA3` to be your Modbus master port:
 
 TODO Modbus port image
-
 TODO I²C port settings
 TODO 1-Wire port settings
 
@@ -549,7 +542,7 @@ TODO 1-Wire port settings
 
 #### Example
 
-TODO link to project
+Check out `/src/CODESYS`!
 
 ---
 
@@ -593,18 +586,8 @@ ALso all boards are to be manufactured with regular 1.6mm thickness, lead free H
 ---
 
 #### Mainboard
-
-![Render_Mainboard](/img/Render_Mainboard.png)
-
-[Interactive Bom / Online view](https://htmlpreview.github.io/?https://raw.githubusercontent.com/Chrismettal/PiPLC/master/pcb/PiPLC-Mainboard/bom/ibom.html)
-
-This board houses all logic and is the only one that benefits from a PCBA service. All other boards plug into here, including the Raspberry Pi.
-
----
-
-#### HMI
-
-![Render_HMI](/img/Render_HMI.png)
+inSDP
+![HMI](/img/RawHMI.jpg)
 
 [Interactive Bom](https://htmlpreview.github.io/?https://raw.githubusercontent.com/Chrismettal/PiPLC/master/pcb/PiPLC-HMI/bom/ibom.html)
 
@@ -646,9 +629,29 @@ Riser board to connect the HMI board to the mainboard. Can theoretically be repl
 
 ### 3D printing
 
-3D printable parts are currently being designed.
+A 3D printable case is provided in `/3d_printing`.
 
-The case is intended to be printed in a isolating and/or flame retardant filament like PC or PETG VO. 
+The case just snapfits together, after all boards were installed using M3x5mm screws.
+
+Currently it will only fit a Raspberry Pi 4 and will not work with a Pi 5! You could modify the case to make a Pi 5 fit but I haven't done that yet.
+
+The DIN-Rail mount on the back is not optimal yet so the compliant snap-action might now work, but since all boards I have manufactured are now deployed, I haven't yet gone around to updating the case.
+
+The case is intended to be printed in a isolating and/or flame retardant filament like `PC` or `PETG VO`. 
+
+---
+
+### Impressions
+
+![InSDP](/img/InSDP.jpg)
+
+![InOpenedSDP](/img/InOpenedSDP.jpg)
+
+![AssemblyUpper](/img/AssemblyUpper.jpg)
+
+![Assembly](/img/Assembly.jpg)
+ 
+![BoardsStacked](/img/BoardsStacked.jpg)
 
 ---
 
